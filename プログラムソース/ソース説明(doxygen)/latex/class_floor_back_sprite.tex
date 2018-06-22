@@ -1,0 +1,72 @@
+\hypertarget{class_floor_back_sprite}{}\section{Floor\+Back\+Sprite Class Reference}
+\label{class_floor_back_sprite}\index{Floor\+Back\+Sprite@{Floor\+Back\+Sprite}}
+
+
+フロアの後ろの背景を現在選択中のステージに合わせ変更するクラス 制作者\+:番場 宥輝  
+
+
+Inheritance diagram for Floor\+Back\+Sprite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_floor_back_sprite}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_floor_back_sprite_1_1_back_image_list}{Back\+Image\+List}
+\begin{DoxyCompactList}\small\item\em ステージ毎のフロアの背景画像を多次元配列を用いて格納するためのクラス \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_floor_back_sprite_addb7861cc28c88efde4b652023a671ef}{Set\+Image} ()
+\begin{DoxyCompactList}\small\item\em 選択中のステージに合わせた背景をセットする \end{DoxyCompactList}\item 
+void \hyperlink{class_floor_back_sprite_a29d03cee121d54e7e74c9cd0f82e9ccc}{Draw} (int floor)
+\begin{DoxyCompactList}\small\item\em 選択中フロア、未選択フロア、未開放フロアで色を変える \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_floor_back_sprite_adbb6e47e74565b39113f8c68d5d4918a}\label{class_floor_back_sprite_adbb6e47e74565b39113f8c68d5d4918a}} 
+Sprite\+Renderer \mbox{[}$\,$\mbox{]} {\bfseries back\+Renderer}
+\item 
+\mbox{\Hypertarget{class_floor_back_sprite_adb983a50493552d8a860bc2dc05a6c87}\label{class_floor_back_sprite_adb983a50493552d8a860bc2dc05a6c87}} 
+List$<$ \hyperlink{class_floor_back_sprite_1_1_back_image_list}{Back\+Image\+List} $>$ {\bfseries floor\+Back\+Image} = new List$<$\hyperlink{class_floor_back_sprite_1_1_back_image_list}{Back\+Image\+List}$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+フロアの後ろの背景を現在選択中のステージに合わせ変更するクラス 制作者\+:番場 宥輝 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_floor_back_sprite_a29d03cee121d54e7e74c9cd0f82e9ccc}\label{class_floor_back_sprite_a29d03cee121d54e7e74c9cd0f82e9ccc}} 
+\index{Floor\+Back\+Sprite@{Floor\+Back\+Sprite}!Draw@{Draw}}
+\index{Draw@{Draw}!Floor\+Back\+Sprite@{Floor\+Back\+Sprite}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Floor\+Back\+Sprite.\+Draw (\begin{DoxyParamCaption}\item[{int}]{floor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+選択中フロア、未選択フロア、未開放フロアで色を変える 
+
+
+\begin{DoxyParams}{Parameters}
+{\em floor} & 選択中のフロア\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_floor_back_sprite_addb7861cc28c88efde4b652023a671ef}\label{class_floor_back_sprite_addb7861cc28c88efde4b652023a671ef}} 
+\index{Floor\+Back\+Sprite@{Floor\+Back\+Sprite}!Set\+Image@{Set\+Image}}
+\index{Set\+Image@{Set\+Image}!Floor\+Back\+Sprite@{Floor\+Back\+Sprite}}
+\subsubsection{\texorpdfstring{Set\+Image()}{SetImage()}}
+{\footnotesize\ttfamily void Floor\+Back\+Sprite.\+Set\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+選択中のステージに合わせた背景をセットする 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Scene/\+Stage\+Select/\+Scripts/Floor\+Back\+Sprite.\+cs\end{DoxyCompactItemize}

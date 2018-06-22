@@ -1,0 +1,63 @@
+\hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component}{}\section{Unity\+Engine.\+Post\+Processing.\+Depth\+Of\+Field\+Component Class Reference}
+\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component}\index{Unity\+Engine.\+Post\+Processing.\+Depth\+Of\+Field\+Component@{Unity\+Engine.\+Post\+Processing.\+Depth\+Of\+Field\+Component}}
+Inheritance diagram for Unity\+Engine.\+Post\+Processing.\+Depth\+Of\+Field\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_1_1_uniforms}{Uniforms}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_ae3e41cb8eaf704a76c63528712d1e6ef}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_ae3e41cb8eaf704a76c63528712d1e6ef}} 
+override Depth\+Texture\+Mode {\bfseries Get\+Camera\+Flags} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a32180b99bf66ab361b862106862d523c}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a32180b99bf66ab361b862106862d523c}} 
+void {\bfseries Prepare} (Render\+Texture source, Material uber\+Material, bool antialias\+CoC, Vector2 taa\+Jitter, float taa\+Blending)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_aec0f639cfc6cbcab6b2ceef5c3de31db}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_aec0f639cfc6cbcab6b2ceef5c3de31db}} 
+override void {\bfseries On\+Disable} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a8df687892189d109e533c6a4320eca73}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a8df687892189d109e533c6a4320eca73}} 
+override bool {\bfseries active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a3804d2270122326a38df1c7e7bb047a1}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a3804d2270122326a38df1c7e7bb047a1}} 
+float {\bfseries Calculate\+Focal\+Length} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a70180c7351be3c2a54143a968e8ad702}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a70180c7351be3c2a54143a968e8ad702}} 
+float {\bfseries Calculate\+Max\+Co\+C\+Radius} (int screen\+Height)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_afcc6adb720e779a2bd4ca2b5eeec6064}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_afcc6adb720e779a2bd4ca2b5eeec6064}} 
+bool {\bfseries Check\+History} (int width, int height)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a6b27b8635197c400a673f20c71d5ce5b}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a6b27b8635197c400a673f20c71d5ce5b}} 
+Render\+Texture\+Format {\bfseries Select\+Format} (Render\+Texture\+Format primary, Render\+Texture\+Format secondary)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a8ec9a0cf015ec97ea56c75049e792a27}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_a8ec9a0cf015ec97ea56c75049e792a27}} 
+const string {\bfseries k\+\_\+\+Shader\+String} = \char`\"{}Hidden/Post FX/Depth Of Field\char`\"{}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_ad7786f081d1bde9d1d215acc36cab1e8}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_ad7786f081d1bde9d1d215acc36cab1e8}} 
+Render\+Texture {\bfseries m\+\_\+\+Co\+C\+History}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_aa3e36fa512910028768573129c5389ce}\label{class_unity_engine_1_1_post_processing_1_1_depth_of_field_component_aa3e36fa512910028768573129c5389ce}} 
+const float {\bfseries k\+\_\+\+Film\+Height} = 0.\+024f
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Runtime/\+Components/Depth\+Of\+Field\+Component.\+cs\end{DoxyCompactItemize}

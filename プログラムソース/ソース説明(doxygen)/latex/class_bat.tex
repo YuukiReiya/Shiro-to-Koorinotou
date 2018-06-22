@@ -1,0 +1,244 @@
+\hypertarget{class_bat}{}\section{Bat Class Reference}
+\label{class_bat}\index{Bat@{Bat}}
+
+
+蝙蝠の敵 製作者：冨田 大悟  
+
+
+Inheritance diagram for Bat\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_bat}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_bat_a94ef7dfdaf7801f5fa36af5ece127fe1}{Rotate\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em 蝙蝠の\+Rotate\+Enemy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bat_a40c63f070f1cd3672b4cb78449ac789d}\label{class_bat_a40c63f070f1cd3672b4cb78449ac789d}} 
+override void {\bfseries Start} ()
+\item 
+override void \hyperlink{class_bat_af1e6e4432c5f803973be596a31cbb650}{Enemy\+Update} ()
+\begin{DoxyCompactList}\small\item\em 蝙蝠の\+Fixed\+Update \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bat_a3120c9dbb1f0228dfa50e994be48334a}\label{class_bat_a3120c9dbb1f0228dfa50e994be48334a}} 
+void {\bfseries On\+Enable} ()
+\item 
+I\+Enumerator \hyperlink{class_bat_a84946382d9226014374a238b1d08cff4}{Flap\+Sound\+Start} (int time)
+\begin{DoxyCompactList}\small\item\em timeの間隔で羽ばたく音を再生する \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_bat_a44b5842b7610432d93cbdcbbbedccc95}{move\+Speed} = 0.\+01f
+\begin{DoxyCompactList}\small\item\em 移動速度 \end{DoxyCompactList}\item 
+float \hyperlink{class_bat_a125bd45781b88b039b4cd2b96ecf9a74}{move\+X\+Size} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em X座標の移動量 \end{DoxyCompactList}\item 
+int \hyperlink{class_bat_aa26440807bdeba3f4e860d7b8510b46a}{move\+Dir} = 1
+\begin{DoxyCompactList}\small\item\em 移動方向 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_bat_a00b206a83145c2273d7d6b4241562f60}{st\+Pos}
+\begin{DoxyCompactList}\small\item\em 開始時の座標 \end{DoxyCompactList}\item 
+float \hyperlink{class_bat_a8c2d220af1b500e9c2e26ef3ee18757f}{sin\+Nam}
+\begin{DoxyCompactList}\small\item\em 現在の\+Sin値 \end{DoxyCompactList}\item 
+float \hyperlink{class_bat_a1fdb20de00fd364c6cf94fefdfa4305a}{sin\+Speed} = 0
+\begin{DoxyCompactList}\small\item\em Sinの上昇量 \end{DoxyCompactList}\item 
+float \hyperlink{class_bat_acb46e48ec1c0fcd8a0a3f4b3b6903672}{up\+Nam} = 0
+\begin{DoxyCompactList}\small\item\em 上下の移動量 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_bat_a6520d007f8d93bb9d152706f69a7fe3f}{t\+Pos}
+\begin{DoxyCompactList}\small\item\em 移動目標座標 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_bat_a3a09b412fabb3b34687291dcd6af9ae1}{box\+Size}
+\begin{DoxyCompactList}\small\item\em あたり判定の大きさ \end{DoxyCompactList}\item 
+float \hyperlink{class_bat_aaa5dc118011ac51afc65feee9f75b7e5}{box\+Ray\+Size} = 0.\+01f
+\begin{DoxyCompactList}\small\item\em あたり判定の\+Rayの距離 \end{DoxyCompactList}\item 
+Audio\+Clip \hyperlink{class_bat_a41382898d4635428ab66dcf4d5695281}{flap\+Sound}
+\begin{DoxyCompactList}\small\item\em 羽ばたく音 \end{DoxyCompactList}\item 
+int \hyperlink{class_bat_aab314f8d3d3ea9c051fdc6d812f56e8b}{flap\+Time}
+\begin{DoxyCompactList}\small\item\em 羽ばたく音を再生する間隔 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+蝙蝠の敵 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bat_af1e6e4432c5f803973be596a31cbb650}\label{class_bat_af1e6e4432c5f803973be596a31cbb650}} 
+\index{Bat@{Bat}!Enemy\+Update@{Enemy\+Update}}
+\index{Enemy\+Update@{Enemy\+Update}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{Enemy\+Update()}{EnemyUpdate()}}
+{\footnotesize\ttfamily override void Bat.\+Enemy\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+蝙蝠の\+Fixed\+Update 
+
+
+
+Reimplemented from \hyperlink{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}{Enemy}.
+
+\mbox{\Hypertarget{class_bat_a84946382d9226014374a238b1d08cff4}\label{class_bat_a84946382d9226014374a238b1d08cff4}} 
+\index{Bat@{Bat}!Flap\+Sound\+Start@{Flap\+Sound\+Start}}
+\index{Flap\+Sound\+Start@{Flap\+Sound\+Start}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{Flap\+Sound\+Start()}{FlapSoundStart()}}
+{\footnotesize\ttfamily I\+Enumerator Bat.\+Flap\+Sound\+Start (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+timeの間隔で羽ばたく音を再生する 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & 羽ばたく音を再生する間隔\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+コルーチン参照
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bat_a94ef7dfdaf7801f5fa36af5ece127fe1}\label{class_bat_a94ef7dfdaf7801f5fa36af5ece127fe1}} 
+\index{Bat@{Bat}!Rotate\+Enemy@{Rotate\+Enemy}}
+\index{Rotate\+Enemy@{Rotate\+Enemy}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{Rotate\+Enemy()}{RotateEnemy()}}
+{\footnotesize\ttfamily override void Bat.\+Rotate\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+蝙蝠の\+Rotate\+Enemy 
+
+
+
+Reimplemented from \hyperlink{class_enemy_a2a0e665070fd362bd3ab2f2962ebff93}{Enemy}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bat_aaa5dc118011ac51afc65feee9f75b7e5}\label{class_bat_aaa5dc118011ac51afc65feee9f75b7e5}} 
+\index{Bat@{Bat}!box\+Ray\+Size@{box\+Ray\+Size}}
+\index{box\+Ray\+Size@{box\+Ray\+Size}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{box\+Ray\+Size}{boxRaySize}}
+{\footnotesize\ttfamily float Bat.\+box\+Ray\+Size = 0.\+01f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+あたり判定の\+Rayの距離 
+
+\mbox{\Hypertarget{class_bat_a3a09b412fabb3b34687291dcd6af9ae1}\label{class_bat_a3a09b412fabb3b34687291dcd6af9ae1}} 
+\index{Bat@{Bat}!box\+Size@{box\+Size}}
+\index{box\+Size@{box\+Size}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{box\+Size}{boxSize}}
+{\footnotesize\ttfamily Vector3 Bat.\+box\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+あたり判定の大きさ 
+
+\mbox{\Hypertarget{class_bat_a41382898d4635428ab66dcf4d5695281}\label{class_bat_a41382898d4635428ab66dcf4d5695281}} 
+\index{Bat@{Bat}!flap\+Sound@{flap\+Sound}}
+\index{flap\+Sound@{flap\+Sound}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{flap\+Sound}{flapSound}}
+{\footnotesize\ttfamily Audio\+Clip Bat.\+flap\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+羽ばたく音 
+
+\mbox{\Hypertarget{class_bat_aab314f8d3d3ea9c051fdc6d812f56e8b}\label{class_bat_aab314f8d3d3ea9c051fdc6d812f56e8b}} 
+\index{Bat@{Bat}!flap\+Time@{flap\+Time}}
+\index{flap\+Time@{flap\+Time}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{flap\+Time}{flapTime}}
+{\footnotesize\ttfamily int Bat.\+flap\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+羽ばたく音を再生する間隔 
+
+\mbox{\Hypertarget{class_bat_aa26440807bdeba3f4e860d7b8510b46a}\label{class_bat_aa26440807bdeba3f4e860d7b8510b46a}} 
+\index{Bat@{Bat}!move\+Dir@{move\+Dir}}
+\index{move\+Dir@{move\+Dir}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{move\+Dir}{moveDir}}
+{\footnotesize\ttfamily int Bat.\+move\+Dir = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+移動方向 
+
+\mbox{\Hypertarget{class_bat_a44b5842b7610432d93cbdcbbbedccc95}\label{class_bat_a44b5842b7610432d93cbdcbbbedccc95}} 
+\index{Bat@{Bat}!move\+Speed@{move\+Speed}}
+\index{move\+Speed@{move\+Speed}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{move\+Speed}{moveSpeed}}
+{\footnotesize\ttfamily float Bat.\+move\+Speed = 0.\+01f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+移動速度 
+
+\mbox{\Hypertarget{class_bat_a125bd45781b88b039b4cd2b96ecf9a74}\label{class_bat_a125bd45781b88b039b4cd2b96ecf9a74}} 
+\index{Bat@{Bat}!move\+X\+Size@{move\+X\+Size}}
+\index{move\+X\+Size@{move\+X\+Size}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{move\+X\+Size}{moveXSize}}
+{\footnotesize\ttfamily float Bat.\+move\+X\+Size = 0.\+1f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+X座標の移動量 
+
+\mbox{\Hypertarget{class_bat_a8c2d220af1b500e9c2e26ef3ee18757f}\label{class_bat_a8c2d220af1b500e9c2e26ef3ee18757f}} 
+\index{Bat@{Bat}!sin\+Nam@{sin\+Nam}}
+\index{sin\+Nam@{sin\+Nam}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{sin\+Nam}{sinNam}}
+{\footnotesize\ttfamily float Bat.\+sin\+Nam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+現在の\+Sin値 
+
+\mbox{\Hypertarget{class_bat_a1fdb20de00fd364c6cf94fefdfa4305a}\label{class_bat_a1fdb20de00fd364c6cf94fefdfa4305a}} 
+\index{Bat@{Bat}!sin\+Speed@{sin\+Speed}}
+\index{sin\+Speed@{sin\+Speed}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{sin\+Speed}{sinSpeed}}
+{\footnotesize\ttfamily float Bat.\+sin\+Speed = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sinの上昇量 
+
+\mbox{\Hypertarget{class_bat_a00b206a83145c2273d7d6b4241562f60}\label{class_bat_a00b206a83145c2273d7d6b4241562f60}} 
+\index{Bat@{Bat}!st\+Pos@{st\+Pos}}
+\index{st\+Pos@{st\+Pos}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{st\+Pos}{stPos}}
+{\footnotesize\ttfamily Vector3 Bat.\+st\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+開始時の座標 
+
+\mbox{\Hypertarget{class_bat_a6520d007f8d93bb9d152706f69a7fe3f}\label{class_bat_a6520d007f8d93bb9d152706f69a7fe3f}} 
+\index{Bat@{Bat}!t\+Pos@{t\+Pos}}
+\index{t\+Pos@{t\+Pos}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{t\+Pos}{tPos}}
+{\footnotesize\ttfamily Vector3 Bat.\+t\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+移動目標座標 
+
+\mbox{\Hypertarget{class_bat_acb46e48ec1c0fcd8a0a3f4b3b6903672}\label{class_bat_acb46e48ec1c0fcd8a0a3f4b3b6903672}} 
+\index{Bat@{Bat}!up\+Nam@{up\+Nam}}
+\index{up\+Nam@{up\+Nam}!Bat@{Bat}}
+\subsubsection{\texorpdfstring{up\+Nam}{upNam}}
+{\footnotesize\ttfamily float Bat.\+up\+Nam = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+上下の移動量 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Bat.\+cs\end{DoxyCompactItemize}

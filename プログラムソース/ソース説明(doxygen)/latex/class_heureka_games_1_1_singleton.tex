@@ -1,0 +1,49 @@
+\hypertarget{class_heureka_games_1_1_singleton}{}\section{Heureka\+Games.\+Singleton$<$ T $>$ Class Template Reference}
+\label{class_heureka_games_1_1_singleton}\index{Heureka\+Games.\+Singleton$<$ T $>$@{Heureka\+Games.\+Singleton$<$ T $>$}}
+Inheritance diagram for Heureka\+Games.\+Singleton$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_heureka_games_1_1_singleton}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_heureka_games_1_1_singleton_adbd535470ab8239e2926a8016e2aea53}{On\+Destroy} ()
+\begin{DoxyCompactList}\small\item\em When Unity quits, it destroys objects in a random order. In principle, a \hyperlink{class_heureka_games_1_1_singleton}{Singleton} is only destroyed when application quits. If any script calls Instance after it have been destroyed, it will create a buggy ghost object that will stay on the Editor scene even after stopping playing the Application. Really bad! So, this was made to be sure we\textquotesingle{}re not creating that buggy ghost object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_heureka_games_1_1_singleton_af345846f15adf4a8a9376717d2851df7}\label{class_heureka_games_1_1_singleton_af345846f15adf4a8a9376717d2851df7}} 
+static T {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_heureka_games_1_1_singleton_a9394a807f0bc63bded2413d215f1c5e2}\label{class_heureka_games_1_1_singleton_a9394a807f0bc63bded2413d215f1c5e2}} 
+static T {\bfseries \+\_\+instance}
+\item 
+\mbox{\Hypertarget{class_heureka_games_1_1_singleton_a78a587b92922d705cb13945bed6d6f0d}\label{class_heureka_games_1_1_singleton_a78a587b92922d705cb13945bed6d6f0d}} 
+static object {\bfseries \+\_\+lock} = new object()
+\item 
+\mbox{\Hypertarget{class_heureka_games_1_1_singleton_a67e62d2cd1cc24f776c6316b1eca7c94}\label{class_heureka_games_1_1_singleton_a67e62d2cd1cc24f776c6316b1eca7c94}} 
+static bool {\bfseries application\+Is\+Quitting} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_heureka_games_1_1_singleton_adbd535470ab8239e2926a8016e2aea53}\label{class_heureka_games_1_1_singleton_adbd535470ab8239e2926a8016e2aea53}} 
+\index{Heureka\+Games\+::\+Singleton@{Heureka\+Games\+::\+Singleton}!On\+Destroy@{On\+Destroy}}
+\index{On\+Destroy@{On\+Destroy}!Heureka\+Games\+::\+Singleton@{Heureka\+Games\+::\+Singleton}}
+\subsubsection{\texorpdfstring{On\+Destroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void \hyperlink{class_heureka_games_1_1_singleton}{Heureka\+Games.\+Singleton}$<$ T $>$.On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+When Unity quits, it destroys objects in a random order. In principle, a \hyperlink{class_heureka_games_1_1_singleton}{Singleton} is only destroyed when application quits. If any script calls Instance after it have been destroyed, it will create a buggy ghost object that will stay on the Editor scene even after stopping playing the Application. Really bad! So, this was made to be sure we\textquotesingle{}re not creating that buggy ghost object. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Heureka/\+Heureka\+Shared/Singleton.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{class_gamepad_input_1_1_game_pad}{}\section{Gamepad\+Input.\+Game\+Pad Class Reference}
+\label{class_gamepad_input_1_1_game_pad}\index{Gamepad\+Input.\+Game\+Pad@{Gamepad\+Input.\+Game\+Pad}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_a2ce8919a41406394f2d8f02521f12f0a}\label{class_gamepad_input_1_1_game_pad_a2ce8919a41406394f2d8f02521f12f0a}} 
+enum {\bfseries Button} \{ \newline
+{\bfseries A}, 
+{\bfseries B}, 
+{\bfseries Y}, 
+{\bfseries X}, 
+\newline
+{\bfseries Start}, 
+{\bfseries Back}
+ \}
+\item 
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_a51c5c01146af5c0beadf207c3bce744b}\label{class_gamepad_input_1_1_game_pad_a51c5c01146af5c0beadf207c3bce744b}} 
+enum {\bfseries Trigger} \{ {\bfseries Left\+Trigger}, 
+{\bfseries Right\+Trigger}
+ \}
+\item 
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_a3194f6b083aa3d4645450311ad7c4f48}\label{class_gamepad_input_1_1_game_pad_a3194f6b083aa3d4645450311ad7c4f48}} 
+enum {\bfseries Axis} \{ {\bfseries Left\+Stick}, 
+{\bfseries Right\+Stick}
+ \}
+\item 
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_afa6622349e6520cce1f7c82d9f38c3ef}\label{class_gamepad_input_1_1_game_pad_afa6622349e6520cce1f7c82d9f38c3ef}} 
+enum {\bfseries Index} \{ \newline
+{\bfseries Any}, 
+{\bfseries One}, 
+{\bfseries Two}, 
+{\bfseries Three}, 
+\newline
+{\bfseries Four}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_a0cd9e4a17e2e184da4bc8e6398452919}\label{class_gamepad_input_1_1_game_pad_a0cd9e4a17e2e184da4bc8e6398452919}} 
+static bool {\bfseries Get\+Button\+Down} (Button button, Index control\+Index)
+\item 
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_a528588a558b40fe2d3f1d5ac9c75c0be}\label{class_gamepad_input_1_1_game_pad_a528588a558b40fe2d3f1d5ac9c75c0be}} 
+static bool {\bfseries Get\+Button\+Up} (Button button, Index control\+Index)
+\item 
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_a96bb3474234b5cfe6fa1b2ff5c5f4c9d}\label{class_gamepad_input_1_1_game_pad_a96bb3474234b5cfe6fa1b2ff5c5f4c9d}} 
+static bool {\bfseries Get\+Button} (Button button, Index control\+Index)
+\item 
+static Vector2 \hyperlink{class_gamepad_input_1_1_game_pad_a13ac832d21112c8245f20f75120071dc}{Get\+Axis} (Axis axis, Index control\+Index, bool raw=false)
+\begin{DoxyCompactList}\small\item\em returns a specified axis \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_a82228971ea4da0fcf12ae44701be9e59}\label{class_gamepad_input_1_1_game_pad_a82228971ea4da0fcf12ae44701be9e59}} 
+static float {\bfseries Get\+Trigger} (Trigger trigger, Index control\+Index, bool raw=false)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_ac661f23600571593d234a630864adf9d}\label{class_gamepad_input_1_1_game_pad_ac661f23600571593d234a630864adf9d}} 
+static Key\+Code {\bfseries Get\+Keycode} (Button button, Index control\+Index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gamepad_input_1_1_game_pad_a13ac832d21112c8245f20f75120071dc}\label{class_gamepad_input_1_1_game_pad_a13ac832d21112c8245f20f75120071dc}} 
+\index{Gamepad\+Input\+::\+Game\+Pad@{Gamepad\+Input\+::\+Game\+Pad}!Get\+Axis@{Get\+Axis}}
+\index{Get\+Axis@{Get\+Axis}!Gamepad\+Input\+::\+Game\+Pad@{Gamepad\+Input\+::\+Game\+Pad}}
+\subsubsection{\texorpdfstring{Get\+Axis()}{GetAxis()}}
+{\footnotesize\ttfamily static Vector2 Gamepad\+Input.\+Game\+Pad.\+Get\+Axis (\begin{DoxyParamCaption}\item[{Axis}]{axis,  }\item[{Index}]{control\+Index,  }\item[{bool}]{raw = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+returns a specified axis 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & One of the analogue sticks, or the dpad\\
+\hline
+{\em control\+Index} & The controller number\\
+\hline
+{\em raw} & if raw is false then the control\+Index will be returned with a deadspot\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Common\+Script/\+Key\+Loader/Game\+Pad.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor}{}\section{Unity\+Editor.\+Post\+Processing.\+Waveform\+Monitor Class Reference}
+\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor}\index{Unity\+Editor.\+Post\+Processing.\+Waveform\+Monitor@{Unity\+Editor.\+Post\+Processing.\+Waveform\+Monitor}}
+Inheritance diagram for Unity\+Editor.\+Post\+Processing.\+Waveform\+Monitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_unity_editor_1_1_post_processing_1_1_waveform_monitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_aa30204365ee9ccf878ecd5e5dafd06d8}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_aa30204365ee9ccf878ecd5e5dafd06d8}} 
+override void {\bfseries Dispose} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_aa2c30e921275f59d61d0f50d3804a306}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_aa2c30e921275f59d61d0f50d3804a306}} 
+override bool {\bfseries Is\+Supported} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a71cc6ab9e9d57a73451cdb0e86d25b79}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a71cc6ab9e9d57a73451cdb0e86d25b79}} 
+override G\+U\+I\+Content {\bfseries Get\+Monitor\+Title} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a68311f67e6546f64f01f825bd0cdff5a}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a68311f67e6546f64f01f825bd0cdff5a}} 
+override void {\bfseries On\+Monitor\+Settings} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_acdc2fa129a9020c11b49e4ed3c47f80d}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_acdc2fa129a9020c11b49e4ed3c47f80d}} 
+override void {\bfseries On\+Monitor\+G\+UI} (Rect r)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a8a2597c0eedeeb0f5451ca10edc1c241}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a8a2597c0eedeeb0f5451ca10edc1c241}} 
+override void {\bfseries On\+Frame\+Data} (Render\+Texture source)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a231d458632678a14b479dee94ce7c274}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a231d458632678a14b479dee94ce7c274}} 
+void {\bfseries Create\+Buffer} (int width, int height)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a5362ee75bf8b2e9116125d6e33d61acd}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a5362ee75bf8b2e9116125d6e33d61acd}} 
+void {\bfseries Compute\+Waveform} (Render\+Texture source)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a4ca7acb5938bcd29c15a37de0191df15}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a4ca7acb5938bcd29c15a37de0191df15}} 
+Compute\+Shader {\bfseries m\+\_\+\+Compute\+Shader}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a9d823eab4cb62b2123b6c4dfef6d807d}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a9d823eab4cb62b2123b6c4dfef6d807d}} 
+Compute\+Buffer {\bfseries m\+\_\+\+Buffer}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a1a9f1c35aba50fdd8a9a31e8d466e045}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a1a9f1c35aba50fdd8a9a31e8d466e045}} 
+Material {\bfseries m\+\_\+\+Material}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a7733558bc710c34093065f431fa3bde2}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a7733558bc710c34093065f431fa3bde2}} 
+Render\+Texture {\bfseries m\+\_\+\+Waveform\+Texture}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_ae0d755a74c2b355f37b18612c072fc75}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_ae0d755a74c2b355f37b18612c072fc75}} 
+Rect {\bfseries m\+\_\+\+Monitor\+Area\+Rect}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a2c4079582d8f390c8aea3bdc570de4d6}\label{class_unity_editor_1_1_post_processing_1_1_waveform_monitor_a2c4079582d8f390c8aea3bdc570de4d6}} 
+static G\+U\+I\+Content {\bfseries s\+\_\+\+Monitor\+Title} = new G\+U\+I\+Content(\char`\"{}Waveform\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Editor/\+Monitors/Waveform\+Monitor.\+cs\end{DoxyCompactItemize}

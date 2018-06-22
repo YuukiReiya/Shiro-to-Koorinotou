@@ -1,0 +1,238 @@
+\hypertarget{class_asset_hunter_main_window}{}\section{Asset\+Hunter\+Main\+Window Class Reference}
+\label{class_asset_hunter_main_window}\index{Asset\+Hunter\+Main\+Window@{Asset\+Hunter\+Main\+Window}}
+Inheritance diagram for Asset\+Hunter\+Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_asset_hunter_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_ab87f937b4cee5228d9bd3a90f9c47c96}\label{class_asset_hunter_main_window_ab87f937b4cee5228d9bd3a90f9c47c96}} 
+enum {\bfseries Asset\+Hunter\+Window\+State} \{ {\bfseries Build\+Report}, 
+{\bfseries Unused\+Assets}, 
+{\bfseries Unused\+Scripts}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a22a49a2644d2e67f779ee1875b169397}\label{class_asset_hunter_main_window_a22a49a2644d2e67f779ee1875b169397}} 
+void {\bfseries On\+Before\+Serialize} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a9d255f95cee3f5885dc46f8984d251cc}\label{class_asset_hunter_main_window_a9d255f95cee3f5885dc46f8984d251cc}} 
+void {\bfseries On\+After\+Deserialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a08b93c3d3b30a0ba73defbf65b1d4287}\label{class_asset_hunter_main_window_a08b93c3d3b30a0ba73defbf65b1d4287}} 
+static void {\bfseries Init\+Debug\+Window} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a1e271288c954a43ab277d67ddcb2362d}\label{class_asset_hunter_main_window_a1e271288c954a43ab277d67ddcb2362d}} 
+static void {\bfseries On\+Postprocess\+Build} (Build\+Target target, string path\+To\+Built\+Project)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a41fd800952772f4390cc87fe016ffd60}\label{class_asset_hunter_main_window_a41fd800952772f4390cc87fe016ffd60}} 
+\hyperlink{class_heureka_games_1_1_asset_hunter_settings}{Asset\+Hunter\+Settings} {\bfseries settings}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a22dfd28e61502681555c88d47ce9b763}\label{class_asset_hunter_main_window_a22dfd28e61502681555c88d47ce9b763}} 
+List$<$ \hyperlink{class_heureka_games_1_1_project_folder_info}{Project\+Folder\+Info} $>$ {\bfseries m\+\_\+\+Project\+Folder\+List} = new List$<$\hyperlink{class_heureka_games_1_1_project_folder_info}{Project\+Folder\+Info}$>$()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_aec7095a8c08db5d77816135fe03a1811}\label{class_asset_hunter_main_window_aec7095a8c08db5d77816135fe03a1811}} 
+List$<$ \hyperlink{class_heureka_games_1_1_serializable_system_type}{Serializable\+System\+Type} $>$ {\bfseries m\+\_\+unused\+Type\+List\+Keys\+Serializer} = new List$<$\hyperlink{class_heureka_games_1_1_serializable_system_type}{Serializable\+System\+Type}$>$()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a889df0c3f382d194ec36f6353a39b0ce}\label{class_asset_hunter_main_window_a889df0c3f382d194ec36f6353a39b0ce}} 
+List$<$ bool $>$ {\bfseries m\+\_\+unused\+Type\+List\+Values\+Serializer} = new List$<$bool$>$()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_abead668b551d1e9663457eda236a5d42}\label{class_asset_hunter_main_window_abead668b551d1e9663457eda236a5d42}} 
+Sorted\+Dictionary$<$ \hyperlink{class_heureka_games_1_1_serializable_system_type}{Serializable\+System\+Type}, bool $>$ {\bfseries m\+\_\+unused\+Type\+Dict} = new Sorted\+Dictionary$<$\hyperlink{class_heureka_games_1_1_serializable_system_type}{Serializable\+System\+Type}, bool$>$(new \hyperlink{class_heureka_games_1_1_serializable_system_type_comparer}{Serializable\+System\+Type\+Comparer}())
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_aefba7472c967fd59534dc7480a288866}\label{class_asset_hunter_main_window_aefba7472c967fd59534dc7480a288866}} 
+List$<$ \hyperlink{class_heureka_games_1_1_serializable_system_type}{Serializable\+System\+Type} $>$ {\bfseries m\+\_\+used\+Type\+List\+Keys\+Serializer} = new List$<$\hyperlink{class_heureka_games_1_1_serializable_system_type}{Serializable\+System\+Type}$>$()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a651cbc0e66701dc4cc33dd5c38c49a45}\label{class_asset_hunter_main_window_a651cbc0e66701dc4cc33dd5c38c49a45}} 
+List$<$ bool $>$ {\bfseries m\+\_\+used\+Type\+List\+Values\+Serializer} = new List$<$bool$>$()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a40bff2af908ed61ce238c90ba0d7d739}\label{class_asset_hunter_main_window_a40bff2af908ed61ce238c90ba0d7d739}} 
+Sorted\+Dictionary$<$ \hyperlink{class_heureka_games_1_1_serializable_system_type}{Serializable\+System\+Type}, bool $>$ {\bfseries m\+\_\+used\+Type\+Dict} = new Sorted\+Dictionary$<$\hyperlink{class_heureka_games_1_1_serializable_system_type}{Serializable\+System\+Type}, bool$>$(new \hyperlink{class_heureka_games_1_1_serializable_system_type_comparer}{Serializable\+System\+Type\+Comparer}())
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a451b3c0fd93bd7cedbc933e98d78e7c7}\label{class_asset_hunter_main_window_a451b3c0fd93bd7cedbc933e98d78e7c7}} 
+List$<$ string $>$ {\bfseries m\+\_\+asset\+Scene\+Dependency\+Keys\+Serializer} = new List$<$string$>$()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a6aa55ff8feb1779558fd917548c2ecb5}\label{class_asset_hunter_main_window_a6aa55ff8feb1779558fd917548c2ecb5}} 
+List$<$ \hyperlink{class_string_list_wrapper}{String\+List\+Wrapper} $>$ {\bfseries m\+\_\+asset\+Scene\+Dependency\+Value\+Serializer} = new List$<$\hyperlink{class_string_list_wrapper}{String\+List\+Wrapper}$>$()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a371c403cd7c08eb794b40eb4619b36fb}\label{class_asset_hunter_main_window_a371c403cd7c08eb794b40eb4619b36fb}} 
+Dictionary$<$ string, List$<$ string $>$ $>$ {\bfseries m\+\_\+asset\+Scene\+Dependencies} = new Dictionary$<$string, List$<$string$>$$>$()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a2b1c674b2d6a03f19066ddaa5aafc4b1}\label{class_asset_hunter_main_window_a2b1c674b2d6a03f19066ddaa5aafc4b1}} 
+\hyperlink{class_heureka_games_1_1_project_folder_info}{Project\+Folder\+Info} {\bfseries m\+\_\+folder\+Marked\+For\+Deletion} = null
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_afd9bbf0d3d487327c0f837b8488b3ad9}\label{class_asset_hunter_main_window_afd9bbf0d3d487327c0f837b8488b3ad9}} 
+bool {\bfseries m\+\_\+\+Build\+Log\+Exists}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a6288eb74002ac1b2f1e85717ee791adc}\label{class_asset_hunter_main_window_a6288eb74002ac1b2f1e85717ee791adc}} 
+bool {\bfseries m\+\_\+\+Build\+Log\+Loaded}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a9ecd259688bae2633931d8a237836a3d}\label{class_asset_hunter_main_window_a9ecd259688bae2633931d8a237836a3d}} 
+static \hyperlink{class_asset_hunter_main_window}{Asset\+Hunter\+Main\+Window} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a21ab4ee8d8363d3df234b86eaf260ae2}\label{class_asset_hunter_main_window_a21ab4ee8d8363d3df234b86eaf260ae2}} 
+void {\bfseries On\+Inspector\+Update} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_afcd26b80c88312bed89cc68f35dc75dc}\label{class_asset_hunter_main_window_afcd26b80c88312bed89cc68f35dc75dc}} 
+void {\bfseries On\+G\+UI} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a020f448ec4261ac52e5abd0a441fc97b}\label{class_asset_hunter_main_window_a020f448ec4261ac52e5abd0a441fc97b}} 
+void {\bfseries On\+Show\+Default\+Header} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_acd5741f2d888b7856a3a2666141ecf0e}\label{class_asset_hunter_main_window_acd5741f2d888b7856a3a2666141ecf0e}} 
+void {\bfseries On\+Show\+Default\+Body} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a00c86d81a167c147025250510843272e}\label{class_asset_hunter_main_window_a00c86d81a167c147025250510843272e}} 
+void {\bfseries change\+State} (Asset\+Hunter\+Window\+State new\+State)
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_abefd70e9a04f548377b9d09afcbb5bc6}\label{class_asset_hunter_main_window_abefd70e9a04f548377b9d09afcbb5bc6}} 
+void {\bfseries On\+Build\+Report\+U\+I\+Update} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a49bb3a0b2c05cb9a2d41d905a311731c}\label{class_asset_hunter_main_window_a49bb3a0b2c05cb9a2d41d905a311731c}} 
+void {\bfseries On\+Unused\+Assets\+U\+I\+Update} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a60f020c0f7394a572fd710d6f8d5eead}\label{class_asset_hunter_main_window_a60f020c0f7394a572fd710d6f8d5eead}} 
+void {\bfseries show\+Unused\+Assets} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a33be8514a0a79550442f2921afad6c72}\label{class_asset_hunter_main_window_a33be8514a0a79550442f2921afad6c72}} 
+void {\bfseries delete\+All\+In\+Folder} (\hyperlink{class_heureka_games_1_1_project_folder_info}{Project\+Folder\+Info} folder, bool should\+Backup)
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a1a7ae23fe8a230dd4ad84768a767c9c7}\label{class_asset_hunter_main_window_a1a7ae23fe8a230dd4ad84768a767c9c7}} 
+string {\bfseries get\+System\+Folder\+Path} (string asset\+Path)
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a53d6e5c484cfdc18eeb65e97978da281}\label{class_asset_hunter_main_window_a53d6e5c484cfdc18eeb65e97978da281}} 
+void {\bfseries delete\+Selected} (List$<$ \hyperlink{class_heureka_games_1_1_asset_object_info}{Asset\+Object\+Info} $>$ objects\+To\+Delete)
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_aa3b1f0cbb785f136ba8f44a1b668b88d}\label{class_asset_hunter_main_window_aa3b1f0cbb785f136ba8f44a1b668b88d}} 
+void {\bfseries create\+Backup} (List$<$ \hyperlink{class_heureka_games_1_1_asset_object_info}{Asset\+Object\+Info} $>$ objects\+To\+Delete, string main\+Directory\+Name)
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a0cd5c22ce9ed9f2d2758bfa0a39a71f7}\label{class_asset_hunter_main_window_a0cd5c22ce9ed9f2d2758bfa0a39a71f7}} 
+void {\bfseries get\+Objects\+Marked\+For\+Deletion} (\hyperlink{class_heureka_games_1_1_project_folder_info}{Project\+Folder\+Info} a\+F\+Info, ref List$<$ \hyperlink{class_heureka_games_1_1_asset_object_info}{Asset\+Object\+Info} $>$ objects\+To\+Delete)
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_ad21819ee1b441b6f9c34a1b7cba62128}\label{class_asset_hunter_main_window_ad21819ee1b441b6f9c34a1b7cba62128}} 
+void {\bfseries show\+Types\+UI} (Sorted\+Dictionary$<$ \hyperlink{class_heureka_games_1_1_serializable_system_type}{Serializable\+System\+Type}, bool $>$ type\+List)
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_add0163f6ac9990dae3fce64e324c537b}\label{class_asset_hunter_main_window_add0163f6ac9990dae3fce64e324c537b}} 
+void {\bfseries show\+Build\+Asset\+Info\+UI} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_ae137f27aff76d3847b4f0958b36f9edd}\label{class_asset_hunter_main_window_ae137f27aff76d3847b4f0958b36f9edd}} 
+void {\bfseries show\+Dependencies\+UI} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_acbd1a2ac572ff9c87d63c71b7a0cc58b}\label{class_asset_hunter_main_window_acbd1a2ac572ff9c87d63c71b7a0cc58b}} 
+void {\bfseries draw\+Asset\+Folder\+Info\+Recursively} (\hyperlink{class_heureka_games_1_1_project_folder_info}{Project\+Folder\+Info} asset\+Folder, int indent\+Level)
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_afaf6e92f5dac18e4640db6c855ba8940}\label{class_asset_hunter_main_window_afaf6e92f5dac18e4640db6c855ba8940}} 
+void {\bfseries load\+Editor\+Log} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a429757b505b659c6a651287acad697e7}\label{class_asset_hunter_main_window_a429757b505b659c6a651287acad697e7}} 
+void {\bfseries refresh\+Unused\+Assets} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a3f83837edc03df2bec9403c9bf247403}\label{class_asset_hunter_main_window_a3f83837edc03df2bec9403c9bf247403}} 
+void {\bfseries update\+Log\+Type\+List} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a03f0c442bd9ad8efc130213e4f7896b0}\label{class_asset_hunter_main_window_a03f0c442bd9ad8efc130213e4f7896b0}} 
+void {\bfseries update\+Unused\+Type\+List} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a6309b70079d524b308fbea105fd343ea}\label{class_asset_hunter_main_window_a6309b70079d524b308fbea105fd343ea}} 
+void {\bfseries get\+Types\+Recursively} (\hyperlink{class_heureka_games_1_1_project_folder_info}{Project\+Folder\+Info} afi)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a85a70fcb2a4f43f875557e2603b4ecbf}\label{class_asset_hunter_main_window_a85a70fcb2a4f43f875557e2603b4ecbf}} 
+static \hyperlink{class_asset_hunter_main_window}{Asset\+Hunter\+Main\+Window} {\bfseries do\+Init} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a83766f2509b9c34b602d292f1c266c24}\label{class_asset_hunter_main_window_a83766f2509b9c34b602d292f1c266c24}} 
+static void {\bfseries load\+Editor\+Resources} ()
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a64ee95bd97ace39d7cde81feb0374ae3}\label{class_asset_hunter_main_window_a64ee95bd97ace39d7cde81feb0374ae3}} 
+static bool {\bfseries delete\+Empty\+Directories} (string start\+Location, ref int delete\+Count)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_aea3608635cd4dc3250e1cc106d967535}\label{class_asset_hunter_main_window_aea3608635cd4dc3250e1cc106d967535}} 
+Asset\+Hunter\+Window\+State {\bfseries m\+\_\+\+Window\+State} = Asset\+Hunter\+Window\+State.\+Unused\+Assets
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a2c068aa43dd2ea6953b2c60b435cfefb}\label{class_asset_hunter_main_window_a2c068aa43dd2ea6953b2c60b435cfefb}} 
+Vector2 {\bfseries scroll\+Pos}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a486cda5f3bff7b8c1483304a1f448fe6}\label{class_asset_hunter_main_window_a486cda5f3bff7b8c1483304a1f448fe6}} 
+bool {\bfseries b\+Show\+Exclude\+Foldout}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a526357f6c622fed1419294506c91e6f3}\label{class_asset_hunter_main_window_a526357f6c622fed1419294506c91e6f3}} 
+bool {\bfseries m\+\_\+show\+Types\+Foldout} = true
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a3863de90ecd88d51d2f06cce086964b1}\label{class_asset_hunter_main_window_a3863de90ecd88d51d2f06cce086964b1}} 
+bool {\bfseries m\+\_\+show\+Assembly\+Foldout} = false
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a9200842815c1e6d1f1d2c4b29da6c882}\label{class_asset_hunter_main_window_a9200842815c1e6d1f1d2c4b29da6c882}} 
+\hyperlink{class_heureka_games_1_1_asset_object_info}{Asset\+Object\+Info} {\bfseries m\+\_\+asset\+Marked\+For\+Deletion} = null
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_ac4a306fc05bc583c87d76b2744320c7d}\label{class_asset_hunter_main_window_ac4a306fc05bc583c87d76b2744320c7d}} 
+Texture2D {\bfseries m\+\_\+\+U\+I\+Warning}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_ab3c4192d9c6b5b8260b7ebec3989a835}\label{class_asset_hunter_main_window_ab3c4192d9c6b5b8260b7ebec3989a835}} 
+Texture2D {\bfseries m\+\_\+\+U\+I\+Small\+Logo}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a8546729b079d60d7cd153cbdc02a978c}\label{class_asset_hunter_main_window_a8546729b079d60d7cd153cbdc02a978c}} 
+Texture2D {\bfseries m\+\_\+\+U\+I\+Wide\+Logo}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a73d100c98129f16bf41835e5550fb09b}\label{class_asset_hunter_main_window_a73d100c98129f16bf41835e5550fb09b}} 
+Texture2D {\bfseries m\+\_\+\+U\+I\+Achievement\+Icon}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a97eed10019de3ceefb16a574d97b3c81}\label{class_asset_hunter_main_window_a97eed10019de3ceefb16a574d97b3c81}} 
+Texture2D {\bfseries m\+\_\+\+U\+I\+Scene\+Select}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a5ba0904a3b7803bc98f060d727ae3d98}\label{class_asset_hunter_main_window_a5ba0904a3b7803bc98f060d727ae3d98}} 
+Texture2D {\bfseries m\+\_\+\+U\+I\+Folder\+Select}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_ab30c08fdb78a8ba24b9233b4c63fa365}\label{class_asset_hunter_main_window_ab30c08fdb78a8ba24b9233b4c63fa365}} 
+Texture2D {\bfseries m\+\_\+\+U\+I\+Settings}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a5a5a05081a3acce397e2cb66c5980b12}\label{class_asset_hunter_main_window_a5a5a05081a3acce397e2cb66c5980b12}} 
+\hyperlink{class_heureka_games_1_1_asset_build_report}{Asset\+Build\+Report} {\bfseries m\+\_\+\+Build\+Log}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a752b56d4e500cd2e9cb271dd511ba14b}\label{class_asset_hunter_main_window_a752b56d4e500cd2e9cb271dd511ba14b}} 
+bool {\bfseries m\+\_\+new\+Build\+Ready}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_ad532d9ec3a89068ac008a9f18ecf7c24}\label{class_asset_hunter_main_window_ad532d9ec3a89068ac008a9f18ecf7c24}} 
+bool {\bfseries m\+\_\+\+Type\+Change\+Detected}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_acd11c5d3013d44d806bf01dbdef0346d}\label{class_asset_hunter_main_window_acd11c5d3013d44d806bf01dbdef0346d}} 
+float {\bfseries btn\+Min\+Width} = 180
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a1891921e7d8c4bf491825f59ee9d4097}\label{class_asset_hunter_main_window_a1891921e7d8c4bf491825f59ee9d4097}} 
+int {\bfseries btn\+Image\+Size} = 16
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_a24a5df87c7cbe58f23fcd7b3b8807a11}\label{class_asset_hunter_main_window_a24a5df87c7cbe58f23fcd7b3b8807a11}} 
+static \hyperlink{class_asset_hunter_main_window}{Asset\+Hunter\+Main\+Window} {\bfseries m\+\_\+window}
+\item 
+\mbox{\Hypertarget{class_asset_hunter_main_window_ab2a228a0fe9215b0b28426b8ea8cbb6b}\label{class_asset_hunter_main_window_ab2a228a0fe9215b0b28426b8ea8cbb6b}} 
+static Color {\bfseries m\+\_\+\+Intial\+G\+U\+I\+Color}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Heureka/\+Asset\+Hunter/\+Editor/Asset\+Hunter\+Main\+Window.\+cs\end{DoxyCompactItemize}

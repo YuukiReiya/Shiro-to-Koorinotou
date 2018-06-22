@@ -1,0 +1,282 @@
+\hypertarget{class_bone}{}\section{Bone Class Reference}
+\label{class_bone}\index{Bone@{Bone}}
+
+
+骸骨の敵 製作者：冨田 大悟  
+
+
+Inheritance diagram for Bone\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_bone}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_bone_adc5939e68918d95e811cce5bfb87f7e5}{Rotate\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em 骸骨の\+Rotate\+Enemy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bone_a08ec43a57f8b3099bac0514cf41a8084}\label{class_bone_a08ec43a57f8b3099bac0514cf41a8084}} 
+override void {\bfseries Start} ()
+\item 
+override void \hyperlink{class_bone_ae81be60a677bf474ff4634cea32921dc}{Enemy\+Update} ()
+\begin{DoxyCompactList}\small\item\em 骸骨の\+Fixed\+Update \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_bone_a4e9643808aa3b00b96fcd597c46f00b1}{Start\+Pos} \{ {\bfseries Right}, 
+{\bfseries Left}, 
+{\bfseries UP}, 
+{\bfseries Down}
+ \}\begin{DoxyCompactList}\small\item\em 開始時点での目標位置の種類 \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_bone_a2741ce8e7ff43d5e84eb8c9be535e444}{Set\+Rotate} ()
+\begin{DoxyCompactList}\small\item\em 目標座標によるモデルの回転 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_bone_a3001403c110fc94d175a6f20cfbb7969}{move\+Speed}
+\begin{DoxyCompactList}\small\item\em 移動速度 \end{DoxyCompactList}\item 
+float \hyperlink{class_bone_a1620b184247a0ea1adad2238de98eaf3}{radius}
+\begin{DoxyCompactList}\small\item\em 回転の半径 \end{DoxyCompactList}\item 
+float \hyperlink{class_bone_ae1b6787fe1fb6d6ffc39ac64c7ef4910}{add\+Angle}
+\begin{DoxyCompactList}\small\item\em 回転の加算角度 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_bone_a0177e90c13081ecb6b3b476f25e58b53}{center}
+\begin{DoxyCompactList}\small\item\em 回転の中心座標 \end{DoxyCompactList}\item 
+\hyperlink{class_bone_a4e9643808aa3b00b96fcd597c46f00b1}{Start\+Pos} \hyperlink{class_bone_ab022c426d0189d797ea4a34acb51fb48}{stpos}
+\begin{DoxyCompactList}\small\item\em 開始時点での目標位置 \end{DoxyCompactList}\item 
+float \hyperlink{class_bone_ab8b4fbcb5d6a56ad5598bc45efd9bd8a}{snam}
+\begin{DoxyCompactList}\small\item\em 回転用sin値 \end{DoxyCompactList}\item 
+float \hyperlink{class_bone_a2b66e86799188e2d7f0e17aafe966df3}{cnam}
+\begin{DoxyCompactList}\small\item\em 回転用cin値 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_bone_a2fcc3eb5e79c0b3abcffb50e9a60cb33}{target\+Coordinate}
+\begin{DoxyCompactList}\small\item\em 目標座標 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_bone_a7a244045aac150bb4e59bdfe7304c333}{reverse\+Box\+Size}
+\begin{DoxyCompactList}\small\item\em 反転サイズ \end{DoxyCompactList}\item 
+float \hyperlink{class_bone_a28cb81944e3d4102e78038df1fda96c4}{reverse\+Ray\+Size}
+\begin{DoxyCompactList}\small\item\em 反転の\+Rayの距離 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bone_a8f40ec6b18b86e98c8aa28b661c10b40}\label{class_bone_a8f40ec6b18b86e98c8aa28b661c10b40}} 
+Game\+Object {\bfseries rotate\+Obj}
+\item 
+Vector3 \hyperlink{class_bone_a13ede7fb2b1628b62fb24c247cb2f80c}{left\+Rotate}
+\begin{DoxyCompactList}\small\item\em 左回転のモデル角度 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_bone_ab2ba8ba25c37da3bf2c7a9a3046f137b}{right\+Rotate}
+\begin{DoxyCompactList}\small\item\em 右回転のモデル角度 \end{DoxyCompactList}\item 
+int \hyperlink{class_bone_ab73dc87056447cb775d87e83c0664395}{not\+Move\+Count} = 5
+\begin{DoxyCompactList}\small\item\em 連続反転の制限回数　超えると動かなくなる \end{DoxyCompactList}\item 
+int \hyperlink{class_bone_ac58bbae121031a91ff61a81007c6c96d}{not\+Move\+Counter}
+\begin{DoxyCompactList}\small\item\em 連続反転の制限回数のカウンタ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+骸骨の敵 製作者：冨田 大悟 
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_bone_a4e9643808aa3b00b96fcd597c46f00b1}\label{class_bone_a4e9643808aa3b00b96fcd597c46f00b1}} 
+\index{Bone@{Bone}!Start\+Pos@{Start\+Pos}}
+\index{Start\+Pos@{Start\+Pos}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{Start\+Pos}{StartPos}}
+{\footnotesize\ttfamily enum \hyperlink{class_bone_a4e9643808aa3b00b96fcd597c46f00b1}{Bone.\+Start\+Pos}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+
+
+開始時点での目標位置の種類 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bone_ae81be60a677bf474ff4634cea32921dc}\label{class_bone_ae81be60a677bf474ff4634cea32921dc}} 
+\index{Bone@{Bone}!Enemy\+Update@{Enemy\+Update}}
+\index{Enemy\+Update@{Enemy\+Update}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{Enemy\+Update()}{EnemyUpdate()}}
+{\footnotesize\ttfamily override void Bone.\+Enemy\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+骸骨の\+Fixed\+Update 
+
+
+
+Reimplemented from \hyperlink{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}{Enemy}.
+
+\mbox{\Hypertarget{class_bone_adc5939e68918d95e811cce5bfb87f7e5}\label{class_bone_adc5939e68918d95e811cce5bfb87f7e5}} 
+\index{Bone@{Bone}!Rotate\+Enemy@{Rotate\+Enemy}}
+\index{Rotate\+Enemy@{Rotate\+Enemy}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{Rotate\+Enemy()}{RotateEnemy()}}
+{\footnotesize\ttfamily override void Bone.\+Rotate\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+骸骨の\+Rotate\+Enemy 
+
+
+
+Reimplemented from \hyperlink{class_enemy_a2a0e665070fd362bd3ab2f2962ebff93}{Enemy}.
+
+\mbox{\Hypertarget{class_bone_a2741ce8e7ff43d5e84eb8c9be535e444}\label{class_bone_a2741ce8e7ff43d5e84eb8c9be535e444}} 
+\index{Bone@{Bone}!Set\+Rotate@{Set\+Rotate}}
+\index{Set\+Rotate@{Set\+Rotate}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{Set\+Rotate()}{SetRotate()}}
+{\footnotesize\ttfamily void Bone.\+Set\+Rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+目標座標によるモデルの回転 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bone_ae1b6787fe1fb6d6ffc39ac64c7ef4910}\label{class_bone_ae1b6787fe1fb6d6ffc39ac64c7ef4910}} 
+\index{Bone@{Bone}!add\+Angle@{add\+Angle}}
+\index{add\+Angle@{add\+Angle}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{add\+Angle}{addAngle}}
+{\footnotesize\ttfamily float Bone.\+add\+Angle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+回転の加算角度 
+
+\mbox{\Hypertarget{class_bone_a0177e90c13081ecb6b3b476f25e58b53}\label{class_bone_a0177e90c13081ecb6b3b476f25e58b53}} 
+\index{Bone@{Bone}!center@{center}}
+\index{center@{center}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily Vector3 Bone.\+center\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+回転の中心座標 
+
+\mbox{\Hypertarget{class_bone_a2b66e86799188e2d7f0e17aafe966df3}\label{class_bone_a2b66e86799188e2d7f0e17aafe966df3}} 
+\index{Bone@{Bone}!cnam@{cnam}}
+\index{cnam@{cnam}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{cnam}{cnam}}
+{\footnotesize\ttfamily float Bone.\+cnam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+回転用cin値 
+
+\mbox{\Hypertarget{class_bone_a13ede7fb2b1628b62fb24c247cb2f80c}\label{class_bone_a13ede7fb2b1628b62fb24c247cb2f80c}} 
+\index{Bone@{Bone}!left\+Rotate@{left\+Rotate}}
+\index{left\+Rotate@{left\+Rotate}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{left\+Rotate}{leftRotate}}
+{\footnotesize\ttfamily Vector3 Bone.\+left\+Rotate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+左回転のモデル角度 
+
+\mbox{\Hypertarget{class_bone_a3001403c110fc94d175a6f20cfbb7969}\label{class_bone_a3001403c110fc94d175a6f20cfbb7969}} 
+\index{Bone@{Bone}!move\+Speed@{move\+Speed}}
+\index{move\+Speed@{move\+Speed}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{move\+Speed}{moveSpeed}}
+{\footnotesize\ttfamily float Bone.\+move\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+移動速度 
+
+\mbox{\Hypertarget{class_bone_ab73dc87056447cb775d87e83c0664395}\label{class_bone_ab73dc87056447cb775d87e83c0664395}} 
+\index{Bone@{Bone}!not\+Move\+Count@{not\+Move\+Count}}
+\index{not\+Move\+Count@{not\+Move\+Count}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{not\+Move\+Count}{notMoveCount}}
+{\footnotesize\ttfamily int Bone.\+not\+Move\+Count = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+連続反転の制限回数　超えると動かなくなる 
+
+\mbox{\Hypertarget{class_bone_ac58bbae121031a91ff61a81007c6c96d}\label{class_bone_ac58bbae121031a91ff61a81007c6c96d}} 
+\index{Bone@{Bone}!not\+Move\+Counter@{not\+Move\+Counter}}
+\index{not\+Move\+Counter@{not\+Move\+Counter}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{not\+Move\+Counter}{notMoveCounter}}
+{\footnotesize\ttfamily int Bone.\+not\+Move\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+連続反転の制限回数のカウンタ 
+
+\mbox{\Hypertarget{class_bone_a1620b184247a0ea1adad2238de98eaf3}\label{class_bone_a1620b184247a0ea1adad2238de98eaf3}} 
+\index{Bone@{Bone}!radius@{radius}}
+\index{radius@{radius}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily float Bone.\+radius\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+回転の半径 
+
+\mbox{\Hypertarget{class_bone_a7a244045aac150bb4e59bdfe7304c333}\label{class_bone_a7a244045aac150bb4e59bdfe7304c333}} 
+\index{Bone@{Bone}!reverse\+Box\+Size@{reverse\+Box\+Size}}
+\index{reverse\+Box\+Size@{reverse\+Box\+Size}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{reverse\+Box\+Size}{reverseBoxSize}}
+{\footnotesize\ttfamily Vector3 Bone.\+reverse\+Box\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+反転サイズ 
+
+\mbox{\Hypertarget{class_bone_a28cb81944e3d4102e78038df1fda96c4}\label{class_bone_a28cb81944e3d4102e78038df1fda96c4}} 
+\index{Bone@{Bone}!reverse\+Ray\+Size@{reverse\+Ray\+Size}}
+\index{reverse\+Ray\+Size@{reverse\+Ray\+Size}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{reverse\+Ray\+Size}{reverseRaySize}}
+{\footnotesize\ttfamily float Bone.\+reverse\+Ray\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+反転の\+Rayの距離 
+
+\mbox{\Hypertarget{class_bone_ab2ba8ba25c37da3bf2c7a9a3046f137b}\label{class_bone_ab2ba8ba25c37da3bf2c7a9a3046f137b}} 
+\index{Bone@{Bone}!right\+Rotate@{right\+Rotate}}
+\index{right\+Rotate@{right\+Rotate}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{right\+Rotate}{rightRotate}}
+{\footnotesize\ttfamily Vector3 Bone.\+right\+Rotate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+右回転のモデル角度 
+
+\mbox{\Hypertarget{class_bone_ab8b4fbcb5d6a56ad5598bc45efd9bd8a}\label{class_bone_ab8b4fbcb5d6a56ad5598bc45efd9bd8a}} 
+\index{Bone@{Bone}!snam@{snam}}
+\index{snam@{snam}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{snam}{snam}}
+{\footnotesize\ttfamily float Bone.\+snam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+回転用sin値 
+
+\mbox{\Hypertarget{class_bone_ab022c426d0189d797ea4a34acb51fb48}\label{class_bone_ab022c426d0189d797ea4a34acb51fb48}} 
+\index{Bone@{Bone}!stpos@{stpos}}
+\index{stpos@{stpos}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{stpos}{stpos}}
+{\footnotesize\ttfamily \hyperlink{class_bone_a4e9643808aa3b00b96fcd597c46f00b1}{Start\+Pos} Bone.\+stpos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+開始時点での目標位置 
+
+\mbox{\Hypertarget{class_bone_a2fcc3eb5e79c0b3abcffb50e9a60cb33}\label{class_bone_a2fcc3eb5e79c0b3abcffb50e9a60cb33}} 
+\index{Bone@{Bone}!target\+Coordinate@{target\+Coordinate}}
+\index{target\+Coordinate@{target\+Coordinate}!Bone@{Bone}}
+\subsubsection{\texorpdfstring{target\+Coordinate}{targetCoordinate}}
+{\footnotesize\ttfamily Vector3 Bone.\+target\+Coordinate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+目標座標 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Bone.\+cs\end{DoxyCompactItemize}

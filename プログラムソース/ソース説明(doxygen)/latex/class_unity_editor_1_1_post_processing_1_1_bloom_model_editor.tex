@@ -1,0 +1,90 @@
+\hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor}{}\section{Unity\+Editor.\+Post\+Processing.\+Bloom\+Model\+Editor Class Reference}
+\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor}\index{Unity\+Editor.\+Post\+Processing.\+Bloom\+Model\+Editor@{Unity\+Editor.\+Post\+Processing.\+Bloom\+Model\+Editor}}
+Inheritance diagram for Unity\+Editor.\+Post\+Processing.\+Bloom\+Model\+Editor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_unity_editor_1_1_post_processing_1_1_bloom_model_editor_1_1_bloom_settings}{Bloom\+Settings}
+\item 
+struct \hyperlink{struct_unity_editor_1_1_post_processing_1_1_bloom_model_editor_1_1_lens_dirt_settings}{Lens\+Dirt\+Settings}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a9e243b49c284dfd0018e7eb8c03b0076}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a9e243b49c284dfd0018e7eb8c03b0076}} 
+override void {\bfseries On\+Enable} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a8ae605305e02f59af174837e93ff5b02}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a8ae605305e02f59af174837e93ff5b02}} 
+override void {\bfseries On\+Inspector\+G\+UI} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_aef1c3035ae1a315f947e7a9a142bafd8}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_aef1c3035ae1a315f947e7a9a142bafd8}} 
+void {\bfseries Prepare\+Graph} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a53d75ccee84ca82e213efc09700fdffd}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a53d75ccee84ca82e213efc09700fdffd}} 
+void {\bfseries Draw\+Graph} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a7a2c43e6b990a050d36930b5f31df491}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a7a2c43e6b990a050d36930b5f31df491}} 
+float {\bfseries Response\+Function} (float x)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a479ba47c64d0ace6f888703b7339f0ee}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a479ba47c64d0ace6f888703b7339f0ee}} 
+Vector3 {\bfseries Point\+In\+Rect} (float x, float y)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a850ec240e784fac04c1821001f76467c}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a850ec240e784fac04c1821001f76467c}} 
+void {\bfseries Draw\+Line} (float x1, float y1, float x2, float y2, float grayscale)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a0fd887bf71f04510055cc00024646167}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a0fd887bf71f04510055cc00024646167}} 
+void {\bfseries Draw\+Rect} (float x1, float y1, float x2, float y2, float fill, float line)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_afcf630d34d38579f27a7fe779bfcd47e}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_afcf630d34d38579f27a7fe779bfcd47e}} 
+\hyperlink{struct_unity_editor_1_1_post_processing_1_1_bloom_model_editor_1_1_bloom_settings}{Bloom\+Settings} {\bfseries m\+\_\+\+Bloom}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a714a665ab25b5143bb9373d69cbd5ae4}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a714a665ab25b5143bb9373d69cbd5ae4}} 
+\hyperlink{struct_unity_editor_1_1_post_processing_1_1_bloom_model_editor_1_1_lens_dirt_settings}{Lens\+Dirt\+Settings} {\bfseries m\+\_\+\+Lens\+Dirt}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a8dccb55e7ba44d24834441b263e48a02}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a8dccb55e7ba44d24834441b263e48a02}} 
+float {\bfseries m\+\_\+\+Graph\+Threshold}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a44b60ff617488fae34b67bf5ac91f615}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a44b60ff617488fae34b67bf5ac91f615}} 
+float {\bfseries m\+\_\+\+Graph\+Knee}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a13e4ca4582476e8ad3822716a0746667}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a13e4ca4582476e8ad3822716a0746667}} 
+float {\bfseries m\+\_\+\+Graph\+Intensity}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_ac27a2a9069a5a5149e05a14175c28b3b}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_ac27a2a9069a5a5149e05a14175c28b3b}} 
+const int {\bfseries k\+\_\+\+Curve\+Resolution} = 48
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a6ac0e974cc5cb126d940febf2a815f46}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a6ac0e974cc5cb126d940febf2a815f46}} 
+Vector3 \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Rect\+Vertices} = new Vector3\mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_ab39d78057e975eccdda23dcb39be5521}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_ab39d78057e975eccdda23dcb39be5521}} 
+Vector3 \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Line\+Vertices} = new Vector3\mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a9dd07b6cfe5861f5d5884b0703149506}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a9dd07b6cfe5861f5d5884b0703149506}} 
+Vector3 \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Curve\+Vertices} = new Vector3\mbox{[}k\+\_\+\+Curve\+Resolution\mbox{]}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a75783c68263576565b98281570c0308b}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a75783c68263576565b98281570c0308b}} 
+Rect {\bfseries m\+\_\+\+Rect\+Graph}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a80fd54922c0811f647c1b4919909406e}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a80fd54922c0811f647c1b4919909406e}} 
+float {\bfseries m\+\_\+\+RangeX}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a69ee2e27acc06cac4a4f3aef00cc6d75}\label{class_unity_editor_1_1_post_processing_1_1_bloom_model_editor_a69ee2e27acc06cac4a4f3aef00cc6d75}} 
+float {\bfseries m\+\_\+\+RangeY}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Editor/\+Models/Bloom\+Model\+Editor.\+cs\end{DoxyCompactItemize}

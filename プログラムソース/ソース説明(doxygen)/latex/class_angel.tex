@@ -1,0 +1,167 @@
+\hypertarget{class_angel}{}\section{Angel Class Reference}
+\label{class_angel}\index{Angel@{Angel}}
+
+
+天使の敵　 製作者：冨田 大悟  
+
+
+Inheritance diagram for Angel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_angel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_angel_ade12610b82079f5748f8d1393cce1f9b}{Rotate\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em 天使の\+Rotate\+Enemy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_angel_a2c35f5d2b12e43d64cc686728a6225c2}{Enemy\+Update} ()
+\begin{DoxyCompactList}\small\item\em 天使の\+Fixed\+Update \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_angel_ae28f9d3c6935246d9ed7c3ed62ea0d82}{move\+Speed}
+\begin{DoxyCompactList}\small\item\em 移動速度 \end{DoxyCompactList}\item 
+float \hyperlink{class_angel_a316911b3b4c0034240c0439b44170b58}{move\+Dir}
+\begin{DoxyCompactList}\small\item\em 移動方向 \end{DoxyCompactList}\item 
+float \hyperlink{class_angel_ad00352b901921315a4215ddd5c7c57d7}{down\+Size}
+\begin{DoxyCompactList}\small\item\em 下に移動する距離 \end{DoxyCompactList}\item 
+float \hyperlink{class_angel_aa7e9bed085ef4689c03e5c7ef8e4ac1d}{down\+Size\+Count}
+\begin{DoxyCompactList}\small\item\em 下移動用のカウント \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_angel_a3305075149f7d8004650479c64efde44}{ray\+Box\+Size}
+\begin{DoxyCompactList}\small\item\em あたり判定の大きさ　壁・床判定用 \end{DoxyCompactList}\item 
+float \hyperlink{class_angel_acd83f4f3c29ee3349e5ed2eeaf30c764}{ray\+Size}
+\begin{DoxyCompactList}\small\item\em あたり判定の\+Rayの距離 \end{DoxyCompactList}\item 
+float \hyperlink{class_angel_a492ff7c5e75a13f60acdf6bdb9439194}{down\+Ray\+Size}
+\begin{DoxyCompactList}\small\item\em 下方向のあたり判定の\+Rayの距離 \end{DoxyCompactList}\item 
+bool \hyperlink{class_angel_abfa2f6dea626f6587c6dc2509cb8df26}{down}
+\begin{DoxyCompactList}\small\item\em 左右移動か下に移動しているか　trueなら下移動 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+天使の敵　 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_angel_a2c35f5d2b12e43d64cc686728a6225c2}\label{class_angel_a2c35f5d2b12e43d64cc686728a6225c2}} 
+\index{Angel@{Angel}!Enemy\+Update@{Enemy\+Update}}
+\index{Enemy\+Update@{Enemy\+Update}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{Enemy\+Update()}{EnemyUpdate()}}
+{\footnotesize\ttfamily override void Angel.\+Enemy\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+天使の\+Fixed\+Update 
+
+
+
+Reimplemented from \hyperlink{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}{Enemy}.
+
+\mbox{\Hypertarget{class_angel_ade12610b82079f5748f8d1393cce1f9b}\label{class_angel_ade12610b82079f5748f8d1393cce1f9b}} 
+\index{Angel@{Angel}!Rotate\+Enemy@{Rotate\+Enemy}}
+\index{Rotate\+Enemy@{Rotate\+Enemy}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{Rotate\+Enemy()}{RotateEnemy()}}
+{\footnotesize\ttfamily override void Angel.\+Rotate\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+天使の\+Rotate\+Enemy 
+
+
+
+Reimplemented from \hyperlink{class_enemy_a2a0e665070fd362bd3ab2f2962ebff93}{Enemy}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_angel_abfa2f6dea626f6587c6dc2509cb8df26}\label{class_angel_abfa2f6dea626f6587c6dc2509cb8df26}} 
+\index{Angel@{Angel}!down@{down}}
+\index{down@{down}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{down}{down}}
+{\footnotesize\ttfamily bool Angel.\+down\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+左右移動か下に移動しているか　trueなら下移動 
+
+\mbox{\Hypertarget{class_angel_a492ff7c5e75a13f60acdf6bdb9439194}\label{class_angel_a492ff7c5e75a13f60acdf6bdb9439194}} 
+\index{Angel@{Angel}!down\+Ray\+Size@{down\+Ray\+Size}}
+\index{down\+Ray\+Size@{down\+Ray\+Size}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{down\+Ray\+Size}{downRaySize}}
+{\footnotesize\ttfamily float Angel.\+down\+Ray\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+下方向のあたり判定の\+Rayの距離 
+
+\mbox{\Hypertarget{class_angel_ad00352b901921315a4215ddd5c7c57d7}\label{class_angel_ad00352b901921315a4215ddd5c7c57d7}} 
+\index{Angel@{Angel}!down\+Size@{down\+Size}}
+\index{down\+Size@{down\+Size}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{down\+Size}{downSize}}
+{\footnotesize\ttfamily float Angel.\+down\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+下に移動する距離 
+
+\mbox{\Hypertarget{class_angel_aa7e9bed085ef4689c03e5c7ef8e4ac1d}\label{class_angel_aa7e9bed085ef4689c03e5c7ef8e4ac1d}} 
+\index{Angel@{Angel}!down\+Size\+Count@{down\+Size\+Count}}
+\index{down\+Size\+Count@{down\+Size\+Count}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{down\+Size\+Count}{downSizeCount}}
+{\footnotesize\ttfamily float Angel.\+down\+Size\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+下移動用のカウント 
+
+\mbox{\Hypertarget{class_angel_a316911b3b4c0034240c0439b44170b58}\label{class_angel_a316911b3b4c0034240c0439b44170b58}} 
+\index{Angel@{Angel}!move\+Dir@{move\+Dir}}
+\index{move\+Dir@{move\+Dir}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{move\+Dir}{moveDir}}
+{\footnotesize\ttfamily float Angel.\+move\+Dir\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+移動方向 
+
+\mbox{\Hypertarget{class_angel_ae28f9d3c6935246d9ed7c3ed62ea0d82}\label{class_angel_ae28f9d3c6935246d9ed7c3ed62ea0d82}} 
+\index{Angel@{Angel}!move\+Speed@{move\+Speed}}
+\index{move\+Speed@{move\+Speed}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{move\+Speed}{moveSpeed}}
+{\footnotesize\ttfamily float Angel.\+move\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+移動速度 
+
+\mbox{\Hypertarget{class_angel_a3305075149f7d8004650479c64efde44}\label{class_angel_a3305075149f7d8004650479c64efde44}} 
+\index{Angel@{Angel}!ray\+Box\+Size@{ray\+Box\+Size}}
+\index{ray\+Box\+Size@{ray\+Box\+Size}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{ray\+Box\+Size}{rayBoxSize}}
+{\footnotesize\ttfamily Vector3 Angel.\+ray\+Box\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+あたり判定の大きさ　壁・床判定用 
+
+\mbox{\Hypertarget{class_angel_acd83f4f3c29ee3349e5ed2eeaf30c764}\label{class_angel_acd83f4f3c29ee3349e5ed2eeaf30c764}} 
+\index{Angel@{Angel}!ray\+Size@{ray\+Size}}
+\index{ray\+Size@{ray\+Size}!Angel@{Angel}}
+\subsubsection{\texorpdfstring{ray\+Size}{raySize}}
+{\footnotesize\ttfamily float Angel.\+ray\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+あたり判定の\+Rayの距離 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Angel.\+cs\end{DoxyCompactItemize}

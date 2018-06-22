@@ -1,0 +1,131 @@
+\hypertarget{class_wamonn}{}\section{Wamonn Class Reference}
+\label{class_wamonn}\index{Wamonn@{Wamonn}}
+
+
+爆発する敵 製作者：冨田 大悟  
+
+
+Inheritance diagram for Wamonn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_wamonn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_wamonn_a46080369edebc97e39e1841b91258856}{Player\+Hit} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーに当たった時の処理 \end{DoxyCompactList}\item 
+override void \hyperlink{class_wamonn_a84f3f9f2380c28a7e455f0cee6e9c933}{Rotate\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em 左右の反転 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_wamonn_a740973b7d8416eac87240bc11670d3c6}\label{class_wamonn_a740973b7d8416eac87240bc11670d3c6}} 
+override void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_wamonn_a1af397f9b6ed9807597a8901a06104f2}\label{class_wamonn_a1af397f9b6ed9807597a8901a06104f2}} 
+void {\bfseries Fixed\+Update} ()
+\item 
+\mbox{\Hypertarget{class_wamonn_a4d8110b4518864dd265328c519692f64}\label{class_wamonn_a4d8110b4518864dd265328c519692f64}} 
+void {\bfseries change\+Rotation} ()
+\item 
+\mbox{\Hypertarget{class_wamonn_abd28f36a4bf3fc573436edd50737befe}\label{class_wamonn_abd28f36a4bf3fc573436edd50737befe}} 
+void {\bfseries Explosion} ()
+\item 
+\mbox{\Hypertarget{class_wamonn_ad9475e2b393f43af9bbdd304cd3969e9}\label{class_wamonn_ad9475e2b393f43af9bbdd304cd3969e9}} 
+void {\bfseries On\+Collision\+Enter} (Collision collision)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_wamonn_a5b8cbe718e8578c32caf52551a9c9631}\label{class_wamonn_a5b8cbe718e8578c32caf52551a9c9631}} 
+int {\bfseries move\+Dir}
+\item 
+\mbox{\Hypertarget{class_wamonn_a4e6514b63e2abb2487c6cfdf24fed5a8}\label{class_wamonn_a4e6514b63e2abb2487c6cfdf24fed5a8}} 
+float {\bfseries speed}
+\item 
+\mbox{\Hypertarget{class_wamonn_ac79d5909b883e28924c9a0e07ce1eb2b}\label{class_wamonn_ac79d5909b883e28924c9a0e07ce1eb2b}} 
+float {\bfseries boost\+Speed}
+\item 
+\mbox{\Hypertarget{class_wamonn_af0bbdc731be348b6d62ede0910de93fa}\label{class_wamonn_af0bbdc731be348b6d62ede0910de93fa}} 
+float {\bfseries boost\+On\+Time}
+\item 
+\mbox{\Hypertarget{class_wamonn_abf16bad9e1401c5a9296701c86bc540f}\label{class_wamonn_abf16bad9e1401c5a9296701c86bc540f}} 
+float {\bfseries boost\+Off\+Time}
+\item 
+\mbox{\Hypertarget{class_wamonn_a96288c80a0ec415bd38d742f31be86a4}\label{class_wamonn_a96288c80a0ec415bd38d742f31be86a4}} 
+float {\bfseries boost\+Count}
+\item 
+\mbox{\Hypertarget{class_wamonn_abc8a41f7301a480106968059769fb789}\label{class_wamonn_abc8a41f7301a480106968059769fb789}} 
+float {\bfseries retrun\+Ray\+Size}
+\item 
+\mbox{\Hypertarget{class_wamonn_a83b93ec718868abb39b523dfabb2c1c5}\label{class_wamonn_a83b93ec718868abb39b523dfabb2c1c5}} 
+Vector3 {\bfseries retrun\+Ray\+Box\+Size}
+\item 
+\mbox{\Hypertarget{class_wamonn_a8445e40234422b3c520baee1b07dbeb8}\label{class_wamonn_a8445e40234422b3c520baee1b07dbeb8}} 
+Vector3 {\bfseries left\+Rotate}
+\item 
+\mbox{\Hypertarget{class_wamonn_a3ad1d334eeaab35fc57d5b0737a626e9}\label{class_wamonn_a3ad1d334eeaab35fc57d5b0737a626e9}} 
+Vector3 {\bfseries right\+Rotate}
+\item 
+\mbox{\Hypertarget{class_wamonn_ab717bae2add9b9e4859b66b277942f25}\label{class_wamonn_ab717bae2add9b9e4859b66b277942f25}} 
+bool {\bfseries explosiondd} =false
+\item 
+\mbox{\Hypertarget{class_wamonn_a68a54b76a8453329ad2339afab662188}\label{class_wamonn_a68a54b76a8453329ad2339afab662188}} 
+float {\bfseries explosion\+Radius}
+\item 
+\mbox{\Hypertarget{class_wamonn_acd0db8960eba5b14f71b0ee4663c9fa3}\label{class_wamonn_acd0db8960eba5b14f71b0ee4663c9fa3}} 
+Game\+Object {\bfseries explosion\+Efect}
+\item 
+\mbox{\Hypertarget{class_wamonn_a9372d00dc8f48a4e991e215cfe9e0751}\label{class_wamonn_a9372d00dc8f48a4e991e215cfe9e0751}} 
+Audio\+Clip {\bfseries explosion\+Sound}
+\item 
+\mbox{\Hypertarget{class_wamonn_ac3b5b514ee6d7b2fb398e340af1a011e}\label{class_wamonn_ac3b5b514ee6d7b2fb398e340af1a011e}} 
+Game\+Object {\bfseries ef}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+爆発する敵 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wamonn_a46080369edebc97e39e1841b91258856}\label{class_wamonn_a46080369edebc97e39e1841b91258856}} 
+\index{Wamonn@{Wamonn}!Player\+Hit@{Player\+Hit}}
+\index{Player\+Hit@{Player\+Hit}!Wamonn@{Wamonn}}
+\subsubsection{\texorpdfstring{Player\+Hit()}{PlayerHit()}}
+{\footnotesize\ttfamily override void Wamonn.\+Player\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+プレイヤーに当たった時の処理 
+
+
+
+Reimplemented from \hyperlink{class_enemy_a2b5e9b4644bd49c33279403c6477ed39}{Enemy}.
+
+\mbox{\Hypertarget{class_wamonn_a84f3f9f2380c28a7e455f0cee6e9c933}\label{class_wamonn_a84f3f9f2380c28a7e455f0cee6e9c933}} 
+\index{Wamonn@{Wamonn}!Rotate\+Enemy@{Rotate\+Enemy}}
+\index{Rotate\+Enemy@{Rotate\+Enemy}!Wamonn@{Wamonn}}
+\subsubsection{\texorpdfstring{Rotate\+Enemy()}{RotateEnemy()}}
+{\footnotesize\ttfamily override void Wamonn.\+Rotate\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+左右の反転 
+
+
+
+Reimplemented from \hyperlink{class_enemy_a2a0e665070fd362bd3ab2f2962ebff93}{Enemy}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Wamonn.\+cs\end{DoxyCompactItemize}

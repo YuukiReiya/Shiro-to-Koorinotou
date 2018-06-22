@@ -1,0 +1,141 @@
+\hypertarget{class_squid}{}\section{Squid Class Reference}
+\label{class_squid}\index{Squid@{Squid}}
+
+
+イカの敵 製作者：冨田 大悟  
+
+
+Inheritance diagram for Squid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_squid}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_squid_a7350ce67466554aa0c46c9da7c5e6da2}{Rotate\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em 左右の反転 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_squid_a79b5ca18135582d01df66f2cce0be082}\label{class_squid_a79b5ca18135582d01df66f2cce0be082}} 
+override void {\bfseries Start} ()
+\item 
+override void \hyperlink{class_squid_ab737cee06933e0631c45bb7fef86fe6b}{Enemy\+Update} ()
+\begin{DoxyCompactList}\small\item\em 継承先での\+Fixed\+Update \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_squid_a5205a9033f57c9b0dfcd1af955a5a6a6}\label{class_squid_a5205a9033f57c9b0dfcd1af955a5a6a6}} 
+enum {\bfseries Move\+Dir} \{ {\bfseries Up}, 
+{\bfseries Right}, 
+{\bfseries Down}, 
+{\bfseries Left}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_squid_a408d6a90277478bda51b518716531627}{turn} ()
+\begin{DoxyCompactList}\small\item\em 回転 \end{DoxyCompactList}\item 
+void \hyperlink{class_squid_a90e09dd2b8978f5a6f749078f2913ebe}{Check\+Dir} ()
+\begin{DoxyCompactList}\small\item\em 進行方向による回転の設定 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_squid_aee00be5c0860b3f1423ea1cdfdbf0119}\label{class_squid_aee00be5c0860b3f1423ea1cdfdbf0119}} 
+Move\+Dir {\bfseries move\+Dir}
+\item 
+\mbox{\Hypertarget{class_squid_a83b929aca26eae1999d7d7b55b6ac0a7}\label{class_squid_a83b929aca26eae1999d7d7b55b6ac0a7}} 
+Vector3 {\bfseries left\+Rotate}
+\item 
+\mbox{\Hypertarget{class_squid_a198545cd0e1c3946c66ca1b0003cc75b}\label{class_squid_a198545cd0e1c3946c66ca1b0003cc75b}} 
+Vector3 {\bfseries right\+Rotate}
+\item 
+\mbox{\Hypertarget{class_squid_a070dfa8015b97a141ccbd186ba24e6c6}\label{class_squid_a070dfa8015b97a141ccbd186ba24e6c6}} 
+float {\bfseries move\+Speed}
+\item 
+\mbox{\Hypertarget{class_squid_a2d2f75e4c56cb5c92bc7daab4cc09242}\label{class_squid_a2d2f75e4c56cb5c92bc7daab4cc09242}} 
+int {\bfseries move\+Time}
+\item 
+\mbox{\Hypertarget{class_squid_a6d7a5349869a24c03e77873505e4c716}\label{class_squid_a6d7a5349869a24c03e77873505e4c716}} 
+int {\bfseries move\+Count}
+\item 
+\mbox{\Hypertarget{class_squid_ac56a84fb6b406e228f2732393dcd2631}\label{class_squid_ac56a84fb6b406e228f2732393dcd2631}} 
+bool {\bfseries turn\+Right}
+\item 
+\mbox{\Hypertarget{class_squid_a260ede7ae6bd7b0491274df50f478f52}\label{class_squid_a260ede7ae6bd7b0491274df50f478f52}} 
+Vector3 {\bfseries box\+Size}
+\item 
+\mbox{\Hypertarget{class_squid_a7bdcf030408472170d2ab679312ecf18}\label{class_squid_a7bdcf030408472170d2ab679312ecf18}} 
+float {\bfseries box\+Ray\+Size}
+\item 
+\mbox{\Hypertarget{class_squid_a83714f003856eb62588e1bd5beaad6d7}\label{class_squid_a83714f003856eb62588e1bd5beaad6d7}} 
+Vector3 {\bfseries aice\+Block\+Pop\+Add\+PosW}
+\item 
+\mbox{\Hypertarget{class_squid_ac4dd2739d11d9afa2279bee71772c8f4}\label{class_squid_ac4dd2739d11d9afa2279bee71772c8f4}} 
+Vector3 {\bfseries aice\+Block\+Pop\+RotateW}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+イカの敵 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_squid_a90e09dd2b8978f5a6f749078f2913ebe}\label{class_squid_a90e09dd2b8978f5a6f749078f2913ebe}} 
+\index{Squid@{Squid}!Check\+Dir@{Check\+Dir}}
+\index{Check\+Dir@{Check\+Dir}!Squid@{Squid}}
+\subsubsection{\texorpdfstring{Check\+Dir()}{CheckDir()}}
+{\footnotesize\ttfamily void Squid.\+Check\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+進行方向による回転の設定 
+
+\mbox{\Hypertarget{class_squid_ab737cee06933e0631c45bb7fef86fe6b}\label{class_squid_ab737cee06933e0631c45bb7fef86fe6b}} 
+\index{Squid@{Squid}!Enemy\+Update@{Enemy\+Update}}
+\index{Enemy\+Update@{Enemy\+Update}!Squid@{Squid}}
+\subsubsection{\texorpdfstring{Enemy\+Update()}{EnemyUpdate()}}
+{\footnotesize\ttfamily override void Squid.\+Enemy\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+継承先での\+Fixed\+Update 
+
+
+
+Reimplemented from \hyperlink{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}{Enemy}.
+
+\mbox{\Hypertarget{class_squid_a7350ce67466554aa0c46c9da7c5e6da2}\label{class_squid_a7350ce67466554aa0c46c9da7c5e6da2}} 
+\index{Squid@{Squid}!Rotate\+Enemy@{Rotate\+Enemy}}
+\index{Rotate\+Enemy@{Rotate\+Enemy}!Squid@{Squid}}
+\subsubsection{\texorpdfstring{Rotate\+Enemy()}{RotateEnemy()}}
+{\footnotesize\ttfamily override void Squid.\+Rotate\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+左右の反転 
+
+
+
+Reimplemented from \hyperlink{class_enemy_a2a0e665070fd362bd3ab2f2962ebff93}{Enemy}.
+
+\mbox{\Hypertarget{class_squid_a408d6a90277478bda51b518716531627}\label{class_squid_a408d6a90277478bda51b518716531627}} 
+\index{Squid@{Squid}!turn@{turn}}
+\index{turn@{turn}!Squid@{Squid}}
+\subsubsection{\texorpdfstring{turn()}{turn()}}
+{\footnotesize\ttfamily void Squid.\+turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+回転 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Squid.\+cs\end{DoxyCompactItemize}

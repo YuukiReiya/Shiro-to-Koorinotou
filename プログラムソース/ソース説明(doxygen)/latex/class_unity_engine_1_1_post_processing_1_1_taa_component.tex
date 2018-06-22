@@ -1,0 +1,81 @@
+\hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component}{}\section{Unity\+Engine.\+Post\+Processing.\+Taa\+Component Class Reference}
+\label{class_unity_engine_1_1_post_processing_1_1_taa_component}\index{Unity\+Engine.\+Post\+Processing.\+Taa\+Component@{Unity\+Engine.\+Post\+Processing.\+Taa\+Component}}
+Inheritance diagram for Unity\+Engine.\+Post\+Processing.\+Taa\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_engine_1_1_post_processing_1_1_taa_component}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_unity_engine_1_1_post_processing_1_1_taa_component_1_1_uniforms}{Uniforms}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_acdb6cc8b86f8792042c7d57579db1e4a}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_acdb6cc8b86f8792042c7d57579db1e4a}} 
+override Depth\+Texture\+Mode {\bfseries Get\+Camera\+Flags} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a338933e1af86c58cfcd016994651b5d8}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a338933e1af86c58cfcd016994651b5d8}} 
+void {\bfseries Reset\+History} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_ac388a6ff1c2b47604772d4a18e6e8d24}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_ac388a6ff1c2b47604772d4a18e6e8d24}} 
+void {\bfseries Set\+Projection\+Matrix} (Func$<$ Vector2, Matrix4x4 $>$ jittered\+Func)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a84a55cff0051067183e6e2daa8cfe317}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a84a55cff0051067183e6e2daa8cfe317}} 
+void {\bfseries Render} (Render\+Texture source, Render\+Texture destination)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_aae1a9b2df8e23593b75e7eb2c9cc6b4c}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_aae1a9b2df8e23593b75e7eb2c9cc6b4c}} 
+override void {\bfseries On\+Disable} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_aadb855573680151dae4900d12af520b2}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_aadb855573680151dae4900d12af520b2}} 
+override bool {\bfseries active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_ad7a44ec209bac50e7f42e10784462019}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_ad7a44ec209bac50e7f42e10784462019}} 
+Vector2 {\bfseries jitter\+Vector}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a52f3e07778893dbda232406a14963471}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a52f3e07778893dbda232406a14963471}} 
+float {\bfseries Get\+Halton\+Value} (int index, int radix)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a6d010d7cefe4fe2b6a53ae8be9d80717}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a6d010d7cefe4fe2b6a53ae8be9d80717}} 
+Vector2 {\bfseries Generate\+Random\+Offset} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a5e3bfb75e11150ced64c681cc4ba3eae}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a5e3bfb75e11150ced64c681cc4ba3eae}} 
+Matrix4x4 {\bfseries Get\+Perspective\+Projection\+Matrix} (Vector2 offset)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_aca66e3898265851f2a8ef711866c760f}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_aca66e3898265851f2a8ef711866c760f}} 
+Matrix4x4 {\bfseries Get\+Orthographic\+Projection\+Matrix} (Vector2 offset)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a207cefcaa1f39a3ed7303a60d17b29e6}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a207cefcaa1f39a3ed7303a60d17b29e6}} 
+const string {\bfseries k\+\_\+\+Shader\+String} = \char`\"{}Hidden/Post FX/Temporal Anti-\/aliasing\char`\"{}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a4e722ab40f3793a419aedbff885f5c71}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a4e722ab40f3793a419aedbff885f5c71}} 
+const int {\bfseries k\+\_\+\+Sample\+Count} = 8
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_aafbe159c8f3c646bc167d9fd5e7547f3}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_aafbe159c8f3c646bc167d9fd5e7547f3}} 
+readonly Render\+Buffer \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+M\+RT} = new Render\+Buffer\mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a480aa66771218e22a32a05fb76541208}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a480aa66771218e22a32a05fb76541208}} 
+int {\bfseries m\+\_\+\+Sample\+Index} = 0
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a3f259591fb3fd6deaa45918559f326d2}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a3f259591fb3fd6deaa45918559f326d2}} 
+bool {\bfseries m\+\_\+\+Reset\+History} = true
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_taa_component_a706d4f067e0dc03b16eedc691344a707}\label{class_unity_engine_1_1_post_processing_1_1_taa_component_a706d4f067e0dc03b16eedc691344a707}} 
+Render\+Texture {\bfseries m\+\_\+\+History\+Texture}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Runtime/\+Components/Taa\+Component.\+cs\end{DoxyCompactItemize}

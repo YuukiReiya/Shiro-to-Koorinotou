@@ -1,0 +1,207 @@
+\hypertarget{class_title}{}\section{Title Class Reference}
+\label{class_title}\index{Title@{Title}}
+
+
+タイトルの処理を行うクラス 制作者\+:番場 宥輝  
+
+
+Inheritance diagram for Title\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_title}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_title_a04cc21116aa24af1fbf2f6aae109efea}\label{class_title_a04cc21116aa24af1fbf2f6aae109efea}} 
+static bool {\bfseries fade\+Is\+Black}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_title_ad1b79b2803d7053d8369e59c012a91c3}\label{class_title_ad1b79b2803d7053d8369e59c012a91c3}} 
+delegate void {\bfseries routine\+Func} ()
+\item 
+\mbox{\Hypertarget{class_title_adb21c32bc899c57bcafc29adcdf766c3}\label{class_title_adb21c32bc899c57bcafc29adcdf766c3}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_title_ad0d94dc5c7c78d3acc72cd84e84801dc}\label{class_title_ad0d94dc5c7c78d3acc72cd84e84801dc}} 
+void {\bfseries Update} ()
+\item 
+void \hyperlink{class_title_aad4ba589818e3ad8b1794ff6a2785efa}{Game\+Start} ()
+\begin{DoxyCompactList}\small\item\em ゲーム開始 \end{DoxyCompactList}\item 
+void \hyperlink{class_title_a8575b965680aab2b77361fbbe39153fb}{Game\+Config} ()
+\begin{DoxyCompactList}\small\item\em コンフィグ \end{DoxyCompactList}\item 
+void \hyperlink{class_title_a93b0e5587f2db785591511b3e2287a5a}{Game\+Credit} ()
+\begin{DoxyCompactList}\small\item\em クレジット \end{DoxyCompactList}\item 
+void \hyperlink{class_title_af1a7258248297b2f84aea9fd3239e4e2}{Game\+End} ()
+\begin{DoxyCompactList}\small\item\em ゲーム終了 \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_title_aa13451685d7894235cd8fa7ff8a3c139}{Run\+Coroutine} (int frame, routine\+Func func)
+\begin{DoxyCompactList}\small\item\em 指定のフレーム後に指定の関数を行うコルーチン \end{DoxyCompactList}\item 
+void \hyperlink{class_title_a7b7aeb60856a00d9b0bb201bed2bc878}{Shutdown} ()
+\begin{DoxyCompactList}\small\item\em アプリケーションの終了を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_title_a78ccd194042c8a8a5bc9ea22d30f0b62}{Load\+Next\+Scene} ()
+\begin{DoxyCompactList}\small\item\em ロードシーンをはさみ、ステージセレクトに画面を遷移する \end{DoxyCompactList}\item 
+void \hyperlink{class_title_acee6703092dc812e12d65a9b003670ec}{Return\+Back\+Scene} ()
+\begin{DoxyCompactList}\small\item\em タイトルシーンに遷移する関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_title_a6d366ededddff41323515352d058b24a}{Return\+Opening\+Scene} ()
+\begin{DoxyCompactList}\small\item\em タイトルシーンに遷移するためにカウンタを加算する関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_title_acfb1043fc68240498ed922ee90c5c933}\label{class_title_acfb1043fc68240498ed922ee90c5c933}} 
+Game\+Object {\bfseries gui}
+\item 
+\mbox{\Hypertarget{class_title_a0a7333da44745f3f460ddd75d0d77764}\label{class_title_a0a7333da44745f3f460ddd75d0d77764}} 
+\hyperlink{class_fade_u_i}{Fade\+UI} {\bfseries Push\+Button}
+\item 
+\mbox{\Hypertarget{class_title_ab6a124bc2664f5909874b2bbfbb1db5e}\label{class_title_ab6a124bc2664f5909874b2bbfbb1db5e}} 
+bool {\bfseries fade\+Push\+Button} = true
+\item 
+\mbox{\Hypertarget{class_title_a4e3530b190026013cf56beef7759e167}\label{class_title_a4e3530b190026013cf56beef7759e167}} 
+int {\bfseries menu} = Menu.\+S\+T\+A\+RT
+\item 
+\mbox{\Hypertarget{class_title_a6e5192577051a0abb98ab0cd1690491c}\label{class_title_a6e5192577051a0abb98ab0cd1690491c}} 
+\hyperlink{class_title_back_shadows}{Title\+Back\+Shadows} {\bfseries back\+Shadows}
+\item 
+\mbox{\Hypertarget{class_title_a6f8dfe1a11190a15a794d89bd58578b2}\label{class_title_a6f8dfe1a11190a15a794d89bd58578b2}} 
+\hyperlink{class_menu_u_i}{Menu\+UI} {\bfseries menu\+UI}
+\item 
+\mbox{\Hypertarget{class_title_aff9b1ff6408029d3fe7271d733237872}\label{class_title_aff9b1ff6408029d3fe7271d733237872}} 
+\hyperlink{class_config}{Config} {\bfseries config}
+\item 
+\mbox{\Hypertarget{class_title_a3bc5f0ec6b3996bdb0695ee34293ab3b}\label{class_title_a3bc5f0ec6b3996bdb0695ee34293ab3b}} 
+\hyperlink{class_credit}{Credit} {\bfseries credit}
+\item 
+\mbox{\Hypertarget{class_title_aaf62b97acaa6303180e6106a7e79a8c8}\label{class_title_aaf62b97acaa6303180e6106a7e79a8c8}} 
+bool {\bfseries menu\+Select} = true
+\item 
+\mbox{\Hypertarget{class_title_ab2a5f4f2ff4b52479b759d6138e83151}\label{class_title_ab2a5f4f2ff4b52479b759d6138e83151}} 
+const int {\bfseries Reset\+Frame} = 15
+\item 
+\mbox{\Hypertarget{class_title_a287e9ad1ee919beb3ed8917e460577b2}\label{class_title_a287e9ad1ee919beb3ed8917e460577b2}} 
+int {\bfseries backcnt} = 0
+\item 
+\mbox{\Hypertarget{class_title_a9c911c213853d63f0f269ce2db6d99d0}\label{class_title_a9c911c213853d63f0f269ce2db6d99d0}} 
+int {\bfseries B\+A\+C\+K\+\_\+\+OP} = 5700
+\item 
+\mbox{\Hypertarget{class_title_ad03e0256342887dd02997d420cc024f3}\label{class_title_ad03e0256342887dd02997d420cc024f3}} 
+bool {\bfseries Return\+Op} = false
+\item 
+\mbox{\Hypertarget{class_title_aeda13f8d2c136bc0dc1cc59aaa846441}\label{class_title_aeda13f8d2c136bc0dc1cc59aaa846441}} 
+routine\+Func {\bfseries running\+Func} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+タイトルの処理を行うクラス 制作者\+:番場 宥輝 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_title_a8575b965680aab2b77361fbbe39153fb}\label{class_title_a8575b965680aab2b77361fbbe39153fb}} 
+\index{Title@{Title}!Game\+Config@{Game\+Config}}
+\index{Game\+Config@{Game\+Config}!Title@{Title}}
+\subsubsection{\texorpdfstring{Game\+Config()}{GameConfig()}}
+{\footnotesize\ttfamily void Title.\+Game\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+コンフィグ 
+
+\mbox{\Hypertarget{class_title_a93b0e5587f2db785591511b3e2287a5a}\label{class_title_a93b0e5587f2db785591511b3e2287a5a}} 
+\index{Title@{Title}!Game\+Credit@{Game\+Credit}}
+\index{Game\+Credit@{Game\+Credit}!Title@{Title}}
+\subsubsection{\texorpdfstring{Game\+Credit()}{GameCredit()}}
+{\footnotesize\ttfamily void Title.\+Game\+Credit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+クレジット 
+
+\mbox{\Hypertarget{class_title_af1a7258248297b2f84aea9fd3239e4e2}\label{class_title_af1a7258248297b2f84aea9fd3239e4e2}} 
+\index{Title@{Title}!Game\+End@{Game\+End}}
+\index{Game\+End@{Game\+End}!Title@{Title}}
+\subsubsection{\texorpdfstring{Game\+End()}{GameEnd()}}
+{\footnotesize\ttfamily void Title.\+Game\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ゲーム終了 
+
+\mbox{\Hypertarget{class_title_aad4ba589818e3ad8b1794ff6a2785efa}\label{class_title_aad4ba589818e3ad8b1794ff6a2785efa}} 
+\index{Title@{Title}!Game\+Start@{Game\+Start}}
+\index{Game\+Start@{Game\+Start}!Title@{Title}}
+\subsubsection{\texorpdfstring{Game\+Start()}{GameStart()}}
+{\footnotesize\ttfamily void Title.\+Game\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ゲーム開始 
+
+\mbox{\Hypertarget{class_title_a78ccd194042c8a8a5bc9ea22d30f0b62}\label{class_title_a78ccd194042c8a8a5bc9ea22d30f0b62}} 
+\index{Title@{Title}!Load\+Next\+Scene@{Load\+Next\+Scene}}
+\index{Load\+Next\+Scene@{Load\+Next\+Scene}!Title@{Title}}
+\subsubsection{\texorpdfstring{Load\+Next\+Scene()}{LoadNextScene()}}
+{\footnotesize\ttfamily void Title.\+Load\+Next\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ロードシーンをはさみ、ステージセレクトに画面を遷移する 
+
+\mbox{\Hypertarget{class_title_acee6703092dc812e12d65a9b003670ec}\label{class_title_acee6703092dc812e12d65a9b003670ec}} 
+\index{Title@{Title}!Return\+Back\+Scene@{Return\+Back\+Scene}}
+\index{Return\+Back\+Scene@{Return\+Back\+Scene}!Title@{Title}}
+\subsubsection{\texorpdfstring{Return\+Back\+Scene()}{ReturnBackScene()}}
+{\footnotesize\ttfamily void Title.\+Return\+Back\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+タイトルシーンに遷移する関数 
+
+\mbox{\Hypertarget{class_title_a6d366ededddff41323515352d058b24a}\label{class_title_a6d366ededddff41323515352d058b24a}} 
+\index{Title@{Title}!Return\+Opening\+Scene@{Return\+Opening\+Scene}}
+\index{Return\+Opening\+Scene@{Return\+Opening\+Scene}!Title@{Title}}
+\subsubsection{\texorpdfstring{Return\+Opening\+Scene()}{ReturnOpeningScene()}}
+{\footnotesize\ttfamily void Title.\+Return\+Opening\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+タイトルシーンに遷移するためにカウンタを加算する関数 
+
+\mbox{\Hypertarget{class_title_aa13451685d7894235cd8fa7ff8a3c139}\label{class_title_aa13451685d7894235cd8fa7ff8a3c139}} 
+\index{Title@{Title}!Run\+Coroutine@{Run\+Coroutine}}
+\index{Run\+Coroutine@{Run\+Coroutine}!Title@{Title}}
+\subsubsection{\texorpdfstring{Run\+Coroutine()}{RunCoroutine()}}
+{\footnotesize\ttfamily I\+Enumerator Title.\+Run\+Coroutine (\begin{DoxyParamCaption}\item[{int}]{frame,  }\item[{routine\+Func}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+指定のフレーム後に指定の関数を行うコルーチン 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & 指定のフレーム\\
+\hline
+{\em func} & 指定の関数\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_title_a7b7aeb60856a00d9b0bb201bed2bc878}\label{class_title_a7b7aeb60856a00d9b0bb201bed2bc878}} 
+\index{Title@{Title}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!Title@{Title}}
+\subsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Title.\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+アプリケーションの終了を行う関数 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Scene/\+Title/\+Scripts/Title.\+cs\end{DoxyCompactItemize}

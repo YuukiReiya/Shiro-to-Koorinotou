@@ -1,0 +1,169 @@
+\hypertarget{class_object_arrangement_system}{}\section{Object\+Arrangement\+System Class Reference}
+\label{class_object_arrangement_system}\index{Object\+Arrangement\+System@{Object\+Arrangement\+System}}
+
+
+オブジェクト配置システム 製作者：冨田 大悟  
+
+
+Inheritance diagram for Object\+Arrangement\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_object_arrangement_system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_object_arrangement_system_ade64515d0fbc603769836f567070264c}{E\+P\+S\+F\+One} ()
+\begin{DoxyCompactList}\small\item\em 開始時の一階層目の処理 \end{DoxyCompactList}\item 
+override void \hyperlink{class_object_arrangement_system_a52e57370ef553b04a50cf8ee6ae81f64}{E\+P\+S\+Start} ()
+\begin{DoxyCompactList}\small\item\em 階層の開始 \end{DoxyCompactList}\item 
+override void \hyperlink{class_object_arrangement_system_ad41ad5ccd9012b9992e9ae7c65768082}{E\+P\+S\+Update} ()
+\begin{DoxyCompactList}\small\item\em 階層の更新 \end{DoxyCompactList}\item 
+override void \hyperlink{class_object_arrangement_system_a98764c494fecf8dce4726107d4539374}{Camaera\+Up\+Stert} ()
+\begin{DoxyCompactList}\small\item\em 開始前のカメラ上昇の開始 \end{DoxyCompactList}\item 
+override void \hyperlink{class_object_arrangement_system_a7fba170e4af44f3ea4083edebe7e74fc}{Camaera\+Up\+Update} ()
+\begin{DoxyCompactList}\small\item\em 開始前のカメラ上昇の開始 \end{DoxyCompactList}\item 
+override void \hyperlink{class_object_arrangement_system_ab4a0e5a7a8e5488cbae90f485bb86e5f}{Camaera\+Up\+End} ()
+\begin{DoxyCompactList}\small\item\em 開始前のカメラ上昇の終了 \end{DoxyCompactList}\item 
+override void \hyperlink{class_object_arrangement_system_a3f1c0ac72189d1a065596b408b04348e}{Tower\+End} ()
+\begin{DoxyCompactList}\small\item\em タワーが閉じた瞬間 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_arrangement_system_a359cd1baccfcafce9b64daf2f8fa4d93}\label{class_object_arrangement_system_a359cd1baccfcafce9b64daf2f8fa4d93}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_object_arrangement_system_a17a2933d5615f8cc060d5b35fff201b1}\label{class_object_arrangement_system_a17a2933d5615f8cc060d5b35fff201b1}} 
+void {\bfseries delete\+Obj} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_object_arrangement_system_a4ff3d4992e454a65d50bcb7d3eca9d41}\label{class_object_arrangement_system_a4ff3d4992e454a65d50bcb7d3eca9d41}} 
+Game\+Object {\bfseries left\+Arrangement\+Object\+Parent}
+\item 
+\mbox{\Hypertarget{class_object_arrangement_system_af26cae38dea51c9c507c057f4833fd55}\label{class_object_arrangement_system_af26cae38dea51c9c507c057f4833fd55}} 
+Game\+Object {\bfseries right\+Arrangement\+Object\+Parent}
+\item 
+\mbox{\Hypertarget{class_object_arrangement_system_a4b2f012832884fb93c011017c9f699ad}\label{class_object_arrangement_system_a4b2f012832884fb93c011017c9f699ad}} 
+bool {\bfseries simple\+Rotation}
+\item 
+\mbox{\Hypertarget{class_object_arrangement_system_a0b29cad9a53bdb2bfea67b5861b44887}\label{class_object_arrangement_system_a0b29cad9a53bdb2bfea67b5861b44887}} 
+int {\bfseries pop\+Tiem\+Time}
+\item 
+\mbox{\Hypertarget{class_object_arrangement_system_af0659e180602d1ad9cb883387ab75680}\label{class_object_arrangement_system_af0659e180602d1ad9cb883387ab75680}} 
+int {\bfseries pop\+Time\+Count}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+オブジェクト配置システム 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_arrangement_system_ab4a0e5a7a8e5488cbae90f485bb86e5f}\label{class_object_arrangement_system_ab4a0e5a7a8e5488cbae90f485bb86e5f}} 
+\index{Object\+Arrangement\+System@{Object\+Arrangement\+System}!Camaera\+Up\+End@{Camaera\+Up\+End}}
+\index{Camaera\+Up\+End@{Camaera\+Up\+End}!Object\+Arrangement\+System@{Object\+Arrangement\+System}}
+\subsubsection{\texorpdfstring{Camaera\+Up\+End()}{CamaeraUpEnd()}}
+{\footnotesize\ttfamily override void Object\+Arrangement\+System.\+Camaera\+Up\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+開始前のカメラ上昇の終了 
+
+
+
+Reimplemented from \hyperlink{class_enemy_pop_system_a86c3886d3f4603c9acf3356afadcc72a}{Enemy\+Pop\+System}.
+
+\mbox{\Hypertarget{class_object_arrangement_system_a98764c494fecf8dce4726107d4539374}\label{class_object_arrangement_system_a98764c494fecf8dce4726107d4539374}} 
+\index{Object\+Arrangement\+System@{Object\+Arrangement\+System}!Camaera\+Up\+Stert@{Camaera\+Up\+Stert}}
+\index{Camaera\+Up\+Stert@{Camaera\+Up\+Stert}!Object\+Arrangement\+System@{Object\+Arrangement\+System}}
+\subsubsection{\texorpdfstring{Camaera\+Up\+Stert()}{CamaeraUpStert()}}
+{\footnotesize\ttfamily override void Object\+Arrangement\+System.\+Camaera\+Up\+Stert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+開始前のカメラ上昇の開始 
+
+
+
+Reimplemented from \hyperlink{class_enemy_pop_system_a0dff3d5cf8729600043c1875be746eed}{Enemy\+Pop\+System}.
+
+\mbox{\Hypertarget{class_object_arrangement_system_a7fba170e4af44f3ea4083edebe7e74fc}\label{class_object_arrangement_system_a7fba170e4af44f3ea4083edebe7e74fc}} 
+\index{Object\+Arrangement\+System@{Object\+Arrangement\+System}!Camaera\+Up\+Update@{Camaera\+Up\+Update}}
+\index{Camaera\+Up\+Update@{Camaera\+Up\+Update}!Object\+Arrangement\+System@{Object\+Arrangement\+System}}
+\subsubsection{\texorpdfstring{Camaera\+Up\+Update()}{CamaeraUpUpdate()}}
+{\footnotesize\ttfamily override void Object\+Arrangement\+System.\+Camaera\+Up\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+開始前のカメラ上昇の開始 
+
+
+
+Reimplemented from \hyperlink{class_enemy_pop_system_af242685f6dfd6d73c04ad284c7ae714c}{Enemy\+Pop\+System}.
+
+\mbox{\Hypertarget{class_object_arrangement_system_ade64515d0fbc603769836f567070264c}\label{class_object_arrangement_system_ade64515d0fbc603769836f567070264c}} 
+\index{Object\+Arrangement\+System@{Object\+Arrangement\+System}!E\+P\+S\+F\+One@{E\+P\+S\+F\+One}}
+\index{E\+P\+S\+F\+One@{E\+P\+S\+F\+One}!Object\+Arrangement\+System@{Object\+Arrangement\+System}}
+\subsubsection{\texorpdfstring{E\+P\+S\+F\+One()}{EPSFOne()}}
+{\footnotesize\ttfamily override void Object\+Arrangement\+System.\+E\+P\+S\+F\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+開始時の一階層目の処理 
+
+
+
+Reimplemented from \hyperlink{class_enemy_pop_system_acf99799679b3492826bfc9d0831bc133}{Enemy\+Pop\+System}.
+
+\mbox{\Hypertarget{class_object_arrangement_system_a52e57370ef553b04a50cf8ee6ae81f64}\label{class_object_arrangement_system_a52e57370ef553b04a50cf8ee6ae81f64}} 
+\index{Object\+Arrangement\+System@{Object\+Arrangement\+System}!E\+P\+S\+Start@{E\+P\+S\+Start}}
+\index{E\+P\+S\+Start@{E\+P\+S\+Start}!Object\+Arrangement\+System@{Object\+Arrangement\+System}}
+\subsubsection{\texorpdfstring{E\+P\+S\+Start()}{EPSStart()}}
+{\footnotesize\ttfamily override void Object\+Arrangement\+System.\+E\+P\+S\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+階層の開始 
+
+
+
+Reimplemented from \hyperlink{class_enemy_pop_system_ac3881414166c809e8958d01e46ba1f91}{Enemy\+Pop\+System}.
+
+\mbox{\Hypertarget{class_object_arrangement_system_ad41ad5ccd9012b9992e9ae7c65768082}\label{class_object_arrangement_system_ad41ad5ccd9012b9992e9ae7c65768082}} 
+\index{Object\+Arrangement\+System@{Object\+Arrangement\+System}!E\+P\+S\+Update@{E\+P\+S\+Update}}
+\index{E\+P\+S\+Update@{E\+P\+S\+Update}!Object\+Arrangement\+System@{Object\+Arrangement\+System}}
+\subsubsection{\texorpdfstring{E\+P\+S\+Update()}{EPSUpdate()}}
+{\footnotesize\ttfamily override void Object\+Arrangement\+System.\+E\+P\+S\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+階層の更新 
+
+
+
+Reimplemented from \hyperlink{class_enemy_pop_system_a35ab795e11acf6b03ae726ca276852a2}{Enemy\+Pop\+System}.
+
+\mbox{\Hypertarget{class_object_arrangement_system_a3f1c0ac72189d1a065596b408b04348e}\label{class_object_arrangement_system_a3f1c0ac72189d1a065596b408b04348e}} 
+\index{Object\+Arrangement\+System@{Object\+Arrangement\+System}!Tower\+End@{Tower\+End}}
+\index{Tower\+End@{Tower\+End}!Object\+Arrangement\+System@{Object\+Arrangement\+System}}
+\subsubsection{\texorpdfstring{Tower\+End()}{TowerEnd()}}
+{\footnotesize\ttfamily override void Object\+Arrangement\+System.\+Tower\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+タワーが閉じた瞬間 
+
+
+
+Reimplemented from \hyperlink{class_enemy_pop_system_ad19396ecf796350cedde7a996d4b3843}{Enemy\+Pop\+System}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Tower/\+Enemy\+Pop\+System\+Script/Object\+Arrangement\+System.\+cs\end{DoxyCompactItemize}

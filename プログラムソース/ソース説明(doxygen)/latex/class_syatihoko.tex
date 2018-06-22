@@ -1,0 +1,104 @@
+\hypertarget{class_syatihoko}{}\section{Syatihoko Class Reference}
+\label{class_syatihoko}\index{Syatihoko@{Syatihoko}}
+
+
+しゃちほこの敵 製作者：冨田 大悟  
+
+
+Inheritance diagram for Syatihoko\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_syatihoko}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_syatihoko_ab4c8b474dcba39edb7ed80e5149ee39c}{Rotate\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em 左右の反転 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_syatihoko_a921cf2c05d610f19214fb476c9ff8a6c}{Enemy\+Update} ()
+\begin{DoxyCompactList}\small\item\em 継承先での\+Fixed\+Update \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_syatihoko_af87101bc4c2c7443de73e7227c5c562f}\label{class_syatihoko_af87101bc4c2c7443de73e7227c5c562f}} 
+void {\bfseries Fall\+Hit\+Block} (Game\+Object hit)
+\item 
+\mbox{\Hypertarget{class_syatihoko_a14314a977cd8a008b8a3b84a68ce3994}\label{class_syatihoko_a14314a977cd8a008b8a3b84a68ce3994}} 
+void {\bfseries Fall\+Hit\+Wall} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_syatihoko_a750098527ec642ea9ff177a3d206ffd0}\label{class_syatihoko_a750098527ec642ea9ff177a3d206ffd0}} 
+Vector3 {\bfseries box\+Size}
+\item 
+\mbox{\Hypertarget{class_syatihoko_aafc289a3406054796bc12bbbe4e57965}\label{class_syatihoko_aafc289a3406054796bc12bbbe4e57965}} 
+float {\bfseries ray\+Size}
+\item 
+\mbox{\Hypertarget{class_syatihoko_a2dde0a0439a95e4c6e56444a50d25a73}\label{class_syatihoko_a2dde0a0439a95e4c6e56444a50d25a73}} 
+bool {\bfseries fall} = false
+\item 
+\mbox{\Hypertarget{class_syatihoko_a669b07305c8ae1a9c87c79a10e6869d8}\label{class_syatihoko_a669b07305c8ae1a9c87c79a10e6869d8}} 
+bool {\bfseries fall\+One} = false
+\item 
+\mbox{\Hypertarget{class_syatihoko_a16293f96920923584e59c14881c23f05}\label{class_syatihoko_a16293f96920923584e59c14881c23f05}} 
+Game\+Object {\bfseries ef}
+\item 
+\mbox{\Hypertarget{class_syatihoko_aa8d4ba1258d9f14331fe8bc469e9d677}\label{class_syatihoko_aa8d4ba1258d9f14331fe8bc469e9d677}} 
+Game\+Object {\bfseries rotate\+Obj}
+\item 
+\mbox{\Hypertarget{class_syatihoko_a7826e5d048e12b0ed2238fa82c2fb9e3}\label{class_syatihoko_a7826e5d048e12b0ed2238fa82c2fb9e3}} 
+Game\+Object {\bfseries break\+Effect}
+\item 
+\mbox{\Hypertarget{class_syatihoko_adc1af0fbe4e7dd3fc79791e32ba00746}\label{class_syatihoko_adc1af0fbe4e7dd3fc79791e32ba00746}} 
+Audio\+Clip {\bfseries dosun}
+\item 
+\mbox{\Hypertarget{class_syatihoko_a2ed2d350634701e580f67d729ad519db}\label{class_syatihoko_a2ed2d350634701e580f67d729ad519db}} 
+Audio\+Clip {\bfseries dosundd}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+しゃちほこの敵 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_syatihoko_a921cf2c05d610f19214fb476c9ff8a6c}\label{class_syatihoko_a921cf2c05d610f19214fb476c9ff8a6c}} 
+\index{Syatihoko@{Syatihoko}!Enemy\+Update@{Enemy\+Update}}
+\index{Enemy\+Update@{Enemy\+Update}!Syatihoko@{Syatihoko}}
+\subsubsection{\texorpdfstring{Enemy\+Update()}{EnemyUpdate()}}
+{\footnotesize\ttfamily override void Syatihoko.\+Enemy\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+継承先での\+Fixed\+Update 
+
+
+
+Reimplemented from \hyperlink{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}{Enemy}.
+
+\mbox{\Hypertarget{class_syatihoko_ab4c8b474dcba39edb7ed80e5149ee39c}\label{class_syatihoko_ab4c8b474dcba39edb7ed80e5149ee39c}} 
+\index{Syatihoko@{Syatihoko}!Rotate\+Enemy@{Rotate\+Enemy}}
+\index{Rotate\+Enemy@{Rotate\+Enemy}!Syatihoko@{Syatihoko}}
+\subsubsection{\texorpdfstring{Rotate\+Enemy()}{RotateEnemy()}}
+{\footnotesize\ttfamily override void Syatihoko.\+Rotate\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+左右の反転 
+
+
+
+Reimplemented from \hyperlink{class_enemy_a2a0e665070fd362bd3ab2f2962ebff93}{Enemy}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Syatihoko.\+cs\end{DoxyCompactItemize}

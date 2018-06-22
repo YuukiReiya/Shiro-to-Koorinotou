@@ -1,0 +1,144 @@
+\hypertarget{class_stage_name_obj}{}\section{Stage\+Name\+Obj Class Reference}
+\label{class_stage_name_obj}\index{Stage\+Name\+Obj@{Stage\+Name\+Obj}}
+
+
+ステージの名前、レベル、コンプリートマークを制御するクラス 制作者\+:番場 宥輝  
+
+
+Inheritance diagram for Stage\+Name\+Obj\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stage_name_obj}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerator \hyperlink{class_stage_name_obj_add4c09db609363dcfc655a0182b7bc8b}{Target\+Frame\+Move\+Right\+Reset} (int frame)
+\begin{DoxyCompactList}\small\item\em 指定フレームの間右に動かし、その後位置を初期化するコルーチン \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_stage_name_obj_a7dd04a5c3dd0db6836a15c1c508dcecf}{Target\+Frame\+Move\+Left\+Reset} (int frame)
+\begin{DoxyCompactList}\small\item\em 指定フレームの間左に動かし、その後位置を初期化するコルーチン \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_a8a7797611e699619e43f73da321232a0}\label{class_stage_name_obj_a8a7797611e699619e43f73da321232a0}} 
+void {\bfseries Start} ()
+\item 
+void \hyperlink{class_stage_name_obj_a05588c0b4fdc4ab72441f92fbc42db08}{Move\+Right} ()
+\begin{DoxyCompactList}\small\item\em 右に動かす関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_stage_name_obj_a5467165970c410d681afc17e244229be}{Move\+Left} ()
+\begin{DoxyCompactList}\small\item\em 左に動かす関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_stage_name_obj_acbf692d5c36a154cc860a0608e4c7166}{Reset} ()
+\begin{DoxyCompactList}\small\item\em 位置を初期化する関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_aa9f43cc6e688828088223bb5e12a21d8}\label{class_stage_name_obj_aa9f43cc6e688828088223bb5e12a21d8}} 
+float {\bfseries speed} = 0.\+1f
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_ac273f83b4dcf78954c7c121e1335d630}\label{class_stage_name_obj_ac273f83b4dcf78954c7c121e1335d630}} 
+Vector3 {\bfseries initialize\+Pos}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_af681394d5ec577269f7bf93521b524bc}\label{class_stage_name_obj_af681394d5ec577269f7bf93521b524bc}} 
+\hyperlink{class_sprite_fade}{Sprite\+Fade} {\bfseries back\+Window\+Fade}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_aade7c647fc830123ac18b465f85efaf6}\label{class_stage_name_obj_aade7c647fc830123ac18b465f85efaf6}} 
+\hyperlink{class_change_sprite}{Change\+Sprite} {\bfseries back\+Window\+Sprite}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_a9f52716e441e41cf0133b12c54428bdb}\label{class_stage_name_obj_a9f52716e441e41cf0133b12c54428bdb}} 
+\hyperlink{class_sprite_fade}{Sprite\+Fade} {\bfseries stage\+Name\+Fade}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_a435e9427bf4e435f015db1252545b52e}\label{class_stage_name_obj_a435e9427bf4e435f015db1252545b52e}} 
+\hyperlink{class_change_sprite}{Change\+Sprite} {\bfseries stage\+Name\+Sprite}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_a4d2dbe2e35bae8b3018088e8aadf6550}\label{class_stage_name_obj_a4d2dbe2e35bae8b3018088e8aadf6550}} 
+\hyperlink{class_sprite_fade}{Sprite\+Fade} {\bfseries stage\+Level\+Fade}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_af2281698e137c5695fce1fb185b2fc94}\label{class_stage_name_obj_af2281698e137c5695fce1fb185b2fc94}} 
+\hyperlink{class_change_sprite}{Change\+Sprite} {\bfseries stage\+Level\+Sprite}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_ad3032c835c10e3a675a00fd797364aba}\label{class_stage_name_obj_ad3032c835c10e3a675a00fd797364aba}} 
+\hyperlink{class_sprite_fade}{Sprite\+Fade} {\bfseries stage\+Comp\+Fade}
+\item 
+\mbox{\Hypertarget{class_stage_name_obj_a6f8114aa1aeaf19e683d956c8aecfced}\label{class_stage_name_obj_a6f8114aa1aeaf19e683d956c8aecfced}} 
+\hyperlink{class_tower_of_complete}{Tower\+Of\+Complete} {\bfseries stage\+Comp}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ステージの名前、レベル、コンプリートマークを制御するクラス 制作者\+:番場 宥輝 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stage_name_obj_a5467165970c410d681afc17e244229be}\label{class_stage_name_obj_a5467165970c410d681afc17e244229be}} 
+\index{Stage\+Name\+Obj@{Stage\+Name\+Obj}!Move\+Left@{Move\+Left}}
+\index{Move\+Left@{Move\+Left}!Stage\+Name\+Obj@{Stage\+Name\+Obj}}
+\subsubsection{\texorpdfstring{Move\+Left()}{MoveLeft()}}
+{\footnotesize\ttfamily void Stage\+Name\+Obj.\+Move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+左に動かす関数 
+
+\mbox{\Hypertarget{class_stage_name_obj_a05588c0b4fdc4ab72441f92fbc42db08}\label{class_stage_name_obj_a05588c0b4fdc4ab72441f92fbc42db08}} 
+\index{Stage\+Name\+Obj@{Stage\+Name\+Obj}!Move\+Right@{Move\+Right}}
+\index{Move\+Right@{Move\+Right}!Stage\+Name\+Obj@{Stage\+Name\+Obj}}
+\subsubsection{\texorpdfstring{Move\+Right()}{MoveRight()}}
+{\footnotesize\ttfamily void Stage\+Name\+Obj.\+Move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+右に動かす関数 
+
+\mbox{\Hypertarget{class_stage_name_obj_acbf692d5c36a154cc860a0608e4c7166}\label{class_stage_name_obj_acbf692d5c36a154cc860a0608e4c7166}} 
+\index{Stage\+Name\+Obj@{Stage\+Name\+Obj}!Reset@{Reset}}
+\index{Reset@{Reset}!Stage\+Name\+Obj@{Stage\+Name\+Obj}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Stage\+Name\+Obj.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+位置を初期化する関数 
+
+\mbox{\Hypertarget{class_stage_name_obj_a7dd04a5c3dd0db6836a15c1c508dcecf}\label{class_stage_name_obj_a7dd04a5c3dd0db6836a15c1c508dcecf}} 
+\index{Stage\+Name\+Obj@{Stage\+Name\+Obj}!Target\+Frame\+Move\+Left\+Reset@{Target\+Frame\+Move\+Left\+Reset}}
+\index{Target\+Frame\+Move\+Left\+Reset@{Target\+Frame\+Move\+Left\+Reset}!Stage\+Name\+Obj@{Stage\+Name\+Obj}}
+\subsubsection{\texorpdfstring{Target\+Frame\+Move\+Left\+Reset()}{TargetFrameMoveLeftReset()}}
+{\footnotesize\ttfamily I\+Enumerator Stage\+Name\+Obj.\+Target\+Frame\+Move\+Left\+Reset (\begin{DoxyParamCaption}\item[{int}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+指定フレームの間左に動かし、その後位置を初期化するコルーチン 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & 処理を行うフレーム\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stage_name_obj_add4c09db609363dcfc655a0182b7bc8b}\label{class_stage_name_obj_add4c09db609363dcfc655a0182b7bc8b}} 
+\index{Stage\+Name\+Obj@{Stage\+Name\+Obj}!Target\+Frame\+Move\+Right\+Reset@{Target\+Frame\+Move\+Right\+Reset}}
+\index{Target\+Frame\+Move\+Right\+Reset@{Target\+Frame\+Move\+Right\+Reset}!Stage\+Name\+Obj@{Stage\+Name\+Obj}}
+\subsubsection{\texorpdfstring{Target\+Frame\+Move\+Right\+Reset()}{TargetFrameMoveRightReset()}}
+{\footnotesize\ttfamily I\+Enumerator Stage\+Name\+Obj.\+Target\+Frame\+Move\+Right\+Reset (\begin{DoxyParamCaption}\item[{int}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+指定フレームの間右に動かし、その後位置を初期化するコルーチン 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & 処理を行うフレーム\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Scene/\+Stage\+Select/\+Scripts/Stage\+Name\+Obj.\+cs\end{DoxyCompactItemize}

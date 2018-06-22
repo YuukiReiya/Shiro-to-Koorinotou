@@ -1,0 +1,55 @@
+\hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer}{}\section{Unity\+Editor.\+Post\+Processing.\+Motion\+Blur\+Model\+Editor.\+Graph\+Drawer Class Reference}
+\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer}\index{Unity\+Editor.\+Post\+Processing.\+Motion\+Blur\+Model\+Editor.\+Graph\+Drawer@{Unity\+Editor.\+Post\+Processing.\+Motion\+Blur\+Model\+Editor.\+Graph\+Drawer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a310918df52daec4cca24d526c9dd85c8}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a310918df52daec4cca24d526c9dd85c8}} 
+void {\bfseries Draw\+Shutter\+Graph} (float angle)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a56ba4c2ab60eb19073707e2e433fec22}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a56ba4c2ab60eb19073707e2e433fec22}} 
+void {\bfseries Draw\+Blending\+Graph} (float strength)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a83135671d1195ab3994ae0e2a7690793}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a83135671d1195ab3994ae0e2a7690793}} 
+float {\bfseries Blending\+Weight} (float strength, float time)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a8fe3837dd58b3529c112d5b3ad3ceefb}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a8fe3837dd58b3529c112d5b3ad3ceefb}} 
+void {\bfseries Draw\+Disc} (Vector2 center, float radius, Color fill)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_afc715331a239d1f1a4f55521bfcb0b60}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_afc715331a239d1f1a4f55521bfcb0b60}} 
+void {\bfseries Draw\+Arc} (Vector2 center, float radius, float angle, Color fill)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_ad0ea97a3ed17028866332ee392a848c5}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_ad0ea97a3ed17028866332ee392a848c5}} 
+void {\bfseries Draw\+Rect} (Vector2 origin, Vector2 size, Color color)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_ad389031105559fb3ed06f452b487f0ec}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_ad389031105559fb3ed06f452b487f0ec}} 
+const float {\bfseries k\+\_\+\+Height} = 32f
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_ad7ef3eab31e49782aad4d80640d8e557}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_ad7ef3eab31e49782aad4d80640d8e557}} 
+Texture {\bfseries m\+\_\+\+Blending\+Icon}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a7f527436e1284f21372ca686e5f199cc}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a7f527436e1284f21372ca686e5f199cc}} 
+G\+U\+I\+Style {\bfseries m\+\_\+\+Lower\+Center\+Style}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_ad6b945547a80f13451cc14d615f8a769}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_ad6b945547a80f13451cc14d615f8a769}} 
+G\+U\+I\+Style {\bfseries m\+\_\+\+Middle\+Center\+Style}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a287cafbbaee30908fe947023d32b9d4d}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a287cafbbaee30908fe947023d32b9d4d}} 
+Color {\bfseries m\+\_\+\+Color\+Dark}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_aa2e6b9dd7f3199c3e5bf689a2e2ff718}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_aa2e6b9dd7f3199c3e5bf689a2e2ff718}} 
+Color {\bfseries m\+\_\+\+Color\+Gray}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a31eb9e45a17b1e744ee1528bd57cb885}\label{class_unity_editor_1_1_post_processing_1_1_motion_blur_model_editor_1_1_graph_drawer_a31eb9e45a17b1e744ee1528bd57cb885}} 
+Vector3 \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Rect\+Vertices} = new Vector3\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Editor/\+Models/Motion\+Blur\+Model\+Editor.\+cs\end{DoxyCompactItemize}

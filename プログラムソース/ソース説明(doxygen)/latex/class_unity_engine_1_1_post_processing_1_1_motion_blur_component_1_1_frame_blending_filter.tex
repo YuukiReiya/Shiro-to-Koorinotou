@@ -1,0 +1,54 @@
+\hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter}{}\section{Unity\+Engine.\+Post\+Processing.\+Motion\+Blur\+Component.\+Frame\+Blending\+Filter Class Reference}
+\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter}\index{Unity\+Engine.\+Post\+Processing.\+Motion\+Blur\+Component.\+Frame\+Blending\+Filter@{Unity\+Engine.\+Post\+Processing.\+Motion\+Blur\+Component.\+Frame\+Blending\+Filter}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_1_1_frame}{Frame}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a65d54ba8a2c251750ae6f0b24b820dea}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a65d54ba8a2c251750ae6f0b24b820dea}} 
+void {\bfseries Dispose} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a28f61022ba58cd83c34e46a2511c32ed}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a28f61022ba58cd83c34e46a2511c32ed}} 
+void {\bfseries Push\+Frame} (Command\+Buffer cb, Render\+Target\+Identifier source, int width, int height, Material material)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a679383bc1fc3e5e698bb5724676efcc5}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a679383bc1fc3e5e698bb5724676efcc5}} 
+void {\bfseries Blend\+Frames} (Command\+Buffer cb, float strength, Render\+Target\+Identifier source, Render\+Target\+Identifier destination, Material material)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a6724ba674a7bb9aba4fd4911e92f8c9f}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a6724ba674a7bb9aba4fd4911e92f8c9f}} 
+\hyperlink{struct_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_1_1_frame}{Frame} {\bfseries Get\+Frame\+Relative} (int offset)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a9a271ef467db3a08ec81700817f04e09}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a9a271ef467db3a08ec81700817f04e09}} 
+static bool {\bfseries Check\+Support\+Compression} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_ae8b90f59aeb534b4f3d46cce8c944656}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_ae8b90f59aeb534b4f3d46cce8c944656}} 
+static Render\+Texture\+Format {\bfseries Get\+Preferred\+Render\+Texture\+Format} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a7fece09db52e92364b1a3bbcffa3959c}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a7fece09db52e92364b1a3bbcffa3959c}} 
+bool {\bfseries m\+\_\+\+Use\+Compression}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_af557ed441fdde8231c03cdf30d77f9ae}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_af557ed441fdde8231c03cdf30d77f9ae}} 
+Render\+Texture\+Format {\bfseries m\+\_\+\+Raw\+Texture\+Format}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_aad11ce62c381c329f42426310f5ec6d1}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_aad11ce62c381c329f42426310f5ec6d1}} 
+\hyperlink{struct_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_1_1_frame}{Frame} \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Frame\+List}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a2a6562c51e2f6080dd716292c6f3c0ca}\label{class_unity_engine_1_1_post_processing_1_1_motion_blur_component_1_1_frame_blending_filter_a2a6562c51e2f6080dd716292c6f3c0ca}} 
+int {\bfseries m\+\_\+\+Last\+Frame\+Count}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Runtime/\+Components/Motion\+Blur\+Component.\+cs\end{DoxyCompactItemize}

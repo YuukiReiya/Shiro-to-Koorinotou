@@ -1,0 +1,331 @@
+\hypertarget{class_enemy}{}\section{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+敵の親クラス 製作者：冨田 大悟  
+
+
+Inheritance diagram for Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_enemy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_af27fad17c4ee829c70ad2d3388d27f89}\label{class_enemy_af27fad17c4ee829c70ad2d3388d27f89}} 
+virtual void {\bfseries On\+Validate} ()
+\item 
+void \hyperlink{class_enemy_acd99666df643c0fea93610769b5bd214}{Cange\+Obj} ()
+\begin{DoxyCompactList}\small\item\em 氷漬けにされたものに変換する \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy_a5b96db39bbd412b91fb3923a6833e6b5}{Wallebatan\+Effect} ()
+\begin{DoxyCompactList}\small\item\em 壁に挟まれたときのエフェクトを生成する \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_a2b5e9b4644bd49c33279403c6477ed39}{Player\+Hit} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーに当たった時の処理 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_a2a0e665070fd362bd3ab2f2962ebff93}{Rotate\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em 左右の反転 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_add93027b5ee19288ed26aa6f98fb88f8}{Floor\+Rotate} ()
+\begin{DoxyCompactList}\small\item\em 階層の反転 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_a0c283968cd63b30131665abda46d933e}\label{class_enemy_a0c283968cd63b30131665abda46d933e}} 
+virtual void {\bfseries Start} ()
+\item 
+virtual void \hyperlink{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}{Enemy\+Update} ()
+\begin{DoxyCompactList}\small\item\em 継承先での\+Fixed\+Update \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_a050e257a9a9f3b1b01923be24eaa7577}{Set\+Collider\+Center} ()
+\begin{DoxyCompactList}\small\item\em モーションでの座標更新によるコライダーの座標更新 \end{DoxyCompactList}\item 
+virtual \hyperlink{class_block_obj}{Block\+Obj} \hyperlink{class_enemy_ab56d4c134b6fc007e07e6825b04f11a5}{Block\+Obj\+Pop} ()
+\begin{DoxyCompactList}\small\item\em 氷を生成する \end{DoxyCompactList}\item 
+bool \hyperlink{class_enemy_a058914a6e2dd7d3d898c2b8bfcc7fa70}{Is\+Wall\+Hit} ()
+\begin{DoxyCompactList}\small\item\em 壁に挟まれているか \end{DoxyCompactList}\item 
+bool \hyperlink{class_enemy_a16617ee5a2f6bf7d5ae879dd9ca2d230}{Is\+Aic\+Block\+Hit} ()
+\begin{DoxyCompactList}\small\item\em 氷にめり込んでいるか \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \hyperlink{class_enemy_a17d5f27a6ec77c562b8cc8abbfcaab62}{collider\+Center}
+\begin{DoxyCompactList}\small\item\em エネミーの中心の元となるオブジェ　　基本ジョイント \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_enemy_abb7ad3ec25f442ac6170b48e3b868527}{model}
+\begin{DoxyCompactList}\small\item\em 氷漬けにされるオブジェ \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_enemy_a0906c6b765e32f42402a6e5aefbe095a}{aice\+Block\+Pop\+Add\+Pos}
+\begin{DoxyCompactList}\small\item\em 氷の出現位置調整 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_enemy_af5beb8b2bb119fd3ca44798fd8a8db11}{aice\+Block\+Obj\+Pop\+Rotation}
+\begin{DoxyCompactList}\small\item\em 出現する氷の回転 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \hyperlink{class_enemy_ac8ac5520ab8c301a37b2482c6626fba7}{enemy\+Center\+Pos}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 実際のエネミーの中心座標 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_af061b512970e551024405942104355e2}\label{class_enemy_af061b512970e551024405942104355e2}} 
+void {\bfseries Fixed\+Update} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_ab496e2e7f17d369973401c28fd84309b}\label{class_enemy_ab496e2e7f17d369973401c28fd84309b}} 
+\hyperlink{class_enemy_collider}{Enemy\+Collider} {\bfseries enemy\+Collider}
+\item 
+\hyperlink{class_block_obj}{Block\+Obj} \hyperlink{class_enemy_ad1892bec7a3cf7a663b68ae349b6e2b1}{aice\+Block}
+\begin{DoxyCompactList}\small\item\em 凍らせた時の氷 \end{DoxyCompactList}\item 
+float \hyperlink{class_enemy_a8b7dc2553eb9f3a3a4bdcbe0dc390ede}{wall\+Hit\+Ray\+Size}
+\begin{DoxyCompactList}\small\item\em 壁に挟まれる\+Rayの距離 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_enemy_a6aa9348e5d07b274d08d045a8562f511}{wall\+Hit\+Box\+Size}
+\begin{DoxyCompactList}\small\item\em 壁に挟まれる\+Rayのサイズ \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_enemy_a1a34acbbd165cfe6c567710b8d2ab3ef}{wall\+Hit\+Back\+Pos}
+\begin{DoxyCompactList}\small\item\em 壁に挟まれたときに固定される位置、（前座標） \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_enemy_a7cb4998f3076e0f9ec871507d54bfcfe}{hit\+Effect}
+\begin{DoxyCompactList}\small\item\em 壁に挟まれたときのエフェクト \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+敵の親クラス 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_ab56d4c134b6fc007e07e6825b04f11a5}\label{class_enemy_ab56d4c134b6fc007e07e6825b04f11a5}} 
+\index{Enemy@{Enemy}!Block\+Obj\+Pop@{Block\+Obj\+Pop}}
+\index{Block\+Obj\+Pop@{Block\+Obj\+Pop}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Block\+Obj\+Pop()}{BlockObjPop()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_block_obj}{Block\+Obj} Enemy.\+Block\+Obj\+Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+氷を生成する 
+
+\begin{DoxyReturn}{Returns}
+生成された氷
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_doragon_a981089224fd04b5d556eae0b9801112f}{Doragon}.
+
+\mbox{\Hypertarget{class_enemy_acd99666df643c0fea93610769b5bd214}\label{class_enemy_acd99666df643c0fea93610769b5bd214}} 
+\index{Enemy@{Enemy}!Cange\+Obj@{Cange\+Obj}}
+\index{Cange\+Obj@{Cange\+Obj}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Cange\+Obj()}{CangeObj()}}
+{\footnotesize\ttfamily void Enemy.\+Cange\+Obj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+氷漬けにされたものに変換する 
+
+\mbox{\Hypertarget{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}\label{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}} 
+\index{Enemy@{Enemy}!Enemy\+Update@{Enemy\+Update}}
+\index{Enemy\+Update@{Enemy\+Update}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Enemy\+Update()}{EnemyUpdate()}}
+{\footnotesize\ttfamily virtual void Enemy.\+Enemy\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+継承先での\+Fixed\+Update 
+
+
+
+Reimplemented in \hyperlink{class_bone_ae81be60a677bf474ff4634cea32921dc}{Bone}, \hyperlink{class_bat_af1e6e4432c5f803973be596a31cbb650}{Bat}, \hyperlink{class_book_ad838b454ccd9f8c4e88215aa220226a4}{Book}, \hyperlink{class_doragon_abf6c6c47805aa970c8dac34b61f38719}{Doragon}, \hyperlink{class_daruma_aacb22dfd1f65e403acf44231e308e97c}{Daruma}, \hyperlink{class_target_move_a4e86c888ec0ad3b43c30a6ff17a0411d}{Target\+Move}, \hyperlink{class_angel_a2c35f5d2b12e43d64cc686728a6225c2}{Angel}, \hyperlink{class_squid_ab737cee06933e0631c45bb7fef86fe6b}{Squid}, \hyperlink{class_fox_a34985f75859d53cd02305e84dfa8a058}{Fox}, \hyperlink{class_ghost_a26c210f4d5bfbecc82cd577fafb0cfdb}{Ghost}, \hyperlink{class_spider_a343565aa379615a2602907dd25137ed9}{Spider}, \hyperlink{class_syatihoko_a921cf2c05d610f19214fb476c9ff8a6c}{Syatihoko}, \hyperlink{class_phantom_ab639a11fe75cb4bce641d5bd52601fae}{Phantom}, \hyperlink{class_jump_enemy_ab5eb8680db77e9ed5ab5696b41aa7b29}{Jump\+Enemy}, \hyperlink{class_stagnation_ae0fe7818f0319e53bf2f25d8659af12f}{Stagnation}, and \hyperlink{class_clione_a59ce5c64ae6b106a6ef39dd5773ebafc}{Clione}.
+
+\mbox{\Hypertarget{class_enemy_add93027b5ee19288ed26aa6f98fb88f8}\label{class_enemy_add93027b5ee19288ed26aa6f98fb88f8}} 
+\index{Enemy@{Enemy}!Floor\+Rotate@{Floor\+Rotate}}
+\index{Floor\+Rotate@{Floor\+Rotate}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Floor\+Rotate()}{FloorRotate()}}
+{\footnotesize\ttfamily virtual void Enemy.\+Floor\+Rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+階層の反転 
+
+
+
+Reimplemented in \hyperlink{class_doragon_ad83502ad8778d1e9fa0f6d2d72526d85}{Doragon}.
+
+\mbox{\Hypertarget{class_enemy_a16617ee5a2f6bf7d5ae879dd9ca2d230}\label{class_enemy_a16617ee5a2f6bf7d5ae879dd9ca2d230}} 
+\index{Enemy@{Enemy}!Is\+Aic\+Block\+Hit@{Is\+Aic\+Block\+Hit}}
+\index{Is\+Aic\+Block\+Hit@{Is\+Aic\+Block\+Hit}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Is\+Aic\+Block\+Hit()}{IsAicBlockHit()}}
+{\footnotesize\ttfamily bool Enemy.\+Is\+Aic\+Block\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+氷にめり込んでいるか 
+
+\begin{DoxyReturn}{Returns}
+めり込んでいればtrue
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_enemy_a058914a6e2dd7d3d898c2b8bfcc7fa70}\label{class_enemy_a058914a6e2dd7d3d898c2b8bfcc7fa70}} 
+\index{Enemy@{Enemy}!Is\+Wall\+Hit@{Is\+Wall\+Hit}}
+\index{Is\+Wall\+Hit@{Is\+Wall\+Hit}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Is\+Wall\+Hit()}{IsWallHit()}}
+{\footnotesize\ttfamily bool Enemy.\+Is\+Wall\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+壁に挟まれているか 
+
+\begin{DoxyReturn}{Returns}
+壁に挟まれていればtrue
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_enemy_a2b5e9b4644bd49c33279403c6477ed39}\label{class_enemy_a2b5e9b4644bd49c33279403c6477ed39}} 
+\index{Enemy@{Enemy}!Player\+Hit@{Player\+Hit}}
+\index{Player\+Hit@{Player\+Hit}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Player\+Hit()}{PlayerHit()}}
+{\footnotesize\ttfamily virtual void Enemy.\+Player\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+プレイヤーに当たった時の処理 
+
+
+
+Reimplemented in \hyperlink{class_wamonn_a46080369edebc97e39e1841b91258856}{Wamonn}.
+
+\mbox{\Hypertarget{class_enemy_a2a0e665070fd362bd3ab2f2962ebff93}\label{class_enemy_a2a0e665070fd362bd3ab2f2962ebff93}} 
+\index{Enemy@{Enemy}!Rotate\+Enemy@{Rotate\+Enemy}}
+\index{Rotate\+Enemy@{Rotate\+Enemy}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Rotate\+Enemy()}{RotateEnemy()}}
+{\footnotesize\ttfamily virtual void Enemy.\+Rotate\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+左右の反転 
+
+
+
+Reimplemented in \hyperlink{class_bone_adc5939e68918d95e811cce5bfb87f7e5}{Bone}, \hyperlink{class_wamonn_a84f3f9f2380c28a7e455f0cee6e9c933}{Wamonn}, \hyperlink{class_squid_a7350ce67466554aa0c46c9da7c5e6da2}{Squid}, \hyperlink{class_spider_aeddc709039ca9a096e53ecc0dd0d3f84}{Spider}, \hyperlink{class_bat_a94ef7dfdaf7801f5fa36af5ece127fe1}{Bat}, \hyperlink{class_syatihoko_ab4c8b474dcba39edb7ed80e5149ee39c}{Syatihoko}, \hyperlink{class_angel_ade12610b82079f5748f8d1393cce1f9b}{Angel}, \hyperlink{class_target_move_afb69b9930791bef6aaa96b8d92ce27c2}{Target\+Move}, and \hyperlink{class_globefish_a31c4458c5be4f3739e1ceedd69656185}{Globefish}.
+
+\mbox{\Hypertarget{class_enemy_a050e257a9a9f3b1b01923be24eaa7577}\label{class_enemy_a050e257a9a9f3b1b01923be24eaa7577}} 
+\index{Enemy@{Enemy}!Set\+Collider\+Center@{Set\+Collider\+Center}}
+\index{Set\+Collider\+Center@{Set\+Collider\+Center}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Set\+Collider\+Center()}{SetColliderCenter()}}
+{\footnotesize\ttfamily virtual void Enemy.\+Set\+Collider\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+モーションでの座標更新によるコライダーの座標更新 
+
+\mbox{\Hypertarget{class_enemy_a5b96db39bbd412b91fb3923a6833e6b5}\label{class_enemy_a5b96db39bbd412b91fb3923a6833e6b5}} 
+\index{Enemy@{Enemy}!Wallebatan\+Effect@{Wallebatan\+Effect}}
+\index{Wallebatan\+Effect@{Wallebatan\+Effect}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Wallebatan\+Effect()}{WallebatanEffect()}}
+{\footnotesize\ttfamily void Enemy.\+Wallebatan\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+壁に挟まれたときのエフェクトを生成する 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_ad1892bec7a3cf7a663b68ae349b6e2b1}\label{class_enemy_ad1892bec7a3cf7a663b68ae349b6e2b1}} 
+\index{Enemy@{Enemy}!aice\+Block@{aice\+Block}}
+\index{aice\+Block@{aice\+Block}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{aice\+Block}{aiceBlock}}
+{\footnotesize\ttfamily \hyperlink{class_block_obj}{Block\+Obj} Enemy.\+aice\+Block\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+凍らせた時の氷 
+
+\mbox{\Hypertarget{class_enemy_af5beb8b2bb119fd3ca44798fd8a8db11}\label{class_enemy_af5beb8b2bb119fd3ca44798fd8a8db11}} 
+\index{Enemy@{Enemy}!aice\+Block\+Obj\+Pop\+Rotation@{aice\+Block\+Obj\+Pop\+Rotation}}
+\index{aice\+Block\+Obj\+Pop\+Rotation@{aice\+Block\+Obj\+Pop\+Rotation}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{aice\+Block\+Obj\+Pop\+Rotation}{aiceBlockObjPopRotation}}
+{\footnotesize\ttfamily Vector3 Enemy.\+aice\+Block\+Obj\+Pop\+Rotation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+出現する氷の回転 
+
+\mbox{\Hypertarget{class_enemy_a0906c6b765e32f42402a6e5aefbe095a}\label{class_enemy_a0906c6b765e32f42402a6e5aefbe095a}} 
+\index{Enemy@{Enemy}!aice\+Block\+Pop\+Add\+Pos@{aice\+Block\+Pop\+Add\+Pos}}
+\index{aice\+Block\+Pop\+Add\+Pos@{aice\+Block\+Pop\+Add\+Pos}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{aice\+Block\+Pop\+Add\+Pos}{aiceBlockPopAddPos}}
+{\footnotesize\ttfamily Vector3 Enemy.\+aice\+Block\+Pop\+Add\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+氷の出現位置調整 
+
+\mbox{\Hypertarget{class_enemy_a17d5f27a6ec77c562b8cc8abbfcaab62}\label{class_enemy_a17d5f27a6ec77c562b8cc8abbfcaab62}} 
+\index{Enemy@{Enemy}!collider\+Center@{collider\+Center}}
+\index{collider\+Center@{collider\+Center}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{collider\+Center}{colliderCenter}}
+{\footnotesize\ttfamily Game\+Object Enemy.\+collider\+Center\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+エネミーの中心の元となるオブジェ　　基本ジョイント 
+
+\mbox{\Hypertarget{class_enemy_a7cb4998f3076e0f9ec871507d54bfcfe}\label{class_enemy_a7cb4998f3076e0f9ec871507d54bfcfe}} 
+\index{Enemy@{Enemy}!hit\+Effect@{hit\+Effect}}
+\index{hit\+Effect@{hit\+Effect}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{hit\+Effect}{hitEffect}}
+{\footnotesize\ttfamily Game\+Object Enemy.\+hit\+Effect\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+壁に挟まれたときのエフェクト 
+
+\mbox{\Hypertarget{class_enemy_abb7ad3ec25f442ac6170b48e3b868527}\label{class_enemy_abb7ad3ec25f442ac6170b48e3b868527}} 
+\index{Enemy@{Enemy}!model@{model}}
+\index{model@{model}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily Game\+Object Enemy.\+model\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+氷漬けにされるオブジェ 
+
+\mbox{\Hypertarget{class_enemy_a1a34acbbd165cfe6c567710b8d2ab3ef}\label{class_enemy_a1a34acbbd165cfe6c567710b8d2ab3ef}} 
+\index{Enemy@{Enemy}!wall\+Hit\+Back\+Pos@{wall\+Hit\+Back\+Pos}}
+\index{wall\+Hit\+Back\+Pos@{wall\+Hit\+Back\+Pos}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{wall\+Hit\+Back\+Pos}{wallHitBackPos}}
+{\footnotesize\ttfamily Vector3 Enemy.\+wall\+Hit\+Back\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+壁に挟まれたときに固定される位置、（前座標） 
+
+\mbox{\Hypertarget{class_enemy_a6aa9348e5d07b274d08d045a8562f511}\label{class_enemy_a6aa9348e5d07b274d08d045a8562f511}} 
+\index{Enemy@{Enemy}!wall\+Hit\+Box\+Size@{wall\+Hit\+Box\+Size}}
+\index{wall\+Hit\+Box\+Size@{wall\+Hit\+Box\+Size}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{wall\+Hit\+Box\+Size}{wallHitBoxSize}}
+{\footnotesize\ttfamily Vector3 Enemy.\+wall\+Hit\+Box\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+壁に挟まれる\+Rayのサイズ 
+
+\mbox{\Hypertarget{class_enemy_a8b7dc2553eb9f3a3a4bdcbe0dc390ede}\label{class_enemy_a8b7dc2553eb9f3a3a4bdcbe0dc390ede}} 
+\index{Enemy@{Enemy}!wall\+Hit\+Ray\+Size@{wall\+Hit\+Ray\+Size}}
+\index{wall\+Hit\+Ray\+Size@{wall\+Hit\+Ray\+Size}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{wall\+Hit\+Ray\+Size}{wallHitRaySize}}
+{\footnotesize\ttfamily float Enemy.\+wall\+Hit\+Ray\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+壁に挟まれる\+Rayの距離 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_enemy_ac8ac5520ab8c301a37b2482c6626fba7}\label{class_enemy_ac8ac5520ab8c301a37b2482c6626fba7}} 
+\index{Enemy@{Enemy}!enemy\+Center\+Pos@{enemy\+Center\+Pos}}
+\index{enemy\+Center\+Pos@{enemy\+Center\+Pos}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{enemy\+Center\+Pos}{enemyCenterPos}}
+{\footnotesize\ttfamily Vector3 Enemy.\+enemy\+Center\+Pos\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+実際のエネミーの中心座標 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Enemy.\+cs\end{DoxyCompactItemize}

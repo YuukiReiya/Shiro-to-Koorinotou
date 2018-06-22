@@ -1,0 +1,293 @@
+\hypertarget{class_config}{}\section{Config Class Reference}
+\label{class_config}\index{Config@{Config}}
+
+
+コンフィグの処理を行うクラス 制作者\+:番場宥輝  
+
+
+Inheritance diagram for Config\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_config}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_config_a025cd5d374f44cbd1265d63f69a7c239}{Config\+Update} ()
+\begin{DoxyCompactList}\small\item\em コンフィグの処理を行うアップデート関数 \end{DoxyCompactList}\item 
+bool \hyperlink{class_config_af38d765e1fafbca28181b723a067b109}{is\+Config\+End} ()
+\begin{DoxyCompactList}\small\item\em コンフィグの処理が終了しているか判定する関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_a9657d1d6b1cf0bd69f07dfc95a20902d}\label{class_config_a9657d1d6b1cf0bd69f07dfc95a20902d}} 
+void {\bfseries Start} ()
+\item 
+void \hyperlink{class_config_ab74559087b49ddc68683cee83e60be25}{Setting} ()
+\begin{DoxyCompactList}\small\item\em 各メニューの処理をまとめた関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_af831e43ea181c0244cf91ceaaddb112d}{Select\+Menu} ()
+\begin{DoxyCompactList}\small\item\em メニューの選択を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_a7a5cdf495c53a17595d439527813abb3}{Close} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}閉じる\char`\"{}処理を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_a046e51367235ce55f4de31f43022b9c6}{Select\+Sound\+Vol} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}サウンド\char`\"{}処理を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_a129efe0f7194ef8eb9c27a94752ff2b7}{Setting\+B\+G\+Mvol} ()
+\begin{DoxyCompactList}\small\item\em B\+G\+Mの音量変更を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_a8a5015567d30dd61658de82526286301}{Setting\+S\+Evol} ()
+\begin{DoxyCompactList}\small\item\em S\+Eの音量変更を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_a39b12148009099d6797eefdf491e57f2}{Select\+Key} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}ボタン\char`\"{}処理を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_a949c8f8016a13dc0de2ad8478d950840}{Setting\+Jump} ()
+\begin{DoxyCompactList}\small\item\em ジャンプボタンを変更を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_a017861e162f694d0b63034ca0bdd99a5}{Setting\+Magic} ()
+\begin{DoxyCompactList}\small\item\em 魔法ボタンを変更を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_ad0b23b838070e0fc7d6232ccc3086f44}{Delete} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}データ\char`\"{}処理を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_a507cbfc344a6caf0d89dea1f0544861a}{Set\+Sound} ()
+\begin{DoxyCompactList}\small\item\em サウンドの描画を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_acc37b6bfa98a26666611bae4fe005d2e}{Set\+Key} ()
+\begin{DoxyCompactList}\small\item\em ボタンの描画を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_config_a3470f1dc49c85032a1e247d817413508}{Reset\+Menu} ()
+\begin{DoxyCompactList}\small\item\em メニューが閉じられたときに行う初期化関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_config_af5660f71632e5a4ce5e62d26032c552d}\label{class_config_af5660f71632e5a4ce5e62d26032c552d}} 
+\hyperlink{class_change_scale}{Change\+Scale} {\bfseries w\+Config}
+\item 
+\mbox{\Hypertarget{class_config_a0026c6b988c3a718f8dddb4055e5aa91}\label{class_config_a0026c6b988c3a718f8dddb4055e5aa91}} 
+int {\bfseries menu} = Menu.\+C\+L\+O\+SE
+\item 
+\mbox{\Hypertarget{class_config_a28812054877c43591d28b47a0db1bd57}\label{class_config_a28812054877c43591d28b47a0db1bd57}} 
+int {\bfseries adjust} = S\+E\+L\+E\+C\+T\+\_\+\+M\+E\+NU
+\item 
+\mbox{\Hypertarget{class_config_a5da8825027c61bdee5cda4b715470912}\label{class_config_a5da8825027c61bdee5cda4b715470912}} 
+\hyperlink{class_title_back_shadows}{Title\+Back\+Shadows} {\bfseries back\+Shadow}
+\item 
+\mbox{\Hypertarget{class_config_aa9c554f5d5e582765859907797e0d358}\label{class_config_aa9c554f5d5e582765859907797e0d358}} 
+\hyperlink{class_title_config_u_i_outline}{Title\+Config\+U\+I\+Outline} {\bfseries menu\+U\+Iol}
+\item 
+\mbox{\Hypertarget{class_config_af27c6e18005995591aa2bcd78c745803}\label{class_config_af27c6e18005995591aa2bcd78c745803}} 
+\hyperlink{class_config_string}{Config\+String} {\bfseries config\+String}
+\item 
+\mbox{\Hypertarget{class_config_a4d89300834284da349f030bd6e4ae53f}\label{class_config_a4d89300834284da349f030bd6e4ae53f}} 
+\hyperlink{class_title_config_string_outline}{Title\+Config\+String\+Outline} {\bfseries config\+String\+Ol}
+\item 
+\mbox{\Hypertarget{class_config_a54b5fbf096f72f8071ef0550d88c20eb}\label{class_config_a54b5fbf096f72f8071ef0550d88c20eb}} 
+\hyperlink{class_volume_u_i}{Volume\+UI} {\bfseries B\+GM}
+\item 
+\mbox{\Hypertarget{class_config_a7239d1465a3013f85a0819ec9a7bfbbe}\label{class_config_a7239d1465a3013f85a0819ec9a7bfbbe}} 
+\hyperlink{class_volume_cursol_u_i}{Volume\+Cursol\+UI} {\bfseries B\+G\+Mcur}
+\item 
+\mbox{\Hypertarget{class_config_a1644892a5342481a0bc1b54b786d1818}\label{class_config_a1644892a5342481a0bc1b54b786d1818}} 
+int {\bfseries B\+G\+Mvol}
+\item 
+\mbox{\Hypertarget{class_config_a565485ce386fe631bd8c63b66501d3d8}\label{class_config_a565485ce386fe631bd8c63b66501d3d8}} 
+\hyperlink{class_volume_u_i}{Volume\+UI} {\bfseries SE}
+\item 
+\mbox{\Hypertarget{class_config_a5a703731c0d005406aa08d078bc19a4c}\label{class_config_a5a703731c0d005406aa08d078bc19a4c}} 
+\hyperlink{class_volume_cursol_u_i}{Volume\+Cursol\+UI} {\bfseries S\+Ecur}
+\item 
+\mbox{\Hypertarget{class_config_ada8ed8c84a07db55553002242c05edf8}\label{class_config_ada8ed8c84a07db55553002242c05edf8}} 
+int {\bfseries S\+Evol}
+\item 
+\mbox{\Hypertarget{class_config_add25d64ad8c40a5f169eaddc2e57696b}\label{class_config_add25d64ad8c40a5f169eaddc2e57696b}} 
+\hyperlink{class_key_u_i}{Key\+UI} {\bfseries jump\+UI}
+\item 
+\mbox{\Hypertarget{class_config_a53c24d69f66cb6feeea93596285708a6}\label{class_config_a53c24d69f66cb6feeea93596285708a6}} 
+\hyperlink{class_key_cursol_u_i}{Key\+Cursol\+UI} {\bfseries jump\+Cur}
+\item 
+\mbox{\Hypertarget{class_config_a0ba228792c507b5c2fee787cde055316}\label{class_config_a0ba228792c507b5c2fee787cde055316}} 
+int {\bfseries jump}
+\item 
+\mbox{\Hypertarget{class_config_ad9790c8ca3ab5e8358fd509dcfb1c4eb}\label{class_config_ad9790c8ca3ab5e8358fd509dcfb1c4eb}} 
+\hyperlink{class_key_u_i}{Key\+UI} {\bfseries magic\+UI}
+\item 
+\mbox{\Hypertarget{class_config_ad425f69b6aa72c1144739d012a2c6fc1}\label{class_config_ad425f69b6aa72c1144739d012a2c6fc1}} 
+\hyperlink{class_key_cursol_u_i}{Key\+Cursol\+UI} {\bfseries magic\+Cur}
+\item 
+\mbox{\Hypertarget{class_config_a9ed40371e3e12646f3a87a9e66b21938}\label{class_config_a9ed40371e3e12646f3a87a9e66b21938}} 
+int {\bfseries magic}
+\item 
+\mbox{\Hypertarget{class_config_a128844019d9db9782d6a0f69e3a0333e}\label{class_config_a128844019d9db9782d6a0f69e3a0333e}} 
+\hyperlink{class_data}{Data} {\bfseries data}
+\item 
+\mbox{\Hypertarget{class_config_a3be9af991b5a6e9feb130ca13961bb52}\label{class_config_a3be9af991b5a6e9feb130ca13961bb52}} 
+const int {\bfseries Reset\+Frame} = 15
+\item 
+\mbox{\Hypertarget{class_config_aa8e0074c0d65d8898b5d0d5db9caef91}\label{class_config_aa8e0074c0d65d8898b5d0d5db9caef91}} 
+const int {\bfseries S\+E\+L\+E\+C\+T\+\_\+\+M\+E\+NU} = 0
+\item 
+\mbox{\Hypertarget{class_config_accdc1e21859714e523973720a8292176}\label{class_config_accdc1e21859714e523973720a8292176}} 
+const int {\bfseries S\+E\+L\+E\+C\+T\+\_\+\+S\+E\+T\+T\+I\+N\+G1} = 1
+\item 
+\mbox{\Hypertarget{class_config_a1e71700908a27cc3f4157c0c33e1764d}\label{class_config_a1e71700908a27cc3f4157c0c33e1764d}} 
+const int {\bfseries S\+E\+L\+E\+C\+T\+\_\+\+S\+E\+T\+T\+I\+N\+G2} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+コンフィグの処理を行うクラス 制作者\+:番場宥輝 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_config_a7a5cdf495c53a17595d439527813abb3}\label{class_config_a7a5cdf495c53a17595d439527813abb3}} 
+\index{Config@{Config}!Close@{Close}}
+\index{Close@{Close}!Config@{Config}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void Config.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\char`\"{}閉じる\char`\"{}処理を行う関数 
+
+\mbox{\Hypertarget{class_config_a025cd5d374f44cbd1265d63f69a7c239}\label{class_config_a025cd5d374f44cbd1265d63f69a7c239}} 
+\index{Config@{Config}!Config\+Update@{Config\+Update}}
+\index{Config\+Update@{Config\+Update}!Config@{Config}}
+\subsubsection{\texorpdfstring{Config\+Update()}{ConfigUpdate()}}
+{\footnotesize\ttfamily void Config.\+Config\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンフィグの処理を行うアップデート関数 
+
+\mbox{\Hypertarget{class_config_ad0b23b838070e0fc7d6232ccc3086f44}\label{class_config_ad0b23b838070e0fc7d6232ccc3086f44}} 
+\index{Config@{Config}!Delete@{Delete}}
+\index{Delete@{Delete}!Config@{Config}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void Config.\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\char`\"{}データ\char`\"{}処理を行う関数 
+
+\mbox{\Hypertarget{class_config_af38d765e1fafbca28181b723a067b109}\label{class_config_af38d765e1fafbca28181b723a067b109}} 
+\index{Config@{Config}!is\+Config\+End@{is\+Config\+End}}
+\index{is\+Config\+End@{is\+Config\+End}!Config@{Config}}
+\subsubsection{\texorpdfstring{is\+Config\+End()}{isConfigEnd()}}
+{\footnotesize\ttfamily bool Config.\+is\+Config\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コンフィグの処理が終了しているか判定する関数 
+
+\begin{DoxyReturn}{Returns}
+true\+:終了,false\+:継続
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_config_a3470f1dc49c85032a1e247d817413508}\label{class_config_a3470f1dc49c85032a1e247d817413508}} 
+\index{Config@{Config}!Reset\+Menu@{Reset\+Menu}}
+\index{Reset\+Menu@{Reset\+Menu}!Config@{Config}}
+\subsubsection{\texorpdfstring{Reset\+Menu()}{ResetMenu()}}
+{\footnotesize\ttfamily void Config.\+Reset\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+メニューが閉じられたときに行う初期化関数 
+
+\mbox{\Hypertarget{class_config_a39b12148009099d6797eefdf491e57f2}\label{class_config_a39b12148009099d6797eefdf491e57f2}} 
+\index{Config@{Config}!Select\+Key@{Select\+Key}}
+\index{Select\+Key@{Select\+Key}!Config@{Config}}
+\subsubsection{\texorpdfstring{Select\+Key()}{SelectKey()}}
+{\footnotesize\ttfamily void Config.\+Select\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\char`\"{}ボタン\char`\"{}処理を行う関数 
+
+\mbox{\Hypertarget{class_config_af831e43ea181c0244cf91ceaaddb112d}\label{class_config_af831e43ea181c0244cf91ceaaddb112d}} 
+\index{Config@{Config}!Select\+Menu@{Select\+Menu}}
+\index{Select\+Menu@{Select\+Menu}!Config@{Config}}
+\subsubsection{\texorpdfstring{Select\+Menu()}{SelectMenu()}}
+{\footnotesize\ttfamily void Config.\+Select\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+メニューの選択を行う関数 
+
+\mbox{\Hypertarget{class_config_a046e51367235ce55f4de31f43022b9c6}\label{class_config_a046e51367235ce55f4de31f43022b9c6}} 
+\index{Config@{Config}!Select\+Sound\+Vol@{Select\+Sound\+Vol}}
+\index{Select\+Sound\+Vol@{Select\+Sound\+Vol}!Config@{Config}}
+\subsubsection{\texorpdfstring{Select\+Sound\+Vol()}{SelectSoundVol()}}
+{\footnotesize\ttfamily void Config.\+Select\+Sound\+Vol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\char`\"{}サウンド\char`\"{}処理を行う関数 
+
+\mbox{\Hypertarget{class_config_acc37b6bfa98a26666611bae4fe005d2e}\label{class_config_acc37b6bfa98a26666611bae4fe005d2e}} 
+\index{Config@{Config}!Set\+Key@{Set\+Key}}
+\index{Set\+Key@{Set\+Key}!Config@{Config}}
+\subsubsection{\texorpdfstring{Set\+Key()}{SetKey()}}
+{\footnotesize\ttfamily void Config.\+Set\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ボタンの描画を行う関数 
+
+\mbox{\Hypertarget{class_config_a507cbfc344a6caf0d89dea1f0544861a}\label{class_config_a507cbfc344a6caf0d89dea1f0544861a}} 
+\index{Config@{Config}!Set\+Sound@{Set\+Sound}}
+\index{Set\+Sound@{Set\+Sound}!Config@{Config}}
+\subsubsection{\texorpdfstring{Set\+Sound()}{SetSound()}}
+{\footnotesize\ttfamily void Config.\+Set\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+サウンドの描画を行う関数 
+
+\mbox{\Hypertarget{class_config_ab74559087b49ddc68683cee83e60be25}\label{class_config_ab74559087b49ddc68683cee83e60be25}} 
+\index{Config@{Config}!Setting@{Setting}}
+\index{Setting@{Setting}!Config@{Config}}
+\subsubsection{\texorpdfstring{Setting()}{Setting()}}
+{\footnotesize\ttfamily void Config.\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+各メニューの処理をまとめた関数 
+
+\mbox{\Hypertarget{class_config_a129efe0f7194ef8eb9c27a94752ff2b7}\label{class_config_a129efe0f7194ef8eb9c27a94752ff2b7}} 
+\index{Config@{Config}!Setting\+B\+G\+Mvol@{Setting\+B\+G\+Mvol}}
+\index{Setting\+B\+G\+Mvol@{Setting\+B\+G\+Mvol}!Config@{Config}}
+\subsubsection{\texorpdfstring{Setting\+B\+G\+Mvol()}{SettingBGMvol()}}
+{\footnotesize\ttfamily void Config.\+Setting\+B\+G\+Mvol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+B\+G\+Mの音量変更を行う関数 
+
+\mbox{\Hypertarget{class_config_a949c8f8016a13dc0de2ad8478d950840}\label{class_config_a949c8f8016a13dc0de2ad8478d950840}} 
+\index{Config@{Config}!Setting\+Jump@{Setting\+Jump}}
+\index{Setting\+Jump@{Setting\+Jump}!Config@{Config}}
+\subsubsection{\texorpdfstring{Setting\+Jump()}{SettingJump()}}
+{\footnotesize\ttfamily void Config.\+Setting\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ジャンプボタンを変更を行う関数 
+
+\mbox{\Hypertarget{class_config_a017861e162f694d0b63034ca0bdd99a5}\label{class_config_a017861e162f694d0b63034ca0bdd99a5}} 
+\index{Config@{Config}!Setting\+Magic@{Setting\+Magic}}
+\index{Setting\+Magic@{Setting\+Magic}!Config@{Config}}
+\subsubsection{\texorpdfstring{Setting\+Magic()}{SettingMagic()}}
+{\footnotesize\ttfamily void Config.\+Setting\+Magic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+魔法ボタンを変更を行う関数 
+
+\mbox{\Hypertarget{class_config_a8a5015567d30dd61658de82526286301}\label{class_config_a8a5015567d30dd61658de82526286301}} 
+\index{Config@{Config}!Setting\+S\+Evol@{Setting\+S\+Evol}}
+\index{Setting\+S\+Evol@{Setting\+S\+Evol}!Config@{Config}}
+\subsubsection{\texorpdfstring{Setting\+S\+Evol()}{SettingSEvol()}}
+{\footnotesize\ttfamily void Config.\+Setting\+S\+Evol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+S\+Eの音量変更を行う関数 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Scene/\+Title/\+Scripts/Config.\+cs\end{DoxyCompactItemize}

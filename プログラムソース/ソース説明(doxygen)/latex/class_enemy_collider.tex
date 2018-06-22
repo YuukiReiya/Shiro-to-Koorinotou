@@ -1,0 +1,96 @@
+\hypertarget{class_enemy_collider}{}\section{Enemy\+Collider Class Reference}
+\label{class_enemy_collider}\index{Enemy\+Collider@{Enemy\+Collider}}
+
+
+エネミーコライダー 製作者：冨田 大悟  
+
+
+Inheritance diagram for Enemy\+Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemy_collider}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_enemy_collider_1_1_enemy_collider_base}{Enemy\+Collider\+Base}
+\begin{DoxyCompactList}\small\item\em コライダー調整用 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_enemy_collider_ab984266faa7320cb7b4bf0ce508eceb9}{Set\+Collider\+Pos} (Vector3 base\+Pos)
+\begin{DoxyCompactList}\small\item\em コライダー座標の修正 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_collider_a65dad0540bd70d157fffb1789bdc5e3e}\label{class_enemy_collider_a65dad0540bd70d157fffb1789bdc5e3e}} 
+void {\bfseries Rotate\+Collider} ()
+\item 
+\mbox{\Hypertarget{class_enemy_collider_a10586dade0134de14d27e73331f70049}\label{class_enemy_collider_a10586dade0134de14d27e73331f70049}} 
+void {\bfseries On\+Validate} ()
+\item 
+\mbox{\Hypertarget{class_enemy_collider_a014505d0090d1acd5433c0f6af7b9239}\label{class_enemy_collider_a014505d0090d1acd5433c0f6af7b9239}} 
+void {\bfseries Rotate\+Collider\+Center\+Add\+Pos} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \hyperlink{class_enemy_collider_a3e048a434677711efec8d3951381f2e2}{enemy\+Center\+Pos}
+\begin{DoxyCompactList}\small\item\em 実際のコライダーの中心座標 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \hyperlink{class_enemy_collider_a8dcf6577b63427f93bde06c22b9fffcf}{collider\+Center\+Add\+Pos}
+\begin{DoxyCompactList}\small\item\em エネミーの中心座標調整 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_collider_a4c486c669bcb41bb019767b591bcd060}\label{class_enemy_collider_a4c486c669bcb41bb019767b591bcd060}} 
+List$<$ \hyperlink{class_enemy_collider_1_1_enemy_collider_base}{Enemy\+Collider\+Base} $>$ {\bfseries collider\+Bases}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+エネミーコライダー 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_collider_ab984266faa7320cb7b4bf0ce508eceb9}\label{class_enemy_collider_ab984266faa7320cb7b4bf0ce508eceb9}} 
+\index{Enemy\+Collider@{Enemy\+Collider}!Set\+Collider\+Pos@{Set\+Collider\+Pos}}
+\index{Set\+Collider\+Pos@{Set\+Collider\+Pos}!Enemy\+Collider@{Enemy\+Collider}}
+\subsubsection{\texorpdfstring{Set\+Collider\+Pos()}{SetColliderPos()}}
+{\footnotesize\ttfamily void Enemy\+Collider.\+Set\+Collider\+Pos (\begin{DoxyParamCaption}\item[{Vector3}]{base\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+コライダー座標の修正 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Pos} & 中心となるワールド座標\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_collider_a8dcf6577b63427f93bde06c22b9fffcf}\label{class_enemy_collider_a8dcf6577b63427f93bde06c22b9fffcf}} 
+\index{Enemy\+Collider@{Enemy\+Collider}!collider\+Center\+Add\+Pos@{collider\+Center\+Add\+Pos}}
+\index{collider\+Center\+Add\+Pos@{collider\+Center\+Add\+Pos}!Enemy\+Collider@{Enemy\+Collider}}
+\subsubsection{\texorpdfstring{collider\+Center\+Add\+Pos}{colliderCenterAddPos}}
+{\footnotesize\ttfamily Vector3 Enemy\+Collider.\+collider\+Center\+Add\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+エネミーの中心座標調整 
+
+\mbox{\Hypertarget{class_enemy_collider_a3e048a434677711efec8d3951381f2e2}\label{class_enemy_collider_a3e048a434677711efec8d3951381f2e2}} 
+\index{Enemy\+Collider@{Enemy\+Collider}!enemy\+Center\+Pos@{enemy\+Center\+Pos}}
+\index{enemy\+Center\+Pos@{enemy\+Center\+Pos}!Enemy\+Collider@{Enemy\+Collider}}
+\subsubsection{\texorpdfstring{enemy\+Center\+Pos}{enemyCenterPos}}
+{\footnotesize\ttfamily Vector3 Enemy\+Collider.\+enemy\+Center\+Pos}
+
+
+
+実際のコライダーの中心座標 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Enemy\+Collider.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,210 @@
+\hypertarget{class_key_loader}{}\section{Key\+Loader Class Reference}
+\label{class_key_loader}\index{Key\+Loader@{Key\+Loader}}
+
+
+キー読み込みの制御 製作者：冨田 大悟  
+
+
+Inheritance diagram for Key\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_key_loader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_key_loader_a1a4482487b406f1c9a3a0df3186f223c}{Key\+Update} ()
+\begin{DoxyCompactList}\small\item\em キーの更新 \end{DoxyCompactList}\item 
+void \hyperlink{class_key_loader_a76cd182f014f01a82281552ececc46fc}{Key\+Release} ()
+\begin{DoxyCompactList}\small\item\em キーの解放 \end{DoxyCompactList}\item 
+void \hyperlink{class_key_loader_a7907d4061b1bfdf6bf007a5ce6ee24e8}{Set\+Key\+Wait} (int time)
+\begin{DoxyCompactList}\small\item\em キーにウェイトをかける \end{DoxyCompactList}\item 
+void \hyperlink{class_key_loader_a29ba5c6b4850d69c4d4577eb2e6159ec}{Set\+Stick\+Wait} (int time)
+\begin{DoxyCompactList}\small\item\em スティックキーにウェイトをかける \end{DoxyCompactList}\item 
+void \hyperlink{class_key_loader_a0d56df66026ce30f307682f82fcadf33}{Key\+Reload} ()
+\begin{DoxyCompactList}\small\item\em アクションキーの更新 \end{DoxyCompactList}\item 
+bool \hyperlink{class_key_loader_ae74fc217257c432cd43de1712c9b51ec}{Is\+Any\+Key} ()
+\begin{DoxyCompactList}\small\item\em どこかのボタンが押されているか \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_key_loader_a61a1d81edb2cddfe02f5710a28db50a1}{Vibration} (float count, float vibration\+Powerx, float vibration\+Powery)
+\begin{DoxyCompactList}\small\item\em バイブレーション \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_key_loader_a6c392829538b06c0d84df495cc7a4c50}\label{class_key_loader_a6c392829538b06c0d84df495cc7a4c50}} 
+bool {\bfseries Stick\+Wait} = false
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_key_loader_abf3ee8be79d04708e5db15e3fe6ee604}\label{class_key_loader_abf3ee8be79d04708e5db15e3fe6ee604}} 
+static \hyperlink{class_key_loader}{Key\+Loader} {\bfseries key\+Loader}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_key_loader_ab2763586f6edc3789e85dba1b29e8f27}\label{class_key_loader_ab2763586f6edc3789e85dba1b29e8f27}} 
+Vector2 {\bfseries joy\+Stick\+Axis}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_key_loader_a195fe45b398fd64fafe2118bb630efb0}\label{class_key_loader_a195fe45b398fd64fafe2118bb630efb0}} 
+bool {\bfseries A}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_key_loader_afcd19428f7a7f732d6fb57f8df9382f3}\label{class_key_loader_afcd19428f7a7f732d6fb57f8df9382f3}} 
+bool {\bfseries B}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_key_loader_a575a5466b8d8697ed9b0052037b3c8fd}\label{class_key_loader_a575a5466b8d8697ed9b0052037b3c8fd}} 
+bool {\bfseries X}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_key_loader_a537496a712deab82822bd10bc6849cc1}\label{class_key_loader_a537496a712deab82822bd10bc6849cc1}} 
+bool {\bfseries Y}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_key_loader_a0e950379f1930f937b74f23fe84d3b40}\label{class_key_loader_a0e950379f1930f937b74f23fe84d3b40}} 
+bool {\bfseries Jump}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_key_loader_a2d0cda845a8f256fe58d7131607263cd}\label{class_key_loader_a2d0cda845a8f256fe58d7131607263cd}} 
+bool {\bfseries Magic}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_key_loader_a2867f4e53f5642b821569403e315ec91}\label{class_key_loader_a2867f4e53f5642b821569403e315ec91}} 
+bool {\bfseries Back}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_key_loader_ad1df7738f5801afd5e89a2a7f1e00fd1}\label{class_key_loader_ad1df7738f5801afd5e89a2a7f1e00fd1}} 
+bool {\bfseries Start\+Key}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_key_loader_a99de4801bb80b73597fc78522074ebb7}\label{class_key_loader_a99de4801bb80b73597fc78522074ebb7}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_key_loader_a0c057ca48be3695c65114dba52c887a1}\label{class_key_loader_a0c057ca48be3695c65114dba52c887a1}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_key_loader_a49a8cae65d49a448aa479c32105a7259}\label{class_key_loader_a49a8cae65d49a448aa479c32105a7259}} 
+I\+Enumerator {\bfseries Set\+Key\+Wait\+Cor} (int time)
+\item 
+\mbox{\Hypertarget{class_key_loader_a1f0112881b03e94bf57ea8a4fb87d63c}\label{class_key_loader_a1f0112881b03e94bf57ea8a4fb87d63c}} 
+I\+Enumerator {\bfseries Set\+Stick\+Wait\+Cor} (int time)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_key_loader_a93e39a51b410774fb1179f0985d922bf}\label{class_key_loader_a93e39a51b410774fb1179f0985d922bf}} 
+Gamepad\+Input.\+Game\+Pad.\+Index {\bfseries pnam}
+\item 
+\mbox{\Hypertarget{class_key_loader_aad43d73762d5e9f241b7879d755daab5}\label{class_key_loader_aad43d73762d5e9f241b7879d755daab5}} 
+bool {\bfseries button\+Wait} = false
+\item 
+\mbox{\Hypertarget{class_key_loader_a7894f40527eb083c37dd0aeab0df4588}\label{class_key_loader_a7894f40527eb083c37dd0aeab0df4588}} 
+Game\+Pad.\+Button {\bfseries jump\+Button} = Game\+Pad.\+Button.\+A
+\item 
+\mbox{\Hypertarget{class_key_loader_a1b5f69ce9f81983ea1883d08bec6afad}\label{class_key_loader_a1b5f69ce9f81983ea1883d08bec6afad}} 
+Game\+Pad.\+Button {\bfseries magic\+Button} = Game\+Pad.\+Button.\+B
+\item 
+\mbox{\Hypertarget{class_key_loader_a2532e3720d95472eb1178db18371a605}\label{class_key_loader_a2532e3720d95472eb1178db18371a605}} 
+bool {\bfseries Debug\+Mode} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+キー読み込みの制御 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_key_loader_ae74fc217257c432cd43de1712c9b51ec}\label{class_key_loader_ae74fc217257c432cd43de1712c9b51ec}} 
+\index{Key\+Loader@{Key\+Loader}!Is\+Any\+Key@{Is\+Any\+Key}}
+\index{Is\+Any\+Key@{Is\+Any\+Key}!Key\+Loader@{Key\+Loader}}
+\subsubsection{\texorpdfstring{Is\+Any\+Key()}{IsAnyKey()}}
+{\footnotesize\ttfamily bool Key\+Loader.\+Is\+Any\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+どこかのボタンが押されているか 
+
+\begin{DoxyReturn}{Returns}
+押されているか
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_key_loader_a76cd182f014f01a82281552ececc46fc}\label{class_key_loader_a76cd182f014f01a82281552ececc46fc}} 
+\index{Key\+Loader@{Key\+Loader}!Key\+Release@{Key\+Release}}
+\index{Key\+Release@{Key\+Release}!Key\+Loader@{Key\+Loader}}
+\subsubsection{\texorpdfstring{Key\+Release()}{KeyRelease()}}
+{\footnotesize\ttfamily void Key\+Loader.\+Key\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+キーの解放 
+
+\mbox{\Hypertarget{class_key_loader_a0d56df66026ce30f307682f82fcadf33}\label{class_key_loader_a0d56df66026ce30f307682f82fcadf33}} 
+\index{Key\+Loader@{Key\+Loader}!Key\+Reload@{Key\+Reload}}
+\index{Key\+Reload@{Key\+Reload}!Key\+Loader@{Key\+Loader}}
+\subsubsection{\texorpdfstring{Key\+Reload()}{KeyReload()}}
+{\footnotesize\ttfamily void Key\+Loader.\+Key\+Reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+アクションキーの更新 
+
+\mbox{\Hypertarget{class_key_loader_a1a4482487b406f1c9a3a0df3186f223c}\label{class_key_loader_a1a4482487b406f1c9a3a0df3186f223c}} 
+\index{Key\+Loader@{Key\+Loader}!Key\+Update@{Key\+Update}}
+\index{Key\+Update@{Key\+Update}!Key\+Loader@{Key\+Loader}}
+\subsubsection{\texorpdfstring{Key\+Update()}{KeyUpdate()}}
+{\footnotesize\ttfamily void Key\+Loader.\+Key\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+キーの更新 
+
+\mbox{\Hypertarget{class_key_loader_a7907d4061b1bfdf6bf007a5ce6ee24e8}\label{class_key_loader_a7907d4061b1bfdf6bf007a5ce6ee24e8}} 
+\index{Key\+Loader@{Key\+Loader}!Set\+Key\+Wait@{Set\+Key\+Wait}}
+\index{Set\+Key\+Wait@{Set\+Key\+Wait}!Key\+Loader@{Key\+Loader}}
+\subsubsection{\texorpdfstring{Set\+Key\+Wait()}{SetKeyWait()}}
+{\footnotesize\ttfamily void Key\+Loader.\+Set\+Key\+Wait (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+キーにウェイトをかける 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & 時間\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_key_loader_a29ba5c6b4850d69c4d4577eb2e6159ec}\label{class_key_loader_a29ba5c6b4850d69c4d4577eb2e6159ec}} 
+\index{Key\+Loader@{Key\+Loader}!Set\+Stick\+Wait@{Set\+Stick\+Wait}}
+\index{Set\+Stick\+Wait@{Set\+Stick\+Wait}!Key\+Loader@{Key\+Loader}}
+\subsubsection{\texorpdfstring{Set\+Stick\+Wait()}{SetStickWait()}}
+{\footnotesize\ttfamily void Key\+Loader.\+Set\+Stick\+Wait (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+スティックキーにウェイトをかける 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & 時間\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_key_loader_a61a1d81edb2cddfe02f5710a28db50a1}\label{class_key_loader_a61a1d81edb2cddfe02f5710a28db50a1}} 
+\index{Key\+Loader@{Key\+Loader}!Vibration@{Vibration}}
+\index{Vibration@{Vibration}!Key\+Loader@{Key\+Loader}}
+\subsubsection{\texorpdfstring{Vibration()}{Vibration()}}
+{\footnotesize\ttfamily I\+Enumerator Key\+Loader.\+Vibration (\begin{DoxyParamCaption}\item[{float}]{count,  }\item[{float}]{vibration\+Powerx,  }\item[{float}]{vibration\+Powery }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+バイブレーション 
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & 時間\\
+\hline
+{\em vibration\+Powerx} & 右の強さ\\
+\hline
+{\em vibration\+Powery} & 左の強さ\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Common\+Script/\+Key\+Loader/Key\+Loader.\+cs\end{DoxyCompactItemize}

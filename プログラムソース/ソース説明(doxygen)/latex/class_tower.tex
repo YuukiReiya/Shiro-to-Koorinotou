@@ -1,0 +1,229 @@
+\hypertarget{class_tower}{}\section{Tower Class Reference}
+\label{class_tower}\index{Tower@{Tower}}
+
+
+左右の壁の制御する 製作者：冨田 大悟  
+
+
+Inheritance diagram for Tower\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tower}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_ac92263cd69f43b776446028c755abe58}\label{class_tower_ac92263cd69f43b776446028c755abe58}} 
+enum {\bfseries Hit\+Block} \{ {\bfseries R\+I\+G\+H\+T\+E\+ND}, 
+{\bfseries L\+E\+F\+T\+E\+ND}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_ac6af62bda9775ecb9f99bbe6850e1fc0}\label{class_tower_ac6af62bda9775ecb9f99bbe6850e1fc0}} 
+void {\bfseries Wall\+Set} ()
+\item 
+void \hyperlink{class_tower_a4ea25831f8d1fcaac113e6aa4acaa4aa}{Tower\+Update} ()
+\begin{DoxyCompactList}\small\item\em タワーの更新 \end{DoxyCompactList}\item 
+bool \hyperlink{class_tower_afecc60cb00b3fa47cf08b4b49428eceb}{Is\+In\+Player\+Died\+Range} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーが死亡位置にいるか \end{DoxyCompactList}\item 
+bool \hyperlink{class_tower_a689abb96a9ad55f182a393499d0e4469}{Is\+Dead\+Speed} ()
+\begin{DoxyCompactList}\small\item\em 終了する速度になっているか \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_a82ea6ca91315d00b450765abb4223875}\label{class_tower_a82ea6ca91315d00b450765abb4223875}} 
+float {\bfseries time} = 0.\+01f
+\item 
+\mbox{\Hypertarget{class_tower_aa3bc2fcfac5272e356f109d0aedd873d}\label{class_tower_aa3bc2fcfac5272e356f109d0aedd873d}} 
+float {\bfseries spacing} = 20
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_ab6fb4c9cfb1895d6a4785c7b2eb5950f}\label{class_tower_ab6fb4c9cfb1895d6a4785c7b2eb5950f}} 
+bool {\bfseries end}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_tower_a9a3d7e8afc95d30a0c33af8d34a86580}\label{class_tower_a9a3d7e8afc95d30a0c33af8d34a86580}} 
+Hit\+Block {\bfseries hit\+Block}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_a27481580a6c5d53115224704ee816cfd}\label{class_tower_a27481580a6c5d53115224704ee816cfd}} 
+void {\bfseries Start} ()
+\item 
+void \hyperlink{class_tower_a5e3288c47bd324050fc3bf3a944b6182}{Tower\+Move} ()
+\begin{DoxyCompactList}\small\item\em 壁の移動 \end{DoxyCompactList}\item 
+void \hyperlink{class_tower_a876271f182e443afbf24c59a5bee3fd9}{Player\+Hit} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーがクリア位置に到達判定 \end{DoxyCompactList}\item 
+void \hyperlink{class_tower_ae677bb0263feb2c923801a2c3699796e}{Speed\+Up\+Pos} ()
+\begin{DoxyCompactList}\small\item\em タワーの加速の制御 \end{DoxyCompactList}\item 
+void \hyperlink{class_tower_a0d51b488f4a8bb8596222b342f48799e}{Move\+End} ()
+\begin{DoxyCompactList}\small\item\em タワーが閉じたか判定 \end{DoxyCompactList}\item 
+void \hyperlink{class_tower_a28221b36c86603e04ea08244fb630b8c}{Check\+Block\+Obj\+Ins} ()
+\begin{DoxyCompactList}\small\item\em 壁に氷が当たった時の処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_tower_aa742c79c293976905d8948f338e163d5}{Hit\+Block\+Obj} (\hyperlink{class_block_obj}{Block\+Obj} bo, Game\+Object wall\+Go, bool lefthit)
+\begin{DoxyCompactList}\small\item\em 氷が壁に当たった時の処理 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tower_a822223b4500ce04e03c8d1402b68323d}\label{class_tower_a822223b4500ce04e03c8d1402b68323d}} 
+void {\bfseries On\+Trigger\+Stay} (Collider other)
+\item 
+\mbox{\Hypertarget{class_tower_a32bc35850a4c1c6b25b47cae42d6e2cd}\label{class_tower_a32bc35850a4c1c6b25b47cae42d6e2cd}} 
+void {\bfseries On\+Trigger\+Exit} (Collider other)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_a2ed8c698f1611007c14baeaee2ae4582}\label{class_tower_a2ed8c698f1611007c14baeaee2ae4582}} 
+\hyperlink{class_wall}{Wall} {\bfseries left\+Wall}
+\item 
+\mbox{\Hypertarget{class_tower_a48afd1f3d4785f843d26f117bd559b8a}\label{class_tower_a48afd1f3d4785f843d26f117bd559b8a}} 
+\hyperlink{class_wall}{Wall} {\bfseries right\+Wall}
+\item 
+\mbox{\Hypertarget{class_tower_a446443ca89df0877642e2ae8142a5dc0}\label{class_tower_a446443ca89df0877642e2ae8142a5dc0}} 
+float {\bfseries left\+End}
+\item 
+\mbox{\Hypertarget{class_tower_a2bf2fe454c186e72883e8a1bfa8786e5}\label{class_tower_a2bf2fe454c186e72883e8a1bfa8786e5}} 
+float {\bfseries right\+End}
+\item 
+\mbox{\Hypertarget{class_tower_afcc853a988af4aecb5ce1e5d21476117}\label{class_tower_afcc853a988af4aecb5ce1e5d21476117}} 
+int {\bfseries tower\+Count}
+\item 
+\mbox{\Hypertarget{class_tower_a960c48cbc697e1fb7a2e61fb42704c21}\label{class_tower_a960c48cbc697e1fb7a2e61fb42704c21}} 
+int {\bfseries end\+Time} = (int)(1250 $\ast$ 0.\+8f)
+\item 
+\mbox{\Hypertarget{class_tower_afab98b12b467829d02905a7ddf7401ed}\label{class_tower_afab98b12b467829d02905a7ddf7401ed}} 
+Audio\+Clip {\bfseries batan}
+\item 
+\mbox{\Hypertarget{class_tower_a87aadb56854248dd085e55d1ec4c3daa}\label{class_tower_a87aadb56854248dd085e55d1ec4c3daa}} 
+bool {\bfseries player\+Died\+Range}
+\item 
+\mbox{\Hypertarget{class_tower_aaf6c9efd8e1753175a2df033ba918b19}\label{class_tower_aaf6c9efd8e1753175a2df033ba918b19}} 
+string {\bfseries floor\+Obj\+Name} = \char`\"{}Floor\+Obj\char`\"{}
+\item 
+\mbox{\Hypertarget{class_tower_ad30bbf3df003f612f3d2e2a676d1ca16}\label{class_tower_ad30bbf3df003f612f3d2e2a676d1ca16}} 
+Game\+Object {\bfseries floor\+Obj}
+\item 
+\mbox{\Hypertarget{class_tower_acdbfbaac3abf53313182d6a9254c547f}\label{class_tower_acdbfbaac3abf53313182d6a9254c547f}} 
+List$<$ \hyperlink{class_block_obj}{Block\+Obj} $>$ {\bfseries block\+Chexk}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+左右の壁の制御する 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tower_a28221b36c86603e04ea08244fb630b8c}\label{class_tower_a28221b36c86603e04ea08244fb630b8c}} 
+\index{Tower@{Tower}!Check\+Block\+Obj\+Ins@{Check\+Block\+Obj\+Ins}}
+\index{Check\+Block\+Obj\+Ins@{Check\+Block\+Obj\+Ins}!Tower@{Tower}}
+\subsubsection{\texorpdfstring{Check\+Block\+Obj\+Ins()}{CheckBlockObjIns()}}
+{\footnotesize\ttfamily void Tower.\+Check\+Block\+Obj\+Ins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+壁に氷が当たった時の処理 
+
+\mbox{\Hypertarget{class_tower_aa742c79c293976905d8948f338e163d5}\label{class_tower_aa742c79c293976905d8948f338e163d5}} 
+\index{Tower@{Tower}!Hit\+Block\+Obj@{Hit\+Block\+Obj}}
+\index{Hit\+Block\+Obj@{Hit\+Block\+Obj}!Tower@{Tower}}
+\subsubsection{\texorpdfstring{Hit\+Block\+Obj()}{HitBlockObj()}}
+{\footnotesize\ttfamily void Tower.\+Hit\+Block\+Obj (\begin{DoxyParamCaption}\item[{\hyperlink{class_block_obj}{Block\+Obj}}]{bo,  }\item[{Game\+Object}]{wall\+Go,  }\item[{bool}]{lefthit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+氷が壁に当たった時の処理 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bo} & 判定するブロック\\
+\hline
+{\em wall\+Go} & 壁\\
+\hline
+{\em lefthit} & 左右の判定\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tower_a689abb96a9ad55f182a393499d0e4469}\label{class_tower_a689abb96a9ad55f182a393499d0e4469}} 
+\index{Tower@{Tower}!Is\+Dead\+Speed@{Is\+Dead\+Speed}}
+\index{Is\+Dead\+Speed@{Is\+Dead\+Speed}!Tower@{Tower}}
+\subsubsection{\texorpdfstring{Is\+Dead\+Speed()}{IsDeadSpeed()}}
+{\footnotesize\ttfamily bool Tower.\+Is\+Dead\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+終了する速度になっているか 
+
+\begin{DoxyReturn}{Returns}
+trueなら終了速度
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tower_afecc60cb00b3fa47cf08b4b49428eceb}\label{class_tower_afecc60cb00b3fa47cf08b4b49428eceb}} 
+\index{Tower@{Tower}!Is\+In\+Player\+Died\+Range@{Is\+In\+Player\+Died\+Range}}
+\index{Is\+In\+Player\+Died\+Range@{Is\+In\+Player\+Died\+Range}!Tower@{Tower}}
+\subsubsection{\texorpdfstring{Is\+In\+Player\+Died\+Range()}{IsInPlayerDiedRange()}}
+{\footnotesize\ttfamily bool Tower.\+Is\+In\+Player\+Died\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+プレイヤーが死亡位置にいるか 
+
+\begin{DoxyReturn}{Returns}
+trueならいる
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tower_a0d51b488f4a8bb8596222b342f48799e}\label{class_tower_a0d51b488f4a8bb8596222b342f48799e}} 
+\index{Tower@{Tower}!Move\+End@{Move\+End}}
+\index{Move\+End@{Move\+End}!Tower@{Tower}}
+\subsubsection{\texorpdfstring{Move\+End()}{MoveEnd()}}
+{\footnotesize\ttfamily void Tower.\+Move\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+タワーが閉じたか判定 
+
+\mbox{\Hypertarget{class_tower_a876271f182e443afbf24c59a5bee3fd9}\label{class_tower_a876271f182e443afbf24c59a5bee3fd9}} 
+\index{Tower@{Tower}!Player\+Hit@{Player\+Hit}}
+\index{Player\+Hit@{Player\+Hit}!Tower@{Tower}}
+\subsubsection{\texorpdfstring{Player\+Hit()}{PlayerHit()}}
+{\footnotesize\ttfamily void Tower.\+Player\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+プレイヤーがクリア位置に到達判定 
+
+\mbox{\Hypertarget{class_tower_ae677bb0263feb2c923801a2c3699796e}\label{class_tower_ae677bb0263feb2c923801a2c3699796e}} 
+\index{Tower@{Tower}!Speed\+Up\+Pos@{Speed\+Up\+Pos}}
+\index{Speed\+Up\+Pos@{Speed\+Up\+Pos}!Tower@{Tower}}
+\subsubsection{\texorpdfstring{Speed\+Up\+Pos()}{SpeedUpPos()}}
+{\footnotesize\ttfamily void Tower.\+Speed\+Up\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+タワーの加速の制御 
+
+\mbox{\Hypertarget{class_tower_a5e3288c47bd324050fc3bf3a944b6182}\label{class_tower_a5e3288c47bd324050fc3bf3a944b6182}} 
+\index{Tower@{Tower}!Tower\+Move@{Tower\+Move}}
+\index{Tower\+Move@{Tower\+Move}!Tower@{Tower}}
+\subsubsection{\texorpdfstring{Tower\+Move()}{TowerMove()}}
+{\footnotesize\ttfamily void Tower.\+Tower\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+壁の移動 
+
+\mbox{\Hypertarget{class_tower_a4ea25831f8d1fcaac113e6aa4acaa4aa}\label{class_tower_a4ea25831f8d1fcaac113e6aa4acaa4aa}} 
+\index{Tower@{Tower}!Tower\+Update@{Tower\+Update}}
+\index{Tower\+Update@{Tower\+Update}!Tower@{Tower}}
+\subsubsection{\texorpdfstring{Tower\+Update()}{TowerUpdate()}}
+{\footnotesize\ttfamily void Tower.\+Tower\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+タワーの更新 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Tower/Tower.\+cs\end{DoxyCompactItemize}

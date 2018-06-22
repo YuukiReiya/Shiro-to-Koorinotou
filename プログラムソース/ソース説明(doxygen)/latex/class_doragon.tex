@@ -1,0 +1,230 @@
+\hypertarget{class_doragon}{}\section{Doragon Class Reference}
+\label{class_doragon}\index{Doragon@{Doragon}}
+
+
+ドラゴンの敵 製作者：冨田 大悟  
+
+
+Inheritance diagram for Doragon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_doragon}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_doragon_ad83502ad8778d1e9fa0f6d2d72526d85}{Floor\+Rotate} ()
+\begin{DoxyCompactList}\small\item\em 階層の反転 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_doragon_acd4044a679832e13cbcd81973f40ad9d}\label{class_doragon_acd4044a679832e13cbcd81973f40ad9d}} 
+override void {\bfseries Start} ()
+\item 
+override void \hyperlink{class_doragon_abf6c6c47805aa970c8dac34b61f38719}{Enemy\+Update} ()
+\begin{DoxyCompactList}\small\item\em ドラゴンの\+Fixed\+Update \end{DoxyCompactList}\item 
+override \hyperlink{class_block_obj}{Block\+Obj} \hyperlink{class_doragon_a981089224fd04b5d556eae0b9801112f}{Block\+Obj\+Pop} ()
+\begin{DoxyCompactList}\small\item\em ドラゴンの\+Block\+Obj\+Pop \end{DoxyCompactList}\item 
+override void \hyperlink{class_doragon_a1fcb48ea850873c4b6d19cc3d215d2f5}{reaching\+Pos} ()
+\begin{DoxyCompactList}\small\item\em ドラゴンの目標到達時の処理 \end{DoxyCompactList}\item 
+override void \hyperlink{class_doragon_ada19292614ee1a706b373875fab11a01}{Set\+Target\+Pos} ()
+\begin{DoxyCompactList}\small\item\em ドラゴンの目標座標の設定 \end{DoxyCompactList}\item 
+override void \hyperlink{class_doragon_a598414769bbb8243a523b937eba7225e}{add\+Move\+Nam} (int adds)
+\begin{DoxyCompactList}\small\item\em ドラゴンの目標座標の更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{[}$\,$\mbox{]} \hyperlink{class_doragon_adb79c5d8427528e7e4bbf36c6e911ad2}{pos\+Wait}
+\begin{DoxyCompactList}\small\item\em 目標座標に到達時のウェイト \end{DoxyCompactList}\item 
+int \hyperlink{class_doragon_a1c12e99bbb3fa6cc68e0df213c0dd642}{wait\+Count}
+\begin{DoxyCompactList}\small\item\em ウェイトカウント \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_doragon_a01a776d0cd525350c471a7a5b7cec015}{rotate\+Obj}
+\begin{DoxyCompactList}\small\item\em 回転するオブジェクト \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_doragon_a981bbd240522378c526222e73f1be32f}{left\+Move}
+\begin{DoxyCompactList}\small\item\em 左移動しているときの回転 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_doragon_afd49bbf4f66601ee15b641d08b7f8077}{right\+Move}
+\begin{DoxyCompactList}\small\item\em 右移動しているときの回転 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_doragon_aaba104d1d08e2b4a5203fa89b434623b}{aice\+Block\+Rotate\+Left}
+\begin{DoxyCompactList}\small\item\em 左移動しているときの凍った時の回転 \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_doragon_a4bc9a71a737302f2b6aa847ff3a6884c}{aice\+Block\+Rotate\+Right}
+\begin{DoxyCompactList}\small\item\em 右移動しているときの凍った時の回転 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+ドラゴンの敵 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_doragon_a598414769bbb8243a523b937eba7225e}\label{class_doragon_a598414769bbb8243a523b937eba7225e}} 
+\index{Doragon@{Doragon}!add\+Move\+Nam@{add\+Move\+Nam}}
+\index{add\+Move\+Nam@{add\+Move\+Nam}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{add\+Move\+Nam()}{addMoveNam()}}
+{\footnotesize\ttfamily override void Doragon.\+add\+Move\+Nam (\begin{DoxyParamCaption}\item[{int}]{adds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ドラゴンの目標座標の更新 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adds} & 進行方向\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_target_move_ace85a95cffab1a4ce3f782c9be95248c}{Target\+Move}.
+
+\mbox{\Hypertarget{class_doragon_a981089224fd04b5d556eae0b9801112f}\label{class_doragon_a981089224fd04b5d556eae0b9801112f}} 
+\index{Doragon@{Doragon}!Block\+Obj\+Pop@{Block\+Obj\+Pop}}
+\index{Block\+Obj\+Pop@{Block\+Obj\+Pop}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{Block\+Obj\+Pop()}{BlockObjPop()}}
+{\footnotesize\ttfamily override \hyperlink{class_block_obj}{Block\+Obj} Doragon.\+Block\+Obj\+Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ドラゴンの\+Block\+Obj\+Pop 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_enemy_ab56d4c134b6fc007e07e6825b04f11a5}{Enemy}.
+
+\mbox{\Hypertarget{class_doragon_abf6c6c47805aa970c8dac34b61f38719}\label{class_doragon_abf6c6c47805aa970c8dac34b61f38719}} 
+\index{Doragon@{Doragon}!Enemy\+Update@{Enemy\+Update}}
+\index{Enemy\+Update@{Enemy\+Update}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{Enemy\+Update()}{EnemyUpdate()}}
+{\footnotesize\ttfamily override void Doragon.\+Enemy\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ドラゴンの\+Fixed\+Update 
+
+
+
+Reimplemented from \hyperlink{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}{Enemy}.
+
+\mbox{\Hypertarget{class_doragon_ad83502ad8778d1e9fa0f6d2d72526d85}\label{class_doragon_ad83502ad8778d1e9fa0f6d2d72526d85}} 
+\index{Doragon@{Doragon}!Floor\+Rotate@{Floor\+Rotate}}
+\index{Floor\+Rotate@{Floor\+Rotate}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{Floor\+Rotate()}{FloorRotate()}}
+{\footnotesize\ttfamily override void Doragon.\+Floor\+Rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+階層の反転 
+
+
+
+Reimplemented from \hyperlink{class_enemy_add93027b5ee19288ed26aa6f98fb88f8}{Enemy}.
+
+\mbox{\Hypertarget{class_doragon_a1fcb48ea850873c4b6d19cc3d215d2f5}\label{class_doragon_a1fcb48ea850873c4b6d19cc3d215d2f5}} 
+\index{Doragon@{Doragon}!reaching\+Pos@{reaching\+Pos}}
+\index{reaching\+Pos@{reaching\+Pos}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{reaching\+Pos()}{reachingPos()}}
+{\footnotesize\ttfamily override void Doragon.\+reaching\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ドラゴンの目標到達時の処理 
+
+
+
+Reimplemented from \hyperlink{class_target_move_aaac3d0086f68958d440f2131559894f2}{Target\+Move}.
+
+\mbox{\Hypertarget{class_doragon_ada19292614ee1a706b373875fab11a01}\label{class_doragon_ada19292614ee1a706b373875fab11a01}} 
+\index{Doragon@{Doragon}!Set\+Target\+Pos@{Set\+Target\+Pos}}
+\index{Set\+Target\+Pos@{Set\+Target\+Pos}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{Set\+Target\+Pos()}{SetTargetPos()}}
+{\footnotesize\ttfamily override void Doragon.\+Set\+Target\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+ドラゴンの目標座標の設定 
+
+
+
+Reimplemented from \hyperlink{class_target_move_a72a50d04fd830edcb8ae5d3b63c3cc36}{Target\+Move}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_doragon_aaba104d1d08e2b4a5203fa89b434623b}\label{class_doragon_aaba104d1d08e2b4a5203fa89b434623b}} 
+\index{Doragon@{Doragon}!aice\+Block\+Rotate\+Left@{aice\+Block\+Rotate\+Left}}
+\index{aice\+Block\+Rotate\+Left@{aice\+Block\+Rotate\+Left}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{aice\+Block\+Rotate\+Left}{aiceBlockRotateLeft}}
+{\footnotesize\ttfamily Vector3 Doragon.\+aice\+Block\+Rotate\+Left\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+左移動しているときの凍った時の回転 
+
+\mbox{\Hypertarget{class_doragon_a4bc9a71a737302f2b6aa847ff3a6884c}\label{class_doragon_a4bc9a71a737302f2b6aa847ff3a6884c}} 
+\index{Doragon@{Doragon}!aice\+Block\+Rotate\+Right@{aice\+Block\+Rotate\+Right}}
+\index{aice\+Block\+Rotate\+Right@{aice\+Block\+Rotate\+Right}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{aice\+Block\+Rotate\+Right}{aiceBlockRotateRight}}
+{\footnotesize\ttfamily Vector3 Doragon.\+aice\+Block\+Rotate\+Right\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+右移動しているときの凍った時の回転 
+
+\mbox{\Hypertarget{class_doragon_a981bbd240522378c526222e73f1be32f}\label{class_doragon_a981bbd240522378c526222e73f1be32f}} 
+\index{Doragon@{Doragon}!left\+Move@{left\+Move}}
+\index{left\+Move@{left\+Move}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{left\+Move}{leftMove}}
+{\footnotesize\ttfamily Vector3 Doragon.\+left\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+左移動しているときの回転 
+
+\mbox{\Hypertarget{class_doragon_adb79c5d8427528e7e4bbf36c6e911ad2}\label{class_doragon_adb79c5d8427528e7e4bbf36c6e911ad2}} 
+\index{Doragon@{Doragon}!pos\+Wait@{pos\+Wait}}
+\index{pos\+Wait@{pos\+Wait}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{pos\+Wait}{posWait}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Doragon.\+pos\+Wait\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+目標座標に到達時のウェイト 
+
+\mbox{\Hypertarget{class_doragon_afd49bbf4f66601ee15b641d08b7f8077}\label{class_doragon_afd49bbf4f66601ee15b641d08b7f8077}} 
+\index{Doragon@{Doragon}!right\+Move@{right\+Move}}
+\index{right\+Move@{right\+Move}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{right\+Move}{rightMove}}
+{\footnotesize\ttfamily Vector3 Doragon.\+right\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+右移動しているときの回転 
+
+\mbox{\Hypertarget{class_doragon_a01a776d0cd525350c471a7a5b7cec015}\label{class_doragon_a01a776d0cd525350c471a7a5b7cec015}} 
+\index{Doragon@{Doragon}!rotate\+Obj@{rotate\+Obj}}
+\index{rotate\+Obj@{rotate\+Obj}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{rotate\+Obj}{rotateObj}}
+{\footnotesize\ttfamily Game\+Object Doragon.\+rotate\+Obj\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+回転するオブジェクト 
+
+\mbox{\Hypertarget{class_doragon_a1c12e99bbb3fa6cc68e0df213c0dd642}\label{class_doragon_a1c12e99bbb3fa6cc68e0df213c0dd642}} 
+\index{Doragon@{Doragon}!wait\+Count@{wait\+Count}}
+\index{wait\+Count@{wait\+Count}!Doragon@{Doragon}}
+\subsubsection{\texorpdfstring{wait\+Count}{waitCount}}
+{\footnotesize\ttfamily int Doragon.\+wait\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ウェイトカウント 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Doragon.\+cs\end{DoxyCompactItemize}

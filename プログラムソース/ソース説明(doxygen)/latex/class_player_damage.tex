@@ -1,0 +1,124 @@
+\hypertarget{class_player_damage}{}\section{Player\+Damage Class Reference}
+\label{class_player_damage}\index{Player\+Damage@{Player\+Damage}}
+
+
+プレイヤーのダメージを制御 製作者：冨田 大悟  
+
+
+Inheritance diagram for Player\+Damage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_damage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_damage_a79eb4af6729d0340caf7725e4121f886}{Damage\+Cansel} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーのダメージ状態を元に戻す \end{DoxyCompactList}\item 
+void \hyperlink{class_player_damage_ada1f62dd6ab0c1b7888f7154f8bcb2ba}{Damage} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーにダメージを与える \end{DoxyCompactList}\item 
+void \hyperlink{class_player_damage_a4702eb72b4be3f5bd35861c5ed45a376}{Invicile} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーの点滅処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_player_damage_a445cc91819e5c5397ac1f992ea9f471b}{Set\+Animes} (\hyperlink{class_player_animation}{Player\+Animation} \+\_\+animes)
+\begin{DoxyCompactList}\small\item\em プレイヤーのアニメをセットする \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_damage_a4944af93ba5758f5461e0d4dfecff70f}\label{class_player_damage_a4944af93ba5758f5461e0d4dfecff70f}} 
+int {\bfseries confusion\+Count}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_damage_aa48816ae52d56fa5a194b50459619956}\label{class_player_damage_aa48816ae52d56fa5a194b50459619956}} 
+\hyperlink{class_player}{Player} {\bfseries player}
+\item 
+\mbox{\Hypertarget{class_player_damage_ab8abab5e15aea696ff5bf888471dfee6}\label{class_player_damage_ab8abab5e15aea696ff5bf888471dfee6}} 
+\hyperlink{class_player_animation}{Player\+Animation} {\bfseries animes}
+\item 
+\mbox{\Hypertarget{class_player_damage_aed30905e09787f58a99daaa5c20b4954}\label{class_player_damage_aed30905e09787f58a99daaa5c20b4954}} 
+int {\bfseries invincible\+Time} = 50
+\item 
+\mbox{\Hypertarget{class_player_damage_a21b0ef72075c4b50f1c46cfcc5b23f8c}\label{class_player_damage_a21b0ef72075c4b50f1c46cfcc5b23f8c}} 
+int {\bfseries invincible\+Count}
+\item 
+\mbox{\Hypertarget{class_player_damage_ac2afe44bda7145925a62ecf11241ad50}\label{class_player_damage_ac2afe44bda7145925a62ecf11241ad50}} 
+int {\bfseries stan\+Time} = 20
+\item 
+\mbox{\Hypertarget{class_player_damage_af43ba37a28f5a5619557faec28654059}\label{class_player_damage_af43ba37a28f5a5619557faec28654059}} 
+int {\bfseries flashing\+Count}
+\item 
+\mbox{\Hypertarget{class_player_damage_a8a4854ec7f9ddc93f66cf49791855ff2}\label{class_player_damage_a8a4854ec7f9ddc93f66cf49791855ff2}} 
+int {\bfseries flashing\+On\+Time} = 2
+\item 
+\mbox{\Hypertarget{class_player_damage_a32d1cfa983a30d4caf9741ca48d54e47}\label{class_player_damage_a32d1cfa983a30d4caf9741ca48d54e47}} 
+int {\bfseries flashing\+Off\+Time} = 3
+\item 
+\mbox{\Hypertarget{class_player_damage_ac3138371fd9d6b795c83c393c9f2d17d}\label{class_player_damage_ac3138371fd9d6b795c83c393c9f2d17d}} 
+Game\+Object {\bfseries flashing\+Obj}
+\item 
+\mbox{\Hypertarget{class_player_damage_ad354cf5d957cfb67cd628b0f0a248c5d}\label{class_player_damage_ad354cf5d957cfb67cd628b0f0a248c5d}} 
+float {\bfseries vibration\+Time}
+\item 
+\mbox{\Hypertarget{class_player_damage_af5d02783493369c4274f9ae7c588c935}\label{class_player_damage_af5d02783493369c4274f9ae7c588c935}} 
+Vector2 {\bfseries vibration\+Power}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+プレイヤーのダメージを制御 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_damage_ada1f62dd6ab0c1b7888f7154f8bcb2ba}\label{class_player_damage_ada1f62dd6ab0c1b7888f7154f8bcb2ba}} 
+\index{Player\+Damage@{Player\+Damage}!Damage@{Damage}}
+\index{Damage@{Damage}!Player\+Damage@{Player\+Damage}}
+\subsubsection{\texorpdfstring{Damage()}{Damage()}}
+{\footnotesize\ttfamily void Player\+Damage.\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+プレイヤーにダメージを与える 
+
+\mbox{\Hypertarget{class_player_damage_a79eb4af6729d0340caf7725e4121f886}\label{class_player_damage_a79eb4af6729d0340caf7725e4121f886}} 
+\index{Player\+Damage@{Player\+Damage}!Damage\+Cansel@{Damage\+Cansel}}
+\index{Damage\+Cansel@{Damage\+Cansel}!Player\+Damage@{Player\+Damage}}
+\subsubsection{\texorpdfstring{Damage\+Cansel()}{DamageCansel()}}
+{\footnotesize\ttfamily void Player\+Damage.\+Damage\+Cansel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+プレイヤーのダメージ状態を元に戻す 
+
+\mbox{\Hypertarget{class_player_damage_a4702eb72b4be3f5bd35861c5ed45a376}\label{class_player_damage_a4702eb72b4be3f5bd35861c5ed45a376}} 
+\index{Player\+Damage@{Player\+Damage}!Invicile@{Invicile}}
+\index{Invicile@{Invicile}!Player\+Damage@{Player\+Damage}}
+\subsubsection{\texorpdfstring{Invicile()}{Invicile()}}
+{\footnotesize\ttfamily void Player\+Damage.\+Invicile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+プレイヤーの点滅処理 
+
+\mbox{\Hypertarget{class_player_damage_a445cc91819e5c5397ac1f992ea9f471b}\label{class_player_damage_a445cc91819e5c5397ac1f992ea9f471b}} 
+\index{Player\+Damage@{Player\+Damage}!Set\+Animes@{Set\+Animes}}
+\index{Set\+Animes@{Set\+Animes}!Player\+Damage@{Player\+Damage}}
+\subsubsection{\texorpdfstring{Set\+Animes()}{SetAnimes()}}
+{\footnotesize\ttfamily void Player\+Damage.\+Set\+Animes (\begin{DoxyParamCaption}\item[{\hyperlink{class_player_animation}{Player\+Animation}}]{\+\_\+animes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+プレイヤーのアニメをセットする 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+animes} & セットするアニメ\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Player/\+Player\+Script/Player\+Damage.\+cs\end{DoxyCompactItemize}

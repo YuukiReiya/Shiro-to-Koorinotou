@@ -1,0 +1,176 @@
+\hypertarget{class_enemy_pop_system}{}\section{Enemy\+Pop\+System Class Reference}
+\label{class_enemy_pop_system}\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+
+
+ステージの敵の現れ方 製作者：冨田 大悟  
+
+
+Inheritance diagram for Enemy\+Pop\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_enemy_pop_system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_enemy_pop_system_acf99799679b3492826bfc9d0831bc133}{E\+P\+S\+F\+One} ()
+\begin{DoxyCompactList}\small\item\em 開始時の一階層目の処理 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_pop_system_a7959c0ca2427fb054d2592e7a068fa7e}{E\+P\+S\+F\+All} ()
+\begin{DoxyCompactList}\small\item\em 開始時の二階層目以降の処理 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_pop_system_ac3881414166c809e8958d01e46ba1f91}{E\+P\+S\+Start} ()
+\begin{DoxyCompactList}\small\item\em 階層の開始 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_pop_system_a35ab795e11acf6b03ae726ca276852a2}{E\+P\+S\+Update} ()
+\begin{DoxyCompactList}\small\item\em 階層の更新 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_pop_system_a0dff3d5cf8729600043c1875be746eed}{Camaera\+Up\+Stert} ()
+\begin{DoxyCompactList}\small\item\em 開始前のカメラ上昇の開始 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_pop_system_af242685f6dfd6d73c04ad284c7ae714c}{Camaera\+Up\+Update} ()
+\begin{DoxyCompactList}\small\item\em 開始前のカメラ上昇の開始 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_pop_system_a86c3886d3f4603c9acf3356afadcc72a}{Camaera\+Up\+End} ()
+\begin{DoxyCompactList}\small\item\em 開始前のカメラ上昇の終了 \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_enemy_pop_system_ad19396ecf796350cedde7a996d4b3843}{Tower\+End} ()
+\begin{DoxyCompactList}\small\item\em タワーが閉じた瞬間 \end{DoxyCompactList}\item 
+void \hyperlink{class_enemy_pop_system_a876d042c43e62e8ad3a7cd96a945f7f7}{Set\+End\+Block} (Tower.\+Hit\+Block hb)
+\begin{DoxyCompactList}\small\item\em 終了したブロックの方向 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_pop_system_a75bd67147850e787e86dc89f7abeda62}\label{class_enemy_pop_system_a75bd67147850e787e86dc89f7abeda62}} 
+Tower.\+Hit\+Block {\bfseries hit\+Block}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ステージの敵の現れ方 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_pop_system_a86c3886d3f4603c9acf3356afadcc72a}\label{class_enemy_pop_system_a86c3886d3f4603c9acf3356afadcc72a}} 
+\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}!Camaera\+Up\+End@{Camaera\+Up\+End}}
+\index{Camaera\+Up\+End@{Camaera\+Up\+End}!Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+\subsubsection{\texorpdfstring{Camaera\+Up\+End()}{CamaeraUpEnd()}}
+{\footnotesize\ttfamily virtual void Enemy\+Pop\+System.\+Camaera\+Up\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+開始前のカメラ上昇の終了 
+
+
+
+Reimplemented in \hyperlink{class_object_arrangement_system_ab4a0e5a7a8e5488cbae90f485bb86e5f}{Object\+Arrangement\+System}.
+
+\mbox{\Hypertarget{class_enemy_pop_system_a0dff3d5cf8729600043c1875be746eed}\label{class_enemy_pop_system_a0dff3d5cf8729600043c1875be746eed}} 
+\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}!Camaera\+Up\+Stert@{Camaera\+Up\+Stert}}
+\index{Camaera\+Up\+Stert@{Camaera\+Up\+Stert}!Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+\subsubsection{\texorpdfstring{Camaera\+Up\+Stert()}{CamaeraUpStert()}}
+{\footnotesize\ttfamily virtual void Enemy\+Pop\+System.\+Camaera\+Up\+Stert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+開始前のカメラ上昇の開始 
+
+
+
+Reimplemented in \hyperlink{class_object_arrangement_system_a98764c494fecf8dce4726107d4539374}{Object\+Arrangement\+System}.
+
+\mbox{\Hypertarget{class_enemy_pop_system_af242685f6dfd6d73c04ad284c7ae714c}\label{class_enemy_pop_system_af242685f6dfd6d73c04ad284c7ae714c}} 
+\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}!Camaera\+Up\+Update@{Camaera\+Up\+Update}}
+\index{Camaera\+Up\+Update@{Camaera\+Up\+Update}!Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+\subsubsection{\texorpdfstring{Camaera\+Up\+Update()}{CamaeraUpUpdate()}}
+{\footnotesize\ttfamily virtual void Enemy\+Pop\+System.\+Camaera\+Up\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+開始前のカメラ上昇の開始 
+
+
+
+Reimplemented in \hyperlink{class_object_arrangement_system_a7fba170e4af44f3ea4083edebe7e74fc}{Object\+Arrangement\+System}.
+
+\mbox{\Hypertarget{class_enemy_pop_system_a7959c0ca2427fb054d2592e7a068fa7e}\label{class_enemy_pop_system_a7959c0ca2427fb054d2592e7a068fa7e}} 
+\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}!E\+P\+S\+F\+All@{E\+P\+S\+F\+All}}
+\index{E\+P\+S\+F\+All@{E\+P\+S\+F\+All}!Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+\subsubsection{\texorpdfstring{E\+P\+S\+F\+All()}{EPSFAll()}}
+{\footnotesize\ttfamily virtual void Enemy\+Pop\+System.\+E\+P\+S\+F\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+開始時の二階層目以降の処理 
+
+\mbox{\Hypertarget{class_enemy_pop_system_acf99799679b3492826bfc9d0831bc133}\label{class_enemy_pop_system_acf99799679b3492826bfc9d0831bc133}} 
+\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}!E\+P\+S\+F\+One@{E\+P\+S\+F\+One}}
+\index{E\+P\+S\+F\+One@{E\+P\+S\+F\+One}!Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+\subsubsection{\texorpdfstring{E\+P\+S\+F\+One()}{EPSFOne()}}
+{\footnotesize\ttfamily virtual void Enemy\+Pop\+System.\+E\+P\+S\+F\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+開始時の一階層目の処理 
+
+
+
+Reimplemented in \hyperlink{class_object_arrangement_system_ade64515d0fbc603769836f567070264c}{Object\+Arrangement\+System}.
+
+\mbox{\Hypertarget{class_enemy_pop_system_ac3881414166c809e8958d01e46ba1f91}\label{class_enemy_pop_system_ac3881414166c809e8958d01e46ba1f91}} 
+\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}!E\+P\+S\+Start@{E\+P\+S\+Start}}
+\index{E\+P\+S\+Start@{E\+P\+S\+Start}!Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+\subsubsection{\texorpdfstring{E\+P\+S\+Start()}{EPSStart()}}
+{\footnotesize\ttfamily virtual void Enemy\+Pop\+System.\+E\+P\+S\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+階層の開始 
+
+
+
+Reimplemented in \hyperlink{class_object_arrangement_system_a52e57370ef553b04a50cf8ee6ae81f64}{Object\+Arrangement\+System}.
+
+\mbox{\Hypertarget{class_enemy_pop_system_a35ab795e11acf6b03ae726ca276852a2}\label{class_enemy_pop_system_a35ab795e11acf6b03ae726ca276852a2}} 
+\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}!E\+P\+S\+Update@{E\+P\+S\+Update}}
+\index{E\+P\+S\+Update@{E\+P\+S\+Update}!Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+\subsubsection{\texorpdfstring{E\+P\+S\+Update()}{EPSUpdate()}}
+{\footnotesize\ttfamily virtual void Enemy\+Pop\+System.\+E\+P\+S\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+階層の更新 
+
+
+
+Reimplemented in \hyperlink{class_object_arrangement_system_ad41ad5ccd9012b9992e9ae7c65768082}{Object\+Arrangement\+System}.
+
+\mbox{\Hypertarget{class_enemy_pop_system_a876d042c43e62e8ad3a7cd96a945f7f7}\label{class_enemy_pop_system_a876d042c43e62e8ad3a7cd96a945f7f7}} 
+\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}!Set\+End\+Block@{Set\+End\+Block}}
+\index{Set\+End\+Block@{Set\+End\+Block}!Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+\subsubsection{\texorpdfstring{Set\+End\+Block()}{SetEndBlock()}}
+{\footnotesize\ttfamily void Enemy\+Pop\+System.\+Set\+End\+Block (\begin{DoxyParamCaption}\item[{Tower.\+Hit\+Block}]{hb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+終了したブロックの方向 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hb} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_pop_system_ad19396ecf796350cedde7a996d4b3843}\label{class_enemy_pop_system_ad19396ecf796350cedde7a996d4b3843}} 
+\index{Enemy\+Pop\+System@{Enemy\+Pop\+System}!Tower\+End@{Tower\+End}}
+\index{Tower\+End@{Tower\+End}!Enemy\+Pop\+System@{Enemy\+Pop\+System}}
+\subsubsection{\texorpdfstring{Tower\+End()}{TowerEnd()}}
+{\footnotesize\ttfamily virtual void Enemy\+Pop\+System.\+Tower\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+タワーが閉じた瞬間 
+
+
+
+Reimplemented in \hyperlink{class_object_arrangement_system_a3f1c0ac72189d1a065596b408b04348e}{Object\+Arrangement\+System}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Tower/\+Enemy\+Pop\+System\+Script/Enemy\+Pop\+System.\+cs\end{DoxyCompactItemize}

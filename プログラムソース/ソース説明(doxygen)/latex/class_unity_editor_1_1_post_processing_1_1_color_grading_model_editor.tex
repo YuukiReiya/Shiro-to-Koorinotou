@@ -1,0 +1,186 @@
+\hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor}{}\section{Unity\+Editor.\+Post\+Processing.\+Color\+Grading\+Model\+Editor Class Reference}
+\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor}\index{Unity\+Editor.\+Post\+Processing.\+Color\+Grading\+Model\+Editor@{Unity\+Editor.\+Post\+Processing.\+Color\+Grading\+Model\+Editor}}
+Inheritance diagram for Unity\+Editor.\+Post\+Processing.\+Color\+Grading\+Model\+Editor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_basic_settings}{Basic\+Settings}
+\item 
+struct \hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_channel_mixer_settings}{Channel\+Mixer\+Settings}
+\item 
+struct \hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_color_wheels_settings}{Color\+Wheels\+Settings}
+\item 
+struct \hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_curves_settings}{Curves\+Settings}
+\item 
+struct \hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_tonemapping_settings}{Tonemapping\+Settings}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a9304ac2ec59d4c192e9783635da1592e}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a9304ac2ec59d4c192e9783635da1592e}} 
+override void {\bfseries On\+Enable} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aab4148dee7ad4938498e7f12556ebac6}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aab4148dee7ad4938498e7f12556ebac6}} 
+override void {\bfseries On\+Disable} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a72e18f9836c9d26b8ee326d7f9e0f855}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a72e18f9836c9d26b8ee326d7f9e0f855}} 
+override void {\bfseries On\+Inspector\+G\+UI} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a6a155a500587d1375dfe4b999f8e1110}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a6a155a500587d1375dfe4b999f8e1110}} 
+void {\bfseries Add\+Curve} (Serialized\+Property prop, Color color, uint min\+Point\+Count, bool loop)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ad308784858d913a248bfad7c1589f2f2}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ad308784858d913a248bfad7c1589f2f2}} 
+void {\bfseries Do\+G\+U\+I\+For} (string title, Action func)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a879a95a03c66bd33ad29292184bece50}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a879a95a03c66bd33ad29292184bece50}} 
+void {\bfseries Do\+Tonemapping\+G\+UI} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ae93319f337bd49aea677729ec4d1b575}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ae93319f337bd49aea677729ec4d1b575}} 
+void {\bfseries Draw\+Neutral\+Tonemapping\+Curve} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a4d3b36da5a557e7778c40c6142a8aa20}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a4d3b36da5a557e7778c40c6142a8aa20}} 
+void {\bfseries Draw\+Line} (float x1, float y1, float x2, float y2, float grayscale)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa99e05d459fbb9fc5686eba1c732d878}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa99e05d459fbb9fc5686eba1c732d878}} 
+Vector3 {\bfseries Point\+In\+Rect} (float x, float y)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa438674a84e1b555e4b1354a021e948e}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa438674a84e1b555e4b1354a021e948e}} 
+float {\bfseries Neutral\+Curve} (float x, float a, float b, float c, float d, float e, float f)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a87b14e6dca2df7118635d58d27836196}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a87b14e6dca2df7118635d58d27836196}} 
+float {\bfseries Neutral\+Tonemap} (float x, float a, float b, float c, float d, float e, float f, float white\+Level, float white\+Clip)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a7f05966115cbe2b35e04af4f99a7e315}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a7f05966115cbe2b35e04af4f99a7e315}} 
+void {\bfseries Do\+Basic\+G\+UI} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa65b499335c8d92d0f7a5c9a3cdee4b0}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa65b499335c8d92d0f7a5c9a3cdee4b0}} 
+void {\bfseries Do\+Channel\+Mixer\+G\+UI} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a033cdc58307a182ccf59897060ff094e}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a033cdc58307a182ccf59897060ff094e}} 
+void {\bfseries Do\+Color\+Wheels\+G\+UI} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ad03c2e80c64099dc8f2828166b862488}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ad03c2e80c64099dc8f2828166b862488}} 
+void {\bfseries Reset\+Visible\+Curves} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_acc3b74043cfc9975a0bc3b25ae7bd9c2}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_acc3b74043cfc9975a0bc3b25ae7bd9c2}} 
+void {\bfseries Set\+Curve\+Visible} (Serialized\+Property prop)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa13cc60c085b1282df05077c5dedaee8}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa13cc60c085b1282df05077c5dedaee8}} 
+bool {\bfseries Special\+Toggle} (bool value, string name, out bool right\+Clicked)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a0ddf0edd4f583c6b98b24b195ed98c3b}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a0ddf0edd4f583c6b98b24b195ed98c3b}} 
+void {\bfseries Do\+Curves\+G\+UI} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a2626dc29f3a978c149d921717daee940}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a2626dc29f3a978c149d921717daee940}} 
+void {\bfseries Draw\+Background\+Texture} (Rect rect, int pass)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ac66ca2e0870cc15eb92e4971cd02c931}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ac66ca2e0870cc15eb92e4971cd02c931}} 
+static void {\bfseries Wheel\+Set\+Title} (Rect position, string label)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ab7aaf10230f5b0382e7d08af2a37b6ec}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ab7aaf10230f5b0382e7d08af2a37b6ec}} 
+\hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_tonemapping_settings}{Tonemapping\+Settings} {\bfseries m\+\_\+\+Tonemapping}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a3b581a8964a3a11dadd1e9061d61cbd1}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a3b581a8964a3a11dadd1e9061d61cbd1}} 
+\hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_basic_settings}{Basic\+Settings} {\bfseries m\+\_\+\+Basic}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa7fe5d6340600cd80291716fa267658c}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa7fe5d6340600cd80291716fa267658c}} 
+\hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_channel_mixer_settings}{Channel\+Mixer\+Settings} {\bfseries m\+\_\+\+Channel\+Mixer}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a36804616c791b5f9b18ce783e26c41b9}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a36804616c791b5f9b18ce783e26c41b9}} 
+\hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_color_wheels_settings}{Color\+Wheels\+Settings} {\bfseries m\+\_\+\+Color\+Wheels}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_afba17cf4593043c5bfc80391278dd85b}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_afba17cf4593043c5bfc80391278dd85b}} 
+\hyperlink{struct_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_1_1_curves_settings}{Curves\+Settings} {\bfseries m\+\_\+\+Curves}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a9112f75ca4adf6e8beb09bc01dd1e579}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a9112f75ca4adf6e8beb09bc01dd1e579}} 
+\hyperlink{class_unity_editor_1_1_post_processing_1_1_curve_editor}{Curve\+Editor} {\bfseries m\+\_\+\+Curve\+Editor}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa75080985c56364f73757d132b81880a}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aa75080985c56364f73757d132b81880a}} 
+Dictionary$<$ Serialized\+Property, Color $>$ {\bfseries m\+\_\+\+Curve\+Dict}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a08937213be27f4ae94bdb1b4fc92577c}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a08937213be27f4ae94bdb1b4fc92577c}} 
+const int {\bfseries k\+\_\+\+Curve\+Resolution} = 24
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a45a31e15a6cf629a6acd44b3de346392}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a45a31e15a6cf629a6acd44b3de346392}} 
+const float {\bfseries k\+\_\+\+Neutral\+RangeX} = 2f
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a37adc3af59bcb99c81b7fa955c3159b1}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a37adc3af59bcb99c81b7fa955c3159b1}} 
+const float {\bfseries k\+\_\+\+Neutral\+RangeY} = 1f
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aaf7da5c394db75c576f05d5c6f31b90b}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_aaf7da5c394db75c576f05d5c6f31b90b}} 
+Vector3 \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Rect\+Vertices} = new Vector3\mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a67cba20cce96ed7a2806d09462d32707}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a67cba20cce96ed7a2806d09462d32707}} 
+Vector3 \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Line\+Vertices} = new Vector3\mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a909c2368109db961e7b6bd4130360752}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a909c2368109db961e7b6bd4130360752}} 
+Vector3 \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Curve\+Vertices} = new Vector3\mbox{[}k\+\_\+\+Curve\+Resolution\mbox{]}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a7ad4db5fded8b1b7f87ee5d5fee83cd7}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a7ad4db5fded8b1b7f87ee5d5fee83cd7}} 
+Rect {\bfseries m\+\_\+\+Neutral\+Curve\+Rect}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static G\+U\+I\+Content \mbox{[}$\,$\mbox{]} {\bfseries s\+\_\+\+Tonemappers}
+\item 
+static G\+U\+I\+Content \mbox{[}$\,$\mbox{]} {\bfseries s\+\_\+\+Curves}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a237cf219a6166621cab988a47986e6ac}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a237cf219a6166621cab988a47986e6ac}} 
+static Material {\bfseries s\+\_\+\+Material\+Spline}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a9937de232005ef761d2151738870ce5a}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_a9937de232005ef761d2151738870ce5a}} 
+\index{Unity\+Editor\+::\+Post\+Processing\+::\+Color\+Grading\+Model\+Editor@{Unity\+Editor\+::\+Post\+Processing\+::\+Color\+Grading\+Model\+Editor}!s\+\_\+\+Curves@{s\+\_\+\+Curves}}
+\index{s\+\_\+\+Curves@{s\+\_\+\+Curves}!Unity\+Editor\+::\+Post\+Processing\+::\+Color\+Grading\+Model\+Editor@{Unity\+Editor\+::\+Post\+Processing\+::\+Color\+Grading\+Model\+Editor}}
+\subsubsection{\texorpdfstring{s\+\_\+\+Curves}{s\_Curves}}
+{\footnotesize\ttfamily G\+U\+I\+Content \mbox{[}$\,$\mbox{]} Unity\+Editor.\+Post\+Processing.\+Color\+Grading\+Model\+Editor.\+s\+\_\+\+Curves\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+        \{
+            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"YRGB"}),
+            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Hue VS Hue"}),
+            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Hue VS Sat"}),
+            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Sat VS Sat"}),
+            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Lum VS Sat"})
+        \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ab0c132fcde3b3c384cfa4210ac3bc558}\label{class_unity_editor_1_1_post_processing_1_1_color_grading_model_editor_ab0c132fcde3b3c384cfa4210ac3bc558}} 
+\index{Unity\+Editor\+::\+Post\+Processing\+::\+Color\+Grading\+Model\+Editor@{Unity\+Editor\+::\+Post\+Processing\+::\+Color\+Grading\+Model\+Editor}!s\+\_\+\+Tonemappers@{s\+\_\+\+Tonemappers}}
+\index{s\+\_\+\+Tonemappers@{s\+\_\+\+Tonemappers}!Unity\+Editor\+::\+Post\+Processing\+::\+Color\+Grading\+Model\+Editor@{Unity\+Editor\+::\+Post\+Processing\+::\+Color\+Grading\+Model\+Editor}}
+\subsubsection{\texorpdfstring{s\+\_\+\+Tonemappers}{s\_Tonemappers}}
+{\footnotesize\ttfamily G\+U\+I\+Content \mbox{[}$\,$\mbox{]} Unity\+Editor.\+Post\+Processing.\+Color\+Grading\+Model\+Editor.\+s\+\_\+\+Tonemappers\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+        \{
+            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"None"}),
+            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Filmic (ACES)"}),
+            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Neutral"})
+        \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Editor/\+Models/Color\+Grading\+Model\+Editor.\+cs\end{DoxyCompactItemize}

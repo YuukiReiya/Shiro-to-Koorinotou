@@ -1,0 +1,95 @@
+\hypertarget{class_floor_move_obj}{}\section{Floor\+Move\+Obj Class Reference}
+\label{class_floor_move_obj}\index{Floor\+Move\+Obj@{Floor\+Move\+Obj}}
+
+
+フロア(\+Game\+Object)がシュッと出て来る関数 制作者\+:番場 宥輝  
+
+
+Inheritance diagram for Floor\+Move\+Obj\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_floor_move_obj}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerator \hyperlink{class_floor_move_obj_a2952b0fa6b0cea5e88ddd03ca07c82ec}{Slide\+Put} ()
+\begin{DoxyCompactList}\small\item\em フロア1$\sim$6まで順番にスライド移動しながら出てくるコルーチン \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_floor_move_obj_a66592e739e390e7bd43c0d73e112577c}{Slide\+Out} ()
+\begin{DoxyCompactList}\small\item\em フロア1$\sim$6まで順番にスライド移動しながら画面外に移動するコルーチン \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_floor_move_obj_a563f523d4fcd23fea63a5895eb8f44a5}\label{class_floor_move_obj_a563f523d4fcd23fea63a5895eb8f44a5}} 
+bool {\bfseries is\+Moving}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_floor_move_obj_a59c1e0eb2b520cc42ad34159eacb9e32}{Start} ()
+\begin{DoxyCompactList}\small\item\em フロアの初期位置をinitialpos分左にズラした値にする \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_floor_move_obj_a24516bd2aa1b359d7d6004262ae1ef9e}\label{class_floor_move_obj_a24516bd2aa1b359d7d6004262ae1ef9e}} 
+Game\+Object \mbox{[}$\,$\mbox{]} {\bfseries floor}
+\item 
+\mbox{\Hypertarget{class_floor_move_obj_ac37370cc720066e141a7b30f569ccbf5}\label{class_floor_move_obj_ac37370cc720066e141a7b30f569ccbf5}} 
+const float {\bfseries initialpos} = 10
+\item 
+\mbox{\Hypertarget{class_floor_move_obj_ada6be5710a08f663acdce9c7dd53771c}\label{class_floor_move_obj_ada6be5710a08f663acdce9c7dd53771c}} 
+float \mbox{[}$\,$\mbox{]} {\bfseries targetpos}
+\item 
+\mbox{\Hypertarget{class_floor_move_obj_a8d900a86ea074b20586b3bcadad5902b}\label{class_floor_move_obj_a8d900a86ea074b20586b3bcadad5902b}} 
+const float {\bfseries speed} = 2.\+5f
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+フロア(\+Game\+Object)がシュッと出て来る関数 制作者\+:番場 宥輝 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_floor_move_obj_a66592e739e390e7bd43c0d73e112577c}\label{class_floor_move_obj_a66592e739e390e7bd43c0d73e112577c}} 
+\index{Floor\+Move\+Obj@{Floor\+Move\+Obj}!Slide\+Out@{Slide\+Out}}
+\index{Slide\+Out@{Slide\+Out}!Floor\+Move\+Obj@{Floor\+Move\+Obj}}
+\subsubsection{\texorpdfstring{Slide\+Out()}{SlideOut()}}
+{\footnotesize\ttfamily I\+Enumerator Floor\+Move\+Obj.\+Slide\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+フロア1$\sim$6まで順番にスライド移動しながら画面外に移動するコルーチン 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_floor_move_obj_a2952b0fa6b0cea5e88ddd03ca07c82ec}\label{class_floor_move_obj_a2952b0fa6b0cea5e88ddd03ca07c82ec}} 
+\index{Floor\+Move\+Obj@{Floor\+Move\+Obj}!Slide\+Put@{Slide\+Put}}
+\index{Slide\+Put@{Slide\+Put}!Floor\+Move\+Obj@{Floor\+Move\+Obj}}
+\subsubsection{\texorpdfstring{Slide\+Put()}{SlidePut()}}
+{\footnotesize\ttfamily I\+Enumerator Floor\+Move\+Obj.\+Slide\+Put (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+フロア1$\sim$6まで順番にスライド移動しながら出てくるコルーチン 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_floor_move_obj_a59c1e0eb2b520cc42ad34159eacb9e32}\label{class_floor_move_obj_a59c1e0eb2b520cc42ad34159eacb9e32}} 
+\index{Floor\+Move\+Obj@{Floor\+Move\+Obj}!Start@{Start}}
+\index{Start@{Start}!Floor\+Move\+Obj@{Floor\+Move\+Obj}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Floor\+Move\+Obj.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+フロアの初期位置をinitialpos分左にズラした値にする 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Scene/\+Stage\+Select/\+Scripts/Floor\+Move\+Obj.\+cs\end{DoxyCompactItemize}

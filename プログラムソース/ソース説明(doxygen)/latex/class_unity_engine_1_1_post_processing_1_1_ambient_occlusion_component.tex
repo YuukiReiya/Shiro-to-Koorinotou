@@ -1,0 +1,82 @@
+\hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component}{}\section{Unity\+Engine.\+Post\+Processing.\+Ambient\+Occlusion\+Component Class Reference}
+\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component}\index{Unity\+Engine.\+Post\+Processing.\+Ambient\+Occlusion\+Component@{Unity\+Engine.\+Post\+Processing.\+Ambient\+Occlusion\+Component}}
+Inheritance diagram for Unity\+Engine.\+Post\+Processing.\+Ambient\+Occlusion\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.921098cm]{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_1_1_uniforms}{Uniforms}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_ad75fa4a0898e2d84ffaa842433864c79}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_ad75fa4a0898e2d84ffaa842433864c79}} 
+override Depth\+Texture\+Mode {\bfseries Get\+Camera\+Flags} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a912e17f44f887c19511e31cb4211551c}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a912e17f44f887c19511e31cb4211551c}} 
+override string {\bfseries Get\+Name} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a40c2e1160a63cb63a910d9e232515001}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a40c2e1160a63cb63a910d9e232515001}} 
+override Camera\+Event {\bfseries Get\+Camera\+Event} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a5f64f7638a6a441cf4bdaeb54dbf1601}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a5f64f7638a6a441cf4bdaeb54dbf1601}} 
+override void {\bfseries Populate\+Command\+Buffer} (Command\+Buffer cb)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a383c6904f750ce5bfe1fd0d69a851fe9}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a383c6904f750ce5bfe1fd0d69a851fe9}} 
+Occlusion\+Source {\bfseries occlusion\+Source}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a818d8d0378085206d92f401ae73c7234}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a818d8d0378085206d92f401ae73c7234}} 
+bool {\bfseries ambient\+Only\+Supported}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a5fa0bbd6818c812f5ffb524b6467fb5c}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a5fa0bbd6818c812f5ffb524b6467fb5c}} 
+override bool {\bfseries active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_acd3f992f84c91d742f1f7715065fede0}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_acd3f992f84c91d742f1f7715065fede0}} 
+enum {\bfseries Occlusion\+Source} \{ {\bfseries Depth\+Texture}, 
+{\bfseries Depth\+Normals\+Texture}, 
+{\bfseries G\+Buffer}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a0394e96a1c17573f8e7d249b62eda9a1}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a0394e96a1c17573f8e7d249b62eda9a1}} 
+const string {\bfseries k\+\_\+\+Blit\+Shader\+String} = \char`\"{}Hidden/Post FX/Blit\char`\"{}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_aab5afd366640d5f65987898bdd3d5ac5}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_aab5afd366640d5f65987898bdd3d5ac5}} 
+const string {\bfseries k\+\_\+\+Shader\+String} = \char`\"{}Hidden/Post FX/Ambient Occlusion\char`\"{}
+\item 
+readonly Render\+Target\+Identifier \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+M\+RT}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a3d271f1950fca25d561790449e95f9b0}\label{class_unity_engine_1_1_post_processing_1_1_ambient_occlusion_component_a3d271f1950fca25d561790449e95f9b0}} 
+\index{Unity\+Engine\+::\+Post\+Processing\+::\+Ambient\+Occlusion\+Component@{Unity\+Engine\+::\+Post\+Processing\+::\+Ambient\+Occlusion\+Component}!m\+\_\+\+M\+RT@{m\+\_\+\+M\+RT}}
+\index{m\+\_\+\+M\+RT@{m\+\_\+\+M\+RT}!Unity\+Engine\+::\+Post\+Processing\+::\+Ambient\+Occlusion\+Component@{Unity\+Engine\+::\+Post\+Processing\+::\+Ambient\+Occlusion\+Component}}
+\subsubsection{\texorpdfstring{m\+\_\+\+M\+RT}{m\_MRT}}
+{\footnotesize\ttfamily readonly Render\+Target\+Identifier \mbox{[}$\,$\mbox{]} Unity\+Engine.\+Post\+Processing.\+Ambient\+Occlusion\+Component.\+m\+\_\+\+M\+RT\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+        \{
+            BuiltinRenderTextureType.GBuffer0, 
+            BuiltinRenderTextureType.CameraTarget 
+        \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Runtime/\+Components/Ambient\+Occlusion\+Component.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component}{}\section{Unity\+Engine.\+Post\+Processing.\+Screen\+Space\+Reflection\+Component Class Reference}
+\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component}\index{Unity\+Engine.\+Post\+Processing.\+Screen\+Space\+Reflection\+Component@{Unity\+Engine.\+Post\+Processing.\+Screen\+Space\+Reflection\+Component}}
+Inheritance diagram for Unity\+Engine.\+Post\+Processing.\+Screen\+Space\+Reflection\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.824104cm]{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_1_1_uniforms}{Uniforms}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_aeaa198759ea4fae9a6ee5feac84730fa}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_aeaa198759ea4fae9a6ee5feac84730fa}} 
+override Depth\+Texture\+Mode {\bfseries Get\+Camera\+Flags} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a0d58b4de3e36450e06df20a4de6bd84c}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a0d58b4de3e36450e06df20a4de6bd84c}} 
+override void {\bfseries On\+Enable} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_ad4da13965c3b67798e594134f70505e3}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_ad4da13965c3b67798e594134f70505e3}} 
+override string {\bfseries Get\+Name} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a696726c8892304b37695a69c900b2b97}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a696726c8892304b37695a69c900b2b97}} 
+override Camera\+Event {\bfseries Get\+Camera\+Event} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a816b26c983d2e6b8723a049dafa72544}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a816b26c983d2e6b8723a049dafa72544}} 
+override void {\bfseries Populate\+Command\+Buffer} (Command\+Buffer cb)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_aa8700a0b57b1a9d4a9d928af7fb3fbad}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_aa8700a0b57b1a9d4a9d928af7fb3fbad}} 
+override bool {\bfseries active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a436158720e345bea4820f47196b748fe}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a436158720e345bea4820f47196b748fe}} 
+enum {\bfseries Pass\+Index} \{ \newline
+{\bfseries Ray\+Trace\+Step} = 0, 
+{\bfseries Composite\+Final} = 1, 
+{\bfseries Blur} = 2, 
+{\bfseries Composite\+S\+SR} = 3, 
+\newline
+{\bfseries Min\+Mip\+Generation} = 4, 
+{\bfseries Hit\+Point\+To\+Reflections} = 5, 
+{\bfseries Bilateral\+Key\+Pack} = 6, 
+{\bfseries Blit\+Depth\+As\+C\+SZ} = 7, 
+\newline
+{\bfseries Poisson\+Blur} = 8
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a096d2ef9820013ddb79b0bd4d23d4b0c}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a096d2ef9820013ddb79b0bd4d23d4b0c}} 
+bool {\bfseries k\+\_\+\+Highlight\+Suppression} = false
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a7fe586e0cf7002cdff8bcabd0576720a}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a7fe586e0cf7002cdff8bcabd0576720a}} 
+bool {\bfseries k\+\_\+\+Trace\+Behind\+Objects} = true
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a405f360e417e577179cf1dde4b5402da}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a405f360e417e577179cf1dde4b5402da}} 
+bool {\bfseries k\+\_\+\+Treat\+Backface\+Hit\+As\+Miss} = false
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a10d58abd7dfda248863c117cdd480ace}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a10d58abd7dfda248863c117cdd480ace}} 
+bool {\bfseries k\+\_\+\+Bilateral\+Upsample} = true
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a275d34901b7119d6da79847beac8fa8e}\label{class_unity_engine_1_1_post_processing_1_1_screen_space_reflection_component_a275d34901b7119d6da79847beac8fa8e}} 
+readonly int \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Reflection\+Textures} = new int\mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Runtime/\+Components/Screen\+Space\+Reflection\+Component.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,276 @@
+\hypertarget{class_pause}{}\section{Pause Class Reference}
+\label{class_pause}\index{Pause@{Pause}}
+
+
+ステージセレクトのポーズ処理を行うクラス 制作者\+:番場 宥輝  
+
+
+Inheritance diagram for Pause\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pause}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_pause_a71b592c36b0dec43fd994e27eb324553}{Pause\+Update} ()
+\begin{DoxyCompactList}\small\item\em ポーズの処理を行う関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_pause_ab516653ae42cf624b0fc448f1616ed10}{Open} ()
+\item 
+void \hyperlink{class_pause_a1bed2e1a05bef4f1d9fcaeba5b8bd2fe}{Reset} ()
+\begin{DoxyCompactList}\small\item\em 値の初期化を行う関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pause_aa2c440cb2264a9ed225e8ff48ab0b616}\label{class_pause_aa2c440cb2264a9ed225e8ff48ab0b616}} 
+bool {\bfseries is\+Displaying}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_pause_a4149a10a956627fef2dbfca9e9720fb2}\label{class_pause_a4149a10a956627fef2dbfca9e9720fb2}} 
+bool {\bfseries is\+Changing}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pause_a2676d511f741a690dd8a1d6f64aef89c}\label{class_pause_a2676d511f741a690dd8a1d6f64aef89c}} 
+void {\bfseries Start} ()
+\item 
+void \hyperlink{class_pause_a36cf62bf6f61444398a76283c40372a3}{Close} ()
+\begin{DoxyCompactList}\small\item\em ポーズ画面を閉じる関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_pause_ab00490b873a9359aae7e84f9145e6b6e}{Select\+Menu} ()
+\begin{DoxyCompactList}\small\item\em メニュー変更 \end{DoxyCompactList}\item 
+void \hyperlink{class_pause_ae232ecdb930782ddadd1c8ff94b5a232}{Setting1} ()
+\begin{DoxyCompactList}\small\item\em 深度1の設定を変更する関数を制御する \end{DoxyCompactList}\item 
+void \hyperlink{class_pause_a8fde416d52c686a5df745b56193703cd}{Setting2} ()
+\begin{DoxyCompactList}\small\item\em 深度2の設定を変更する関数を制御する \end{DoxyCompactList}\item 
+void \hyperlink{class_pause_aaf1a1ade7e3f8d741a454bc3dd4a2a39}{Setting\+B\+GM} ()
+\begin{DoxyCompactList}\small\item\em B\+G\+Mの音量を変更する関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_pause_a169932331432bf421d19a9fafdd6800f}{Setting\+SE} ()
+\begin{DoxyCompactList}\small\item\em S\+Eの音量を変更する関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_pause_a5dff9113158ef08a7c9ee48b12827b22}{Setting\+Jump} ()
+\begin{DoxyCompactList}\small\item\em ジャンプのキーを変更する関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_pause_ac6996ec18e769c7af8b0f29a4d78e8d7}{Setting\+Magic} ()
+\begin{DoxyCompactList}\small\item\em 魔法のキーを変更する関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_pause_a132605f67bd5ff4dacdec6adfcb104f0}{Return\+Title} ()
+\begin{DoxyCompactList}\small\item\em タイトルに戻る処理を行う関数 \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_pause_ac99fd26d97c3fb53f035c64a7f77c7d0}{Return\+Title\+Routine} (int frame)
+\begin{DoxyCompactList}\small\item\em 引数フレーム待ちタイトルにシーン遷移するコルーチン \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pause_a1ef15392c52442f736b7f40cfaea627e}\label{class_pause_a1ef15392c52442f736b7f40cfaea627e}} 
+\hyperlink{class_change_scale}{Change\+Scale} {\bfseries w\+Pause}
+\item 
+\mbox{\Hypertarget{class_pause_a4264fdd5b4d4b5c6daa6c1b384390082}\label{class_pause_a4264fdd5b4d4b5c6daa6c1b384390082}} 
+int {\bfseries menu} = Menu.\+C\+L\+O\+SE
+\item 
+\mbox{\Hypertarget{class_pause_a24599a3a40516580d486e13d506e0368}\label{class_pause_a24599a3a40516580d486e13d506e0368}} 
+int {\bfseries setting} = S\+E\+T\+T\+I\+N\+G\+\_\+\+M\+E\+NU
+\item 
+\mbox{\Hypertarget{class_pause_a904e6a431d28b76af9592875ddf4fce7}\label{class_pause_a904e6a431d28b76af9592875ddf4fce7}} 
+int {\bfseries B\+G\+Mvol}
+\item 
+\mbox{\Hypertarget{class_pause_a5e7dd9a07c8fe5dd7f65bb807e94f39a}\label{class_pause_a5e7dd9a07c8fe5dd7f65bb807e94f39a}} 
+int {\bfseries S\+Evol}
+\item 
+\mbox{\Hypertarget{class_pause_a36269a84092d52f119fc0253775c59c0}\label{class_pause_a36269a84092d52f119fc0253775c59c0}} 
+int {\bfseries jump}
+\item 
+\mbox{\Hypertarget{class_pause_adf36bc8fef636a5831f3f5ade4ad8c60}\label{class_pause_adf36bc8fef636a5831f3f5ade4ad8c60}} 
+int {\bfseries magic}
+\item 
+\mbox{\Hypertarget{class_pause_a19f62c88a1046fc6f8502cd661e3a023}\label{class_pause_a19f62c88a1046fc6f8502cd661e3a023}} 
+\hyperlink{class_stage_select_back_shadows}{Stage\+Select\+Back\+Shadows} {\bfseries black\+Shadow}
+\item 
+\mbox{\Hypertarget{class_pause_ad647209de39987b39ee7e20ac6692050}\label{class_pause_ad647209de39987b39ee7e20ac6692050}} 
+\hyperlink{class_stage_select_pause_u_i_outline}{Stage\+Select\+Pause\+U\+I\+Outline} {\bfseries p\+U\+Ioutline}
+\item 
+\mbox{\Hypertarget{class_pause_aeaf4fde4bb869683f1a72985ba44347f}\label{class_pause_aeaf4fde4bb869683f1a72985ba44347f}} 
+\hyperlink{class_pause_string}{Pause\+String} {\bfseries p\+String}
+\item 
+\mbox{\Hypertarget{class_pause_a0bf2516602e942bc4fdc938df558c8a9}\label{class_pause_a0bf2516602e942bc4fdc938df558c8a9}} 
+\hyperlink{class_stage_select_pause_string_outline}{Stage\+Select\+Pause\+String\+Outline} {\bfseries p\+Str\+Outline}
+\item 
+\mbox{\Hypertarget{class_pause_ab5d74d0999f19b88832026ac83eb0fb6}\label{class_pause_ab5d74d0999f19b88832026ac83eb0fb6}} 
+\hyperlink{class_volume_sprite}{Volume\+Sprite} {\bfseries bgm\+Sprite}
+\item 
+\mbox{\Hypertarget{class_pause_a29a4755fa15489b22e5493df751a8e26}\label{class_pause_a29a4755fa15489b22e5493df751a8e26}} 
+\hyperlink{class_volume_cursol_sprite}{Volume\+Cursol\+Sprite} {\bfseries bgm\+CS}
+\item 
+\mbox{\Hypertarget{class_pause_aa9f4cda3f46b2fba7d9aa0ed132d6496}\label{class_pause_aa9f4cda3f46b2fba7d9aa0ed132d6496}} 
+\hyperlink{class_volume_sprite}{Volume\+Sprite} {\bfseries se\+Sprite}
+\item 
+\mbox{\Hypertarget{class_pause_ab54f17922858174ce63e3e67f4913293}\label{class_pause_ab54f17922858174ce63e3e67f4913293}} 
+\hyperlink{class_volume_cursol_sprite}{Volume\+Cursol\+Sprite} {\bfseries se\+CS}
+\item 
+\mbox{\Hypertarget{class_pause_abf45f11ee2e1d903c653c8becbc2fc12}\label{class_pause_abf45f11ee2e1d903c653c8becbc2fc12}} 
+\hyperlink{class_key_sprite}{Key\+Sprite} {\bfseries jump\+Sprite}
+\item 
+\mbox{\Hypertarget{class_pause_a457a38a3bf1ef2259c9138d5475fe174}\label{class_pause_a457a38a3bf1ef2259c9138d5475fe174}} 
+\hyperlink{class_key_cursol_sprite}{Key\+Cursol\+Sprite} {\bfseries jump\+CS}
+\item 
+\mbox{\Hypertarget{class_pause_a2ac956a38fd3b919b6e8a410cd697801}\label{class_pause_a2ac956a38fd3b919b6e8a410cd697801}} 
+\hyperlink{class_key_sprite}{Key\+Sprite} {\bfseries magic\+Sprite}
+\item 
+\mbox{\Hypertarget{class_pause_a65b119c90df29a27f94e2894a2b81c44}\label{class_pause_a65b119c90df29a27f94e2894a2b81c44}} 
+\hyperlink{class_key_cursol_sprite}{Key\+Cursol\+Sprite} {\bfseries magic\+CS}
+\item 
+\mbox{\Hypertarget{class_pause_a6e17438ca83a2ff43fec45031946b749}\label{class_pause_a6e17438ca83a2ff43fec45031946b749}} 
+const int {\bfseries R\+E\+S\+E\+T\+\_\+\+K\+EY} = 15
+\item 
+\mbox{\Hypertarget{class_pause_a3c6d7dc43ae2069c257e57ca00ace718}\label{class_pause_a3c6d7dc43ae2069c257e57ca00ace718}} 
+const int {\bfseries S\+E\+T\+T\+I\+N\+G\+\_\+\+M\+E\+NU} = 0
+\item 
+\mbox{\Hypertarget{class_pause_a4234ff83ead3aa5ae4c0d5ea186b0d5a}\label{class_pause_a4234ff83ead3aa5ae4c0d5ea186b0d5a}} 
+const int {\bfseries S\+E\+T\+T\+I\+N\+G\+\_\+1} = 1
+\item 
+\mbox{\Hypertarget{class_pause_af22403f05b2a1343ccbff8cd3373604f}\label{class_pause_af22403f05b2a1343ccbff8cd3373604f}} 
+const int {\bfseries S\+E\+T\+T\+I\+N\+G\+\_\+2} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ステージセレクトのポーズ処理を行うクラス 制作者\+:番場 宥輝 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pause_a36cf62bf6f61444398a76283c40372a3}\label{class_pause_a36cf62bf6f61444398a76283c40372a3}} 
+\index{Pause@{Pause}!Close@{Close}}
+\index{Close@{Close}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void Pause.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ポーズ画面を閉じる関数 
+
+\mbox{\Hypertarget{class_pause_ab516653ae42cf624b0fc448f1616ed10}\label{class_pause_ab516653ae42cf624b0fc448f1616ed10}} 
+\index{Pause@{Pause}!Open@{Open}}
+\index{Open@{Open}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily void Pause.\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+$<$summar$>$ ポーズ画面を開く関数 \mbox{\Hypertarget{class_pause_a71b592c36b0dec43fd994e27eb324553}\label{class_pause_a71b592c36b0dec43fd994e27eb324553}} 
+\index{Pause@{Pause}!Pause\+Update@{Pause\+Update}}
+\index{Pause\+Update@{Pause\+Update}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Pause\+Update()}{PauseUpdate()}}
+{\footnotesize\ttfamily void Pause.\+Pause\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ポーズの処理を行う関数 
+
+\mbox{\Hypertarget{class_pause_a1bed2e1a05bef4f1d9fcaeba5b8bd2fe}\label{class_pause_a1bed2e1a05bef4f1d9fcaeba5b8bd2fe}} 
+\index{Pause@{Pause}!Reset@{Reset}}
+\index{Reset@{Reset}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Pause.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+値の初期化を行う関数 
+
+\mbox{\Hypertarget{class_pause_a132605f67bd5ff4dacdec6adfcb104f0}\label{class_pause_a132605f67bd5ff4dacdec6adfcb104f0}} 
+\index{Pause@{Pause}!Return\+Title@{Return\+Title}}
+\index{Return\+Title@{Return\+Title}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Return\+Title()}{ReturnTitle()}}
+{\footnotesize\ttfamily void Pause.\+Return\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+タイトルに戻る処理を行う関数 
+
+\mbox{\Hypertarget{class_pause_ac99fd26d97c3fb53f035c64a7f77c7d0}\label{class_pause_ac99fd26d97c3fb53f035c64a7f77c7d0}} 
+\index{Pause@{Pause}!Return\+Title\+Routine@{Return\+Title\+Routine}}
+\index{Return\+Title\+Routine@{Return\+Title\+Routine}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Return\+Title\+Routine()}{ReturnTitleRoutine()}}
+{\footnotesize\ttfamily I\+Enumerator Pause.\+Return\+Title\+Routine (\begin{DoxyParamCaption}\item[{int}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+引数フレーム待ちタイトルにシーン遷移するコルーチン 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & 処理を待つフレーム数\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pause_ab00490b873a9359aae7e84f9145e6b6e}\label{class_pause_ab00490b873a9359aae7e84f9145e6b6e}} 
+\index{Pause@{Pause}!Select\+Menu@{Select\+Menu}}
+\index{Select\+Menu@{Select\+Menu}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Select\+Menu()}{SelectMenu()}}
+{\footnotesize\ttfamily void Pause.\+Select\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+メニュー変更 
+
+\mbox{\Hypertarget{class_pause_ae232ecdb930782ddadd1c8ff94b5a232}\label{class_pause_ae232ecdb930782ddadd1c8ff94b5a232}} 
+\index{Pause@{Pause}!Setting1@{Setting1}}
+\index{Setting1@{Setting1}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Setting1()}{Setting1()}}
+{\footnotesize\ttfamily void Pause.\+Setting1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+深度1の設定を変更する関数を制御する 
+
+\mbox{\Hypertarget{class_pause_a8fde416d52c686a5df745b56193703cd}\label{class_pause_a8fde416d52c686a5df745b56193703cd}} 
+\index{Pause@{Pause}!Setting2@{Setting2}}
+\index{Setting2@{Setting2}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Setting2()}{Setting2()}}
+{\footnotesize\ttfamily void Pause.\+Setting2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+深度2の設定を変更する関数を制御する 
+
+\mbox{\Hypertarget{class_pause_aaf1a1ade7e3f8d741a454bc3dd4a2a39}\label{class_pause_aaf1a1ade7e3f8d741a454bc3dd4a2a39}} 
+\index{Pause@{Pause}!Setting\+B\+GM@{Setting\+B\+GM}}
+\index{Setting\+B\+GM@{Setting\+B\+GM}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Setting\+B\+G\+M()}{SettingBGM()}}
+{\footnotesize\ttfamily void Pause.\+Setting\+B\+GM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+B\+G\+Mの音量を変更する関数 
+
+\mbox{\Hypertarget{class_pause_a5dff9113158ef08a7c9ee48b12827b22}\label{class_pause_a5dff9113158ef08a7c9ee48b12827b22}} 
+\index{Pause@{Pause}!Setting\+Jump@{Setting\+Jump}}
+\index{Setting\+Jump@{Setting\+Jump}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Setting\+Jump()}{SettingJump()}}
+{\footnotesize\ttfamily void Pause.\+Setting\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ジャンプのキーを変更する関数 
+
+\mbox{\Hypertarget{class_pause_ac6996ec18e769c7af8b0f29a4d78e8d7}\label{class_pause_ac6996ec18e769c7af8b0f29a4d78e8d7}} 
+\index{Pause@{Pause}!Setting\+Magic@{Setting\+Magic}}
+\index{Setting\+Magic@{Setting\+Magic}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Setting\+Magic()}{SettingMagic()}}
+{\footnotesize\ttfamily void Pause.\+Setting\+Magic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+魔法のキーを変更する関数 
+
+\mbox{\Hypertarget{class_pause_a169932331432bf421d19a9fafdd6800f}\label{class_pause_a169932331432bf421d19a9fafdd6800f}} 
+\index{Pause@{Pause}!Setting\+SE@{Setting\+SE}}
+\index{Setting\+SE@{Setting\+SE}!Pause@{Pause}}
+\subsubsection{\texorpdfstring{Setting\+S\+E()}{SettingSE()}}
+{\footnotesize\ttfamily void Pause.\+Setting\+SE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+S\+Eの音量を変更する関数 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Scene/\+Stage\+Select/\+Scripts/Pause.\+cs\end{DoxyCompactItemize}

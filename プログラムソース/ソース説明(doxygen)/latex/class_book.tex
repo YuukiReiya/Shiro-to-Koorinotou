@@ -1,0 +1,193 @@
+\hypertarget{class_book}{}\section{Book Class Reference}
+\label{class_book}\index{Book@{Book}}
+
+
+本の敵 製作者：冨田 大悟  
+
+
+Inheritance diagram for Book\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_book}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_book_a2c559caf9034d31263a9a9118ef48a26}\label{class_book_a2c559caf9034d31263a9a9118ef48a26}} 
+override void {\bfseries Start} ()
+\item 
+override void \hyperlink{class_book_ad838b454ccd9f8c4e88215aa220226a4}{Enemy\+Update} ()
+\begin{DoxyCompactList}\small\item\em 本の\+Fixed\+Update \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_book_a79094da09cd65678df094ab0058b5ee5}\label{class_book_a79094da09cd65678df094ab0058b5ee5}} 
+void {\bfseries On\+Enable} ()
+\item 
+void \hyperlink{class_book_afa98fd4c4380e34a2d2e231ad0836d7c}{Create\+Gameobj} ()
+\begin{DoxyCompactList}\small\item\em 球を生成する \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_book_off_shot}{Book\+Off\+Shot} \hyperlink{class_book_a6bdde0825229953d0ca01c5f8155640c}{shot}
+\begin{DoxyCompactList}\small\item\em 本の撃つ玉 \end{DoxyCompactList}\item 
+int \hyperlink{class_book_a5a72ee51241bfe497c5ec37cca7e93b0}{create\+Time}
+\begin{DoxyCompactList}\small\item\em 球の生成間隔 \end{DoxyCompactList}\item 
+int \hyperlink{class_book_a132afd5c2381c6b72abb611b29e9cecc}{st\+Shot\+Create\+Time}
+\begin{DoxyCompactList}\small\item\em 初回生成間隔 \end{DoxyCompactList}\item 
+int \hyperlink{class_book_ad61980db8afccccb6166f620f90551f9}{effect\+Play\+Time} = 10
+\begin{DoxyCompactList}\small\item\em 球を打つ前のエフェクトの実行する時間 \end{DoxyCompactList}\item 
+int \hyperlink{class_book_af625fb16f0bc669f6ccc9547d8577ee8}{create\+Count}
+\begin{DoxyCompactList}\small\item\em 生成用のカウント \end{DoxyCompactList}\item 
+float \hyperlink{class_book_a4e63db3a3e3999e1ccaf01b9678182e7}{pop\+Pos}
+\begin{DoxyCompactList}\small\item\em 球を生成する座標の位置（半径） \end{DoxyCompactList}\item 
+int \hyperlink{class_book_abb3b0df54a256fdd22ca78d1806772d1}{stop\+Time}
+\begin{DoxyCompactList}\small\item\em エフェクトの停止用のカウント \end{DoxyCompactList}\item 
+\hyperlink{class_old_effect}{Old\+Effect} \hyperlink{class_book_a9dfb0d5289ac6d76729c958a82da5707}{move\+Efect}
+\begin{DoxyCompactList}\small\item\em 球を打つ前に現れるエフェクト \end{DoxyCompactList}\item 
+\hyperlink{class_auto_efect_start_stop}{Auto\+Efect\+Start\+Stop} \hyperlink{class_book_a11aaae4569af0471e6b5f67d4523bcf2}{autoss}
+\begin{DoxyCompactList}\small\item\em 球を打つ前に現れるエフェクトの制御 \end{DoxyCompactList}\item 
+Audio\+Clip \hyperlink{class_book_adf12a76c0251881fb97b7d3b4ee147f2}{shot\+Sound}
+\begin{DoxyCompactList}\small\item\em 球を撃った時の音 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+本の敵 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_book_afa98fd4c4380e34a2d2e231ad0836d7c}\label{class_book_afa98fd4c4380e34a2d2e231ad0836d7c}} 
+\index{Book@{Book}!Create\+Gameobj@{Create\+Gameobj}}
+\index{Create\+Gameobj@{Create\+Gameobj}!Book@{Book}}
+\subsubsection{\texorpdfstring{Create\+Gameobj()}{CreateGameobj()}}
+{\footnotesize\ttfamily void Book.\+Create\+Gameobj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+球を生成する 
+
+\mbox{\Hypertarget{class_book_ad838b454ccd9f8c4e88215aa220226a4}\label{class_book_ad838b454ccd9f8c4e88215aa220226a4}} 
+\index{Book@{Book}!Enemy\+Update@{Enemy\+Update}}
+\index{Enemy\+Update@{Enemy\+Update}!Book@{Book}}
+\subsubsection{\texorpdfstring{Enemy\+Update()}{EnemyUpdate()}}
+{\footnotesize\ttfamily override void Book.\+Enemy\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+本の\+Fixed\+Update 
+
+
+
+Reimplemented from \hyperlink{class_enemy_ab19a73003a5b443ba93f4b6a45c0abad}{Enemy}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_book_a11aaae4569af0471e6b5f67d4523bcf2}\label{class_book_a11aaae4569af0471e6b5f67d4523bcf2}} 
+\index{Book@{Book}!autoss@{autoss}}
+\index{autoss@{autoss}!Book@{Book}}
+\subsubsection{\texorpdfstring{autoss}{autoss}}
+{\footnotesize\ttfamily \hyperlink{class_auto_efect_start_stop}{Auto\+Efect\+Start\+Stop} Book.\+autoss\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+球を打つ前に現れるエフェクトの制御 
+
+\mbox{\Hypertarget{class_book_af625fb16f0bc669f6ccc9547d8577ee8}\label{class_book_af625fb16f0bc669f6ccc9547d8577ee8}} 
+\index{Book@{Book}!create\+Count@{create\+Count}}
+\index{create\+Count@{create\+Count}!Book@{Book}}
+\subsubsection{\texorpdfstring{create\+Count}{createCount}}
+{\footnotesize\ttfamily int Book.\+create\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+生成用のカウント 
+
+\mbox{\Hypertarget{class_book_a5a72ee51241bfe497c5ec37cca7e93b0}\label{class_book_a5a72ee51241bfe497c5ec37cca7e93b0}} 
+\index{Book@{Book}!create\+Time@{create\+Time}}
+\index{create\+Time@{create\+Time}!Book@{Book}}
+\subsubsection{\texorpdfstring{create\+Time}{createTime}}
+{\footnotesize\ttfamily int Book.\+create\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+球の生成間隔 
+
+\mbox{\Hypertarget{class_book_ad61980db8afccccb6166f620f90551f9}\label{class_book_ad61980db8afccccb6166f620f90551f9}} 
+\index{Book@{Book}!effect\+Play\+Time@{effect\+Play\+Time}}
+\index{effect\+Play\+Time@{effect\+Play\+Time}!Book@{Book}}
+\subsubsection{\texorpdfstring{effect\+Play\+Time}{effectPlayTime}}
+{\footnotesize\ttfamily int Book.\+effect\+Play\+Time = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+球を打つ前のエフェクトの実行する時間 
+
+\mbox{\Hypertarget{class_book_a9dfb0d5289ac6d76729c958a82da5707}\label{class_book_a9dfb0d5289ac6d76729c958a82da5707}} 
+\index{Book@{Book}!move\+Efect@{move\+Efect}}
+\index{move\+Efect@{move\+Efect}!Book@{Book}}
+\subsubsection{\texorpdfstring{move\+Efect}{moveEfect}}
+{\footnotesize\ttfamily \hyperlink{class_old_effect}{Old\+Effect} Book.\+move\+Efect\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+球を打つ前に現れるエフェクト 
+
+\mbox{\Hypertarget{class_book_a4e63db3a3e3999e1ccaf01b9678182e7}\label{class_book_a4e63db3a3e3999e1ccaf01b9678182e7}} 
+\index{Book@{Book}!pop\+Pos@{pop\+Pos}}
+\index{pop\+Pos@{pop\+Pos}!Book@{Book}}
+\subsubsection{\texorpdfstring{pop\+Pos}{popPos}}
+{\footnotesize\ttfamily float Book.\+pop\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+球を生成する座標の位置（半径） 
+
+\mbox{\Hypertarget{class_book_a6bdde0825229953d0ca01c5f8155640c}\label{class_book_a6bdde0825229953d0ca01c5f8155640c}} 
+\index{Book@{Book}!shot@{shot}}
+\index{shot@{shot}!Book@{Book}}
+\subsubsection{\texorpdfstring{shot}{shot}}
+{\footnotesize\ttfamily \hyperlink{class_book_off_shot}{Book\+Off\+Shot} Book.\+shot\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+本の撃つ玉 
+
+\mbox{\Hypertarget{class_book_adf12a76c0251881fb97b7d3b4ee147f2}\label{class_book_adf12a76c0251881fb97b7d3b4ee147f2}} 
+\index{Book@{Book}!shot\+Sound@{shot\+Sound}}
+\index{shot\+Sound@{shot\+Sound}!Book@{Book}}
+\subsubsection{\texorpdfstring{shot\+Sound}{shotSound}}
+{\footnotesize\ttfamily Audio\+Clip Book.\+shot\+Sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+球を撃った時の音 
+
+\mbox{\Hypertarget{class_book_abb3b0df54a256fdd22ca78d1806772d1}\label{class_book_abb3b0df54a256fdd22ca78d1806772d1}} 
+\index{Book@{Book}!stop\+Time@{stop\+Time}}
+\index{stop\+Time@{stop\+Time}!Book@{Book}}
+\subsubsection{\texorpdfstring{stop\+Time}{stopTime}}
+{\footnotesize\ttfamily int Book.\+stop\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+エフェクトの停止用のカウント 
+
+\mbox{\Hypertarget{class_book_a132afd5c2381c6b72abb611b29e9cecc}\label{class_book_a132afd5c2381c6b72abb611b29e9cecc}} 
+\index{Book@{Book}!st\+Shot\+Create\+Time@{st\+Shot\+Create\+Time}}
+\index{st\+Shot\+Create\+Time@{st\+Shot\+Create\+Time}!Book@{Book}}
+\subsubsection{\texorpdfstring{st\+Shot\+Create\+Time}{stShotCreateTime}}
+{\footnotesize\ttfamily int Book.\+st\+Shot\+Create\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+初回生成間隔 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Enemy/\+Script/Book.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor}{}\section{Unity\+Editor.\+Post\+Processing.\+Vectorscope\+Monitor Class Reference}
+\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor}\index{Unity\+Editor.\+Post\+Processing.\+Vectorscope\+Monitor@{Unity\+Editor.\+Post\+Processing.\+Vectorscope\+Monitor}}
+Inheritance diagram for Unity\+Editor.\+Post\+Processing.\+Vectorscope\+Monitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a005eed06f524b178cf20c653a065e4b8}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a005eed06f524b178cf20c653a065e4b8}} 
+override void {\bfseries Dispose} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a463538bb61faf99a1507ac9501eb7de1}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a463538bb61faf99a1507ac9501eb7de1}} 
+override bool {\bfseries Is\+Supported} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_aaab4f236c863002855bf65f364e981ea}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_aaab4f236c863002855bf65f364e981ea}} 
+override G\+U\+I\+Content {\bfseries Get\+Monitor\+Title} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_af640d93cb043401ba229796ac3803c1e}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_af640d93cb043401ba229796ac3803c1e}} 
+override void {\bfseries On\+Monitor\+Settings} ()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_acb7862e8e86f2eb6cd33d8b2c89be22e}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_acb7862e8e86f2eb6cd33d8b2c89be22e}} 
+override void {\bfseries On\+Monitor\+G\+UI} (Rect r)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_aad2a91361031b9b19ad81a7b72f9b695}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_aad2a91361031b9b19ad81a7b72f9b695}} 
+override void {\bfseries On\+Frame\+Data} (Render\+Texture source)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_ad6ac12eb124b8aba8377a0e6dfd2331d}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_ad6ac12eb124b8aba8377a0e6dfd2331d}} 
+void {\bfseries Create\+Buffer} (int width, int height)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a8ed2b20a182be70ba996d658ae6934ce}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a8ed2b20a182be70ba996d658ae6934ce}} 
+void {\bfseries Compute\+Vectorscope} (Render\+Texture source)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a138bf5d4c88bbfa2d2ffc213897ed4ca}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a138bf5d4c88bbfa2d2ffc213897ed4ca}} 
+Compute\+Shader {\bfseries m\+\_\+\+Compute\+Shader}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_ae17bc0a4b07af47807162e28de3d70fb}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_ae17bc0a4b07af47807162e28de3d70fb}} 
+Compute\+Buffer {\bfseries m\+\_\+\+Buffer}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a82752010b24170e8321725b5507e81d6}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a82752010b24170e8321725b5507e81d6}} 
+Material {\bfseries m\+\_\+\+Material}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a4cf435f0bd11ca99b8247716e5afc1df}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a4cf435f0bd11ca99b8247716e5afc1df}} 
+Render\+Texture {\bfseries m\+\_\+\+Vectorscope\+Texture}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a4f6b0fc900a68c3f04fe70470df605ce}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a4f6b0fc900a68c3f04fe70470df605ce}} 
+Rect {\bfseries m\+\_\+\+Monitor\+Area\+Rect}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a1cd797a773a957de3b065a5dffb0c71b}\label{class_unity_editor_1_1_post_processing_1_1_vectorscope_monitor_a1cd797a773a957de3b065a5dffb0c71b}} 
+static G\+U\+I\+Content {\bfseries s\+\_\+\+Monitor\+Title} = new G\+U\+I\+Content(\char`\"{}Vectorscope\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Editor/\+Monitors/Vectorscope\+Monitor.\+cs\end{DoxyCompactItemize}

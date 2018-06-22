@@ -1,0 +1,87 @@
+\hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component}{}\section{Unity\+Engine.\+Post\+Processing.\+Eye\+Adaptation\+Component Class Reference}
+\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component}\index{Unity\+Engine.\+Post\+Processing.\+Eye\+Adaptation\+Component@{Unity\+Engine.\+Post\+Processing.\+Eye\+Adaptation\+Component}}
+Inheritance diagram for Unity\+Engine.\+Post\+Processing.\+Eye\+Adaptation\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_1_1_uniforms}{Uniforms}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a461fa3fb6ad4571e4d860ed8c7c0beb4}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a461fa3fb6ad4571e4d860ed8c7c0beb4}} 
+void {\bfseries Reset\+History} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a1fd3a905eb93bbb912e2316baa1b1396}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a1fd3a905eb93bbb912e2316baa1b1396}} 
+override void {\bfseries On\+Enable} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a983236f00adbfa6c477423ecf2d55eec}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a983236f00adbfa6c477423ecf2d55eec}} 
+override void {\bfseries On\+Disable} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_af6319d4a0410aedaa227fe1725e70309}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_af6319d4a0410aedaa227fe1725e70309}} 
+Texture {\bfseries Prepare} (Render\+Texture source, Material uber\+Material)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a3f25f90f406ea8d9ae4e51194c802a71}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a3f25f90f406ea8d9ae4e51194c802a71}} 
+void {\bfseries On\+G\+UI} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_ae4f7d376419dd90448617b828a9b1238}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_ae4f7d376419dd90448617b828a9b1238}} 
+override bool {\bfseries active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_ab2514a2caec3015f80965a7bf2bf0794}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_ab2514a2caec3015f80965a7bf2bf0794}} 
+Vector4 {\bfseries Get\+Histogram\+Scale\+Offset\+Res} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a098d4b83df452a696ce538455991491e}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a098d4b83df452a696ce538455991491e}} 
+Compute\+Shader {\bfseries m\+\_\+\+Eye\+Compute}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_aeb3658f74237024d1f0c63b64b6f4731}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_aeb3658f74237024d1f0c63b64b6f4731}} 
+Compute\+Buffer {\bfseries m\+\_\+\+Histogram\+Buffer}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a04792ae5a0aa1bdd7623beb6fc4eb362}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a04792ae5a0aa1bdd7623beb6fc4eb362}} 
+readonly Render\+Texture \mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Auto\+Exposure\+Pool} = new Render\+Texture\mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_aa1c503a8338c7fbf3b1b24dfb1aeb02b}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_aa1c503a8338c7fbf3b1b24dfb1aeb02b}} 
+int {\bfseries m\+\_\+\+Auto\+Exposure\+Ping\+Ping}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a204527bcd277a6306c49cd93d2c2b502}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a204527bcd277a6306c49cd93d2c2b502}} 
+Render\+Texture {\bfseries m\+\_\+\+Current\+Auto\+Exposure}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_ad6f36fd3106cd9e3f73e300831008647}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_ad6f36fd3106cd9e3f73e300831008647}} 
+Render\+Texture {\bfseries m\+\_\+\+Debug\+Histogram}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a8ce4218bc24063d4507c7c625ba0b7b6}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a8ce4218bc24063d4507c7c625ba0b7b6}} 
+bool {\bfseries m\+\_\+\+First\+Frame} = true
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_ab06dfc1c0abafdaa137671c1c5f86259}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_ab06dfc1c0abafdaa137671c1c5f86259}} 
+const int {\bfseries k\+\_\+\+Histogram\+Bins} = 64
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_aeaaeef3111b5b1a3d12fe213ace0a82e}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_aeaaeef3111b5b1a3d12fe213ace0a82e}} 
+const int {\bfseries k\+\_\+\+Histogram\+ThreadX} = 16
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_af9a3876cd982aff783dff0ee698bf8d4}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_af9a3876cd982aff783dff0ee698bf8d4}} 
+const int {\bfseries k\+\_\+\+Histogram\+ThreadY} = 16
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a791d1da1d068ae9be19f47c28dbcf52a}\label{class_unity_engine_1_1_post_processing_1_1_eye_adaptation_component_a791d1da1d068ae9be19f47c28dbcf52a}} 
+static uint \mbox{[}$\,$\mbox{]} {\bfseries s\+\_\+\+Empty\+Histogram\+Buffer}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Runtime/\+Components/Eye\+Adaptation\+Component.\+cs\end{DoxyCompactItemize}

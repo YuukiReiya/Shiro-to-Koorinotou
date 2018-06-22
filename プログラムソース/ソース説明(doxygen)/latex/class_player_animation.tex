@@ -1,0 +1,152 @@
+\hypertarget{class_player_animation}{}\section{Player\+Animation Class Reference}
+\label{class_player_animation}\index{Player\+Animation@{Player\+Animation}}
+
+
+\char`\"{}しろちゃん\char`\"{}のアニメーション制御クラス 制作者：番場宥輝  
+
+
+Inheritance diagram for Player\+Animation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_animation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_animation_a9d2e95bbf85077927c96fd48c07b7d91}{Run\+Animation} (bool result)
+\begin{DoxyCompactList}\small\item\em 走るアニメーション \end{DoxyCompactList}\item 
+void \hyperlink{class_player_animation_acaddf95b458f156aa80c82f6d41750fd}{Jump\+Animation} (bool animflags)
+\begin{DoxyCompactList}\small\item\em ジャンプアニメーション \end{DoxyCompactList}\item 
+void \hyperlink{class_player_animation_a2cd568277cb0fafca136ab727ef4e1ce}{Clear\+Animation} (bool animflags)
+\begin{DoxyCompactList}\small\item\em クリアアニメーション \end{DoxyCompactList}\item 
+void \hyperlink{class_player_animation_a3241d3465f0dd71e9692acfb23560432}{Cross\+Magic\+Animation} ()
+\begin{DoxyCompactList}\small\item\em 横向き魔法アニメーション \end{DoxyCompactList}\item 
+void \hyperlink{class_player_animation_a5e13800596dcf4cb95379c50746e4586}{Up\+Magic\+Animation} ()
+\begin{DoxyCompactList}\small\item\em 上向き魔法アニメーション \end{DoxyCompactList}\item 
+void \hyperlink{class_player_animation_ad6c513194c0f9b74d99093dad05826cb}{Under\+Magic\+Animation} ()
+\begin{DoxyCompactList}\small\item\em 下向き魔法アニメーション \end{DoxyCompactList}\item 
+void \hyperlink{class_player_animation_a1f857cd924289c430cc5f158ae53e91f}{Damage\+Animation} ()
+\begin{DoxyCompactList}\small\item\em ダメージアニメーション \end{DoxyCompactList}\item 
+void \hyperlink{class_player_animation_ab9d35f9c0315046476b8c59dd1422231}{Idle\+Animation} (bool animflags)
+\begin{DoxyCompactList}\small\item\em 待機（アイドル）アニメーション \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_animation_af81155d514b150dcbcc862d068199438}\label{class_player_animation_af81155d514b150dcbcc862d068199438}} 
+void {\bfseries Awake} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_animation_a0a6b9dbfac73a480e2ca39503182af0e}\label{class_player_animation_a0a6b9dbfac73a480e2ca39503182af0e}} 
+Animator {\bfseries animator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}しろちゃん\char`\"{}のアニメーション制御クラス 制作者：番場宥輝 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_animation_a2cd568277cb0fafca136ab727ef4e1ce}\label{class_player_animation_a2cd568277cb0fafca136ab727ef4e1ce}} 
+\index{Player\+Animation@{Player\+Animation}!Clear\+Animation@{Clear\+Animation}}
+\index{Clear\+Animation@{Clear\+Animation}!Player\+Animation@{Player\+Animation}}
+\subsubsection{\texorpdfstring{Clear\+Animation()}{ClearAnimation()}}
+{\footnotesize\ttfamily void Player\+Animation.\+Clear\+Animation (\begin{DoxyParamCaption}\item[{bool}]{animflags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+クリアアニメーション 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animflags} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_animation_a3241d3465f0dd71e9692acfb23560432}\label{class_player_animation_a3241d3465f0dd71e9692acfb23560432}} 
+\index{Player\+Animation@{Player\+Animation}!Cross\+Magic\+Animation@{Cross\+Magic\+Animation}}
+\index{Cross\+Magic\+Animation@{Cross\+Magic\+Animation}!Player\+Animation@{Player\+Animation}}
+\subsubsection{\texorpdfstring{Cross\+Magic\+Animation()}{CrossMagicAnimation()}}
+{\footnotesize\ttfamily void Player\+Animation.\+Cross\+Magic\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+横向き魔法アニメーション 
+
+\mbox{\Hypertarget{class_player_animation_a1f857cd924289c430cc5f158ae53e91f}\label{class_player_animation_a1f857cd924289c430cc5f158ae53e91f}} 
+\index{Player\+Animation@{Player\+Animation}!Damage\+Animation@{Damage\+Animation}}
+\index{Damage\+Animation@{Damage\+Animation}!Player\+Animation@{Player\+Animation}}
+\subsubsection{\texorpdfstring{Damage\+Animation()}{DamageAnimation()}}
+{\footnotesize\ttfamily void Player\+Animation.\+Damage\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ダメージアニメーション 
+
+\mbox{\Hypertarget{class_player_animation_ab9d35f9c0315046476b8c59dd1422231}\label{class_player_animation_ab9d35f9c0315046476b8c59dd1422231}} 
+\index{Player\+Animation@{Player\+Animation}!Idle\+Animation@{Idle\+Animation}}
+\index{Idle\+Animation@{Idle\+Animation}!Player\+Animation@{Player\+Animation}}
+\subsubsection{\texorpdfstring{Idle\+Animation()}{IdleAnimation()}}
+{\footnotesize\ttfamily void Player\+Animation.\+Idle\+Animation (\begin{DoxyParamCaption}\item[{bool}]{animflags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+待機（アイドル）アニメーション 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animflags} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_animation_acaddf95b458f156aa80c82f6d41750fd}\label{class_player_animation_acaddf95b458f156aa80c82f6d41750fd}} 
+\index{Player\+Animation@{Player\+Animation}!Jump\+Animation@{Jump\+Animation}}
+\index{Jump\+Animation@{Jump\+Animation}!Player\+Animation@{Player\+Animation}}
+\subsubsection{\texorpdfstring{Jump\+Animation()}{JumpAnimation()}}
+{\footnotesize\ttfamily void Player\+Animation.\+Jump\+Animation (\begin{DoxyParamCaption}\item[{bool}]{animflags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ジャンプアニメーション 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animflags} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_animation_a9d2e95bbf85077927c96fd48c07b7d91}\label{class_player_animation_a9d2e95bbf85077927c96fd48c07b7d91}} 
+\index{Player\+Animation@{Player\+Animation}!Run\+Animation@{Run\+Animation}}
+\index{Run\+Animation@{Run\+Animation}!Player\+Animation@{Player\+Animation}}
+\subsubsection{\texorpdfstring{Run\+Animation()}{RunAnimation()}}
+{\footnotesize\ttfamily void Player\+Animation.\+Run\+Animation (\begin{DoxyParamCaption}\item[{bool}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+走るアニメーション 
+
+\mbox{\Hypertarget{class_player_animation_ad6c513194c0f9b74d99093dad05826cb}\label{class_player_animation_ad6c513194c0f9b74d99093dad05826cb}} 
+\index{Player\+Animation@{Player\+Animation}!Under\+Magic\+Animation@{Under\+Magic\+Animation}}
+\index{Under\+Magic\+Animation@{Under\+Magic\+Animation}!Player\+Animation@{Player\+Animation}}
+\subsubsection{\texorpdfstring{Under\+Magic\+Animation()}{UnderMagicAnimation()}}
+{\footnotesize\ttfamily void Player\+Animation.\+Under\+Magic\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+下向き魔法アニメーション 
+
+\mbox{\Hypertarget{class_player_animation_a5e13800596dcf4cb95379c50746e4586}\label{class_player_animation_a5e13800596dcf4cb95379c50746e4586}} 
+\index{Player\+Animation@{Player\+Animation}!Up\+Magic\+Animation@{Up\+Magic\+Animation}}
+\index{Up\+Magic\+Animation@{Up\+Magic\+Animation}!Player\+Animation@{Player\+Animation}}
+\subsubsection{\texorpdfstring{Up\+Magic\+Animation()}{UpMagicAnimation()}}
+{\footnotesize\ttfamily void Player\+Animation.\+Up\+Magic\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+上向き魔法アニメーション 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Player/\+Player\+Script/\+Player\+Anim\+Script/Player\+Animation.\+cs\end{DoxyCompactItemize}

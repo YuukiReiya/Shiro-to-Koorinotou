@@ -1,0 +1,81 @@
+\hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component}{}\section{Unity\+Engine.\+Post\+Processing.\+Builtin\+Debug\+Views\+Component Class Reference}
+\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component}\index{Unity\+Engine.\+Post\+Processing.\+Builtin\+Debug\+Views\+Component@{Unity\+Engine.\+Post\+Processing.\+Builtin\+Debug\+Views\+Component}}
+Inheritance diagram for Unity\+Engine.\+Post\+Processing.\+Builtin\+Debug\+Views\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.911263cm]{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_1_1_arrow_array}{Arrow\+Array}
+\item 
+class \hyperlink{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_1_1_uniforms}{Uniforms}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_ab4292e4509256eb32cb378060fa3250f}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_ab4292e4509256eb32cb378060fa3250f}} 
+override Depth\+Texture\+Mode {\bfseries Get\+Camera\+Flags} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a6f11761eaeb91f54400f5b9a3f5864b2}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a6f11761eaeb91f54400f5b9a3f5864b2}} 
+override Camera\+Event {\bfseries Get\+Camera\+Event} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a18f07a927f8d2aee8f5e7bf045b87714}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a18f07a927f8d2aee8f5e7bf045b87714}} 
+override string {\bfseries Get\+Name} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a5eb24d5ee1ad5360967bfd5bc2c8485b}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a5eb24d5ee1ad5360967bfd5bc2c8485b}} 
+override void {\bfseries Populate\+Command\+Buffer} (Command\+Buffer cb)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a67be7492ee423602f45ad4ce2896fae1}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a67be7492ee423602f45ad4ce2896fae1}} 
+override void {\bfseries On\+Disable} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a278b64dc1a7dc3dfae9f829accb1592c}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a278b64dc1a7dc3dfae9f829accb1592c}} 
+override bool {\bfseries active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_af1b64dcf9ddd5cbda41d32931ce1a566}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_af1b64dcf9ddd5cbda41d32931ce1a566}} 
+enum {\bfseries Pass} \{ \newline
+{\bfseries Depth}, 
+{\bfseries Normals}, 
+{\bfseries Movec\+Opacity}, 
+{\bfseries Movec\+Imaging}, 
+\newline
+{\bfseries Movec\+Arrows}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a42465df6cb3dcf7306db70348ef57f5a}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a42465df6cb3dcf7306db70348ef57f5a}} 
+void {\bfseries Depth\+Pass} (Command\+Buffer cb)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a42ede0dbe88072fdbe1304d7f17bf412}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a42ede0dbe88072fdbe1304d7f17bf412}} 
+void {\bfseries Depth\+Normals\+Pass} (Command\+Buffer cb)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_ae8426e69bf4b5dc071c9e987f522d8b0}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_ae8426e69bf4b5dc071c9e987f522d8b0}} 
+void {\bfseries Motion\+Vectors\+Pass} (Command\+Buffer cb)
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a6757a54480bc8c7b5e2b3d14d31e17d2}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a6757a54480bc8c7b5e2b3d14d31e17d2}} 
+void {\bfseries Prepare\+Arrows} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a45c39a3d538b09a9d37d4cbac0050755}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a45c39a3d538b09a9d37d4cbac0050755}} 
+const string {\bfseries k\+\_\+\+Shader\+String} = \char`\"{}Hidden/Post FX/Builtin Debug Views\char`\"{}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a95ea11d2fe39f7a587f1b5f1b2336539}\label{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_a95ea11d2fe39f7a587f1b5f1b2336539}} 
+\hyperlink{class_unity_engine_1_1_post_processing_1_1_builtin_debug_views_component_1_1_arrow_array}{Arrow\+Array} {\bfseries m\+\_\+\+Arrows}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Runtime/\+Components/Builtin\+Debug\+Views\+Component.\+cs\end{DoxyCompactItemize}

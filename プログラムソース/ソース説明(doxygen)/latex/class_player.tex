@@ -1,0 +1,368 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+プレイヤーを制御する 製作者：冨田 大悟  
+
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_aa4f5ff678bbdc84d859a144aca0975db}{Clear\+Move\+Start} ()
+\begin{DoxyCompactList}\small\item\em クリアした時に一度実行される処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_player_ae225a525cb56847f919b5b6342233f97}{To\+Clare\+Move\+Pos} ()
+\begin{DoxyCompactList}\small\item\em クリア時の移動処理 \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_a2aacc7413713cf79b529a0a9965ea3d8}{Is\+Clare\+Move\+Pos} ()
+\begin{DoxyCompactList}\small\item\em クリアした時に目的地に到着したかどうか \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a61abc629af38a106fcb7cd94ac0dff45}{Damage\+Check} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーがダメージを受けるかチェックする \end{DoxyCompactList}\item 
+void \hyperlink{class_player_ae737f5c0952f352da117d07cce727e6d}{Creat\+Dead\+Effect} ()
+\begin{DoxyCompactList}\small\item\em 死亡時のエフェクトを生成する \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_a54be273b0cd99bf5f3ee8825bd8bc943}{Player\+Sandwiched} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーが挟まれているかどうか \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a9440423bdfba23f83fa5f0abb921fa00}\label{class_player_a9440423bdfba23f83fa5f0abb921fa00}} 
+bool {\bfseries control\+On} = false
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a626d7b1a0a69ccb17979ea7a0728fca7}\label{class_player_a626d7b1a0a69ccb17979ea7a0728fca7}} 
+static \hyperlink{class_player}{Player} {\bfseries player}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a63f14794946478b179054b27c2ce1cef}\label{class_player_a63f14794946478b179054b27c2ce1cef}} 
+virtual void {\bfseries On\+Validate} ()
+\item 
+void \hyperlink{class_player_a2a687463f122935a8b084231f0c919de}{Set\+Collider\+Center} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーのコライダー座標の調整 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_af91c4e98ee93befc5fee4918f35215e9}\label{class_player_af91c4e98ee93befc5fee4918f35215e9}} 
+int {\bfseries dir}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_player_a8386e65cacb96e09412a6aea8fd677a2}\label{class_player_a8386e65cacb96e09412a6aea8fd677a2}} 
+bool {\bfseries life}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_player_ad6575300cb1a27c06e49bdf66dd28b0f}\label{class_player_ad6575300cb1a27c06e49bdf66dd28b0f}} 
+Vector3 {\bfseries player\+Center}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_aaddfa9f3b558df64f5d1d09e2b906901}\label{class_player_aaddfa9f3b558df64f5d1d09e2b906901}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_player_a1a09a3ded16ac1646f6bdd4f25fe0ddd}\label{class_player_a1a09a3ded16ac1646f6bdd4f25fe0ddd}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_player_aa0458562e3da0655ecb39a0031114335}\label{class_player_aa0458562e3da0655ecb39a0031114335}} 
+void {\bfseries Fixed\+Update} ()
+\item 
+void \hyperlink{class_player_a3fdebad803b97f4643696b3421be2195}{Move} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーの移動処理 \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_ab2fd8fba7de97ea1d0c4e7821d29c661}{Is\+Can\+Cove} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーが移動できるかどうかの判定 \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a689d6b007b09f694a246fe806bef7d5f}{Jump} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーのジャンプ処理 \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_a9d75eb5e439284a9e14334de881e59c3}{Is\+Air} ()
+\begin{DoxyCompactList}\small\item\em プレーヤーが空中にいるか \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a2c4d3671ace6954258733b6f49c68764}{Freeze\+Shoot} ()
+\begin{DoxyCompactList}\small\item\em プレイヤーの玉を撃つ処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a3f5753ef7b1f00fb358eab8b6df132cf}{Shot\+Decision} (\hyperlink{class_player_shot}{Player\+Shot} go)
+\begin{DoxyCompactList}\small\item\em 球の生成位置調整 \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a2ae58096ded4d63ab46232618cb6f1a4}{Create\+Shot} (\hyperlink{class_player_shot}{Player\+Shot} go, Vector3 shot\+Move\+Dir)
+\begin{DoxyCompactList}\small\item\em 球の生成 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_af75dce28d0c467e06f984717a283ebcb}\label{class_player_af75dce28d0c467e06f984717a283ebcb}} 
+float {\bfseries move\+Speed} = 0.\+1f
+\item 
+\mbox{\Hypertarget{class_player_abdbd98fb253d61fd32e8009b6fbca919}\label{class_player_abdbd98fb253d61fd32e8009b6fbca919}} 
+float {\bfseries x\+Ray\+Size} = 0.\+5f
+\item 
+\mbox{\Hypertarget{class_player_adbe97223ce09ffbaaa99eeaaa0e9ce43}\label{class_player_adbe97223ce09ffbaaa99eeaaa0e9ce43}} 
+float {\bfseries player\+X\+Size}
+\item 
+\mbox{\Hypertarget{class_player_abe745e7a3a738f587cf263b8d0eb9a52}\label{class_player_abe745e7a3a738f587cf263b8d0eb9a52}} 
+float {\bfseries Y\+Ray\+Size} = 0.\+1f
+\item 
+\mbox{\Hypertarget{class_player_a422823133b592020ac83436fb28d376d}\label{class_player_a422823133b592020ac83436fb28d376d}} 
+float {\bfseries jump\+Power} = 17f
+\item 
+\mbox{\Hypertarget{class_player_a81829a35b301f291bd4a7271baa886ee}\label{class_player_a81829a35b301f291bd4a7271baa886ee}} 
+bool {\bfseries jump\+On}
+\item 
+\mbox{\Hypertarget{class_player_aac47208eeea68235b8b5bdfa33aacbe1}\label{class_player_aac47208eeea68235b8b5bdfa33aacbe1}} 
+int {\bfseries jump\+Time} = 5
+\item 
+\mbox{\Hypertarget{class_player_a8ee7625d064edfe481c7ead680f7409b}\label{class_player_a8ee7625d064edfe481c7ead680f7409b}} 
+int {\bfseries jump\+Count}
+\item 
+\mbox{\Hypertarget{class_player_a64a89cd16bdc7b35d3e72e619850f647}\label{class_player_a64a89cd16bdc7b35d3e72e619850f647}} 
+int {\bfseries landing\+Wait\+Time} = 10
+\item 
+\mbox{\Hypertarget{class_player_a809825fd10b70fcd34c7a7a044b40e6c}\label{class_player_a809825fd10b70fcd34c7a7a044b40e6c}} 
+int {\bfseries landing\+Wait\+Count}
+\item 
+\mbox{\Hypertarget{class_player_a211b6616b57c5a51f1656c2f9f8ef9be}\label{class_player_a211b6616b57c5a51f1656c2f9f8ef9be}} 
+bool {\bfseries grund}
+\item 
+\mbox{\Hypertarget{class_player_a2a922cb0f33945013b61ee3889c4c94c}\label{class_player_a2a922cb0f33945013b61ee3889c4c94c}} 
+\hyperlink{class_player_damage}{Player\+Damage} {\bfseries p\+Damage}
+\item 
+\mbox{\Hypertarget{class_player_a6e235568aa19c9fd4e5fa3401a034012}\label{class_player_a6e235568aa19c9fd4e5fa3401a034012}} 
+\hyperlink{class_player_shot}{Player\+Shot} {\bfseries freeze\+Shot\+Prfab}
+\item 
+\mbox{\Hypertarget{class_player_aa1ee840f2a2922d1b8818f99f8e5bdde}\label{class_player_aa1ee840f2a2922d1b8818f99f8e5bdde}} 
+\hyperlink{class_player_shot}{Player\+Shot} {\bfseries player\+Shot}
+\item 
+\mbox{\Hypertarget{class_player_afbe42f0dc3a0da4e074ab5df1a603b05}\label{class_player_afbe42f0dc3a0da4e074ab5df1a603b05}} 
+bool {\bfseries freeze\+Exist}
+\item 
+\mbox{\Hypertarget{class_player_a17ca3fa8e5d178b6029bb61f5375fcfa}\label{class_player_a17ca3fa8e5d178b6029bb61f5375fcfa}} 
+float {\bfseries shot\+Pos} = 1.\+5f
+\item 
+\mbox{\Hypertarget{class_player_aee2f0b99b459d2c0ed9748d6e9dd18a4}\label{class_player_aee2f0b99b459d2c0ed9748d6e9dd18a4}} 
+Vector3 {\bfseries shot\+Center\+Pos} =new Vector3(0,1.\+1f,0)
+\item 
+\mbox{\Hypertarget{class_player_a48399463d7559ca444b49794616abab2}\label{class_player_a48399463d7559ca444b49794616abab2}} 
+int {\bfseries shot\+Rigor\+Time}
+\item 
+\mbox{\Hypertarget{class_player_a0f75a822c5ce68bdc7fd4a29f927da34}\label{class_player_a0f75a822c5ce68bdc7fd4a29f927da34}} 
+int {\bfseries shot\+Rigor\+Count}
+\item 
+\mbox{\Hypertarget{class_player_a0d7b36217f2284e084754dce7ece4811}\label{class_player_a0d7b36217f2284e084754dce7ece4811}} 
+Physic\+Material {\bfseries pm}
+\item 
+\mbox{\Hypertarget{class_player_a4f097419d4171e0b1381c48ee5e3353c}\label{class_player_a4f097419d4171e0b1381c48ee5e3353c}} 
+Game\+Object {\bfseries collider\+Base\+Obj}
+\item 
+\mbox{\Hypertarget{class_player_a60ad6d2b486025a08a228554a54a3474}\label{class_player_a60ad6d2b486025a08a228554a54a3474}} 
+Vector3 {\bfseries Box\+Ray\+Scale}
+\item 
+\mbox{\Hypertarget{class_player_a00f307aec7792c08938b3d49b327c9b1}\label{class_player_a00f307aec7792c08938b3d49b327c9b1}} 
+Vector3 {\bfseries collider\+Center\+Pos}
+\item 
+\mbox{\Hypertarget{class_player_a68746528069f1c05046cc0f73077f9b7}\label{class_player_a68746528069f1c05046cc0f73077f9b7}} 
+Rigidbody {\bfseries rigid\+Body}
+\item 
+\mbox{\Hypertarget{class_player_ae1e42d9c280dc8525006831c5439030e}\label{class_player_ae1e42d9c280dc8525006831c5439030e}} 
+Vector3 {\bfseries b\+Pos}
+\item 
+\mbox{\Hypertarget{class_player_a8e5cd06b6ab47deb2fb88a4e987039e9}\label{class_player_a8e5cd06b6ab47deb2fb88a4e987039e9}} 
+\hyperlink{class_old_effect}{Old\+Effect} {\bfseries move\+Effect}
+\item 
+\mbox{\Hypertarget{class_player_a6e37b0206677fd9091b2b578fdec3201}\label{class_player_a6e37b0206677fd9091b2b578fdec3201}} 
+Game\+Object {\bfseries dead\+Effect}
+\item 
+\mbox{\Hypertarget{class_player_af302cb3daa64bd88ed89b0dc3b34f1fa}\label{class_player_af302cb3daa64bd88ed89b0dc3b34f1fa}} 
+\hyperlink{class_player_animation}{Player\+Animation} {\bfseries animes}
+\item 
+\mbox{\Hypertarget{class_player_a6ec008ca082e9573e4548ec09fca2577}\label{class_player_a6ec008ca082e9573e4548ec09fca2577}} 
+int {\bfseries idel\+Time}
+\item 
+\mbox{\Hypertarget{class_player_ac27b6840c1a42bbf0a590a13bce7f83e}\label{class_player_ac27b6840c1a42bbf0a590a13bce7f83e}} 
+int {\bfseries idel\+Count}
+\item 
+\mbox{\Hypertarget{class_player_a992f1908a0b1350bda0b0969fe504394}\label{class_player_a992f1908a0b1350bda0b0969fe504394}} 
+float {\bfseries idel\+Move\+Size}
+\item 
+\mbox{\Hypertarget{class_player_a6eba3d88a52bee40d6dfd4727ffece36}\label{class_player_a6eba3d88a52bee40d6dfd4727ffece36}} 
+Audio\+Clip {\bfseries jump\+Sound}
+\item 
+\mbox{\Hypertarget{class_player_a86d326507c64d2e83327a2598a28ba63}\label{class_player_a86d326507c64d2e83327a2598a28ba63}} 
+Audio\+Clip {\bfseries shot\+Sound}
+\item 
+\mbox{\Hypertarget{class_player_ab80bb2e2a57b2d13835085234e8a64c7}\label{class_player_ab80bb2e2a57b2d13835085234e8a64c7}} 
+Vector3 {\bfseries clear\+Pos} = new Vector3(0,38,0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+プレイヤーを制御する 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_aa4f5ff678bbdc84d859a144aca0975db}\label{class_player_aa4f5ff678bbdc84d859a144aca0975db}} 
+\index{Player@{Player}!Clear\+Move\+Start@{Clear\+Move\+Start}}
+\index{Clear\+Move\+Start@{Clear\+Move\+Start}!Player@{Player}}
+\subsubsection{\texorpdfstring{Clear\+Move\+Start()}{ClearMoveStart()}}
+{\footnotesize\ttfamily void Player.\+Clear\+Move\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+クリアした時に一度実行される処理 
+
+\mbox{\Hypertarget{class_player_ae737f5c0952f352da117d07cce727e6d}\label{class_player_ae737f5c0952f352da117d07cce727e6d}} 
+\index{Player@{Player}!Creat\+Dead\+Effect@{Creat\+Dead\+Effect}}
+\index{Creat\+Dead\+Effect@{Creat\+Dead\+Effect}!Player@{Player}}
+\subsubsection{\texorpdfstring{Creat\+Dead\+Effect()}{CreatDeadEffect()}}
+{\footnotesize\ttfamily void Player.\+Creat\+Dead\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+死亡時のエフェクトを生成する 
+
+\mbox{\Hypertarget{class_player_a2ae58096ded4d63ab46232618cb6f1a4}\label{class_player_a2ae58096ded4d63ab46232618cb6f1a4}} 
+\index{Player@{Player}!Create\+Shot@{Create\+Shot}}
+\index{Create\+Shot@{Create\+Shot}!Player@{Player}}
+\subsubsection{\texorpdfstring{Create\+Shot()}{CreateShot()}}
+{\footnotesize\ttfamily void Player.\+Create\+Shot (\begin{DoxyParamCaption}\item[{\hyperlink{class_player_shot}{Player\+Shot}}]{go,  }\item[{Vector3}]{shot\+Move\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+球の生成 
+
+
+\begin{DoxyParams}{Parameters}
+{\em go} & 生成する球のプレハブ\\
+\hline
+{\em shot\+Move\+Dir} & 球の移動方向\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a61abc629af38a106fcb7cd94ac0dff45}\label{class_player_a61abc629af38a106fcb7cd94ac0dff45}} 
+\index{Player@{Player}!Damage\+Check@{Damage\+Check}}
+\index{Damage\+Check@{Damage\+Check}!Player@{Player}}
+\subsubsection{\texorpdfstring{Damage\+Check()}{DamageCheck()}}
+{\footnotesize\ttfamily void Player.\+Damage\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+プレイヤーがダメージを受けるかチェックする 
+
+\mbox{\Hypertarget{class_player_a2c4d3671ace6954258733b6f49c68764}\label{class_player_a2c4d3671ace6954258733b6f49c68764}} 
+\index{Player@{Player}!Freeze\+Shoot@{Freeze\+Shoot}}
+\index{Freeze\+Shoot@{Freeze\+Shoot}!Player@{Player}}
+\subsubsection{\texorpdfstring{Freeze\+Shoot()}{FreezeShoot()}}
+{\footnotesize\ttfamily void Player.\+Freeze\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+プレイヤーの玉を撃つ処理 
+
+\mbox{\Hypertarget{class_player_a9d75eb5e439284a9e14334de881e59c3}\label{class_player_a9d75eb5e439284a9e14334de881e59c3}} 
+\index{Player@{Player}!Is\+Air@{Is\+Air}}
+\index{Is\+Air@{Is\+Air}!Player@{Player}}
+\subsubsection{\texorpdfstring{Is\+Air()}{IsAir()}}
+{\footnotesize\ttfamily bool Player.\+Is\+Air (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+プレーヤーが空中にいるか 
+
+\begin{DoxyReturn}{Returns}
+trueなら空中
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_ab2fd8fba7de97ea1d0c4e7821d29c661}\label{class_player_ab2fd8fba7de97ea1d0c4e7821d29c661}} 
+\index{Player@{Player}!Is\+Can\+Cove@{Is\+Can\+Cove}}
+\index{Is\+Can\+Cove@{Is\+Can\+Cove}!Player@{Player}}
+\subsubsection{\texorpdfstring{Is\+Can\+Cove()}{IsCanCove()}}
+{\footnotesize\ttfamily bool Player.\+Is\+Can\+Cove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+プレイヤーが移動できるかどうかの判定 
+
+\begin{DoxyReturn}{Returns}
+trueなら移動できる
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a2aacc7413713cf79b529a0a9965ea3d8}\label{class_player_a2aacc7413713cf79b529a0a9965ea3d8}} 
+\index{Player@{Player}!Is\+Clare\+Move\+Pos@{Is\+Clare\+Move\+Pos}}
+\index{Is\+Clare\+Move\+Pos@{Is\+Clare\+Move\+Pos}!Player@{Player}}
+\subsubsection{\texorpdfstring{Is\+Clare\+Move\+Pos()}{IsClareMovePos()}}
+{\footnotesize\ttfamily bool Player.\+Is\+Clare\+Move\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+クリアした時に目的地に到着したかどうか 
+
+\begin{DoxyReturn}{Returns}
+trueなら到着した
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a689d6b007b09f694a246fe806bef7d5f}\label{class_player_a689d6b007b09f694a246fe806bef7d5f}} 
+\index{Player@{Player}!Jump@{Jump}}
+\index{Jump@{Jump}!Player@{Player}}
+\subsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void Player.\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+プレイヤーのジャンプ処理 
+
+\mbox{\Hypertarget{class_player_a3fdebad803b97f4643696b3421be2195}\label{class_player_a3fdebad803b97f4643696b3421be2195}} 
+\index{Player@{Player}!Move@{Move}}
+\index{Move@{Move}!Player@{Player}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Player.\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+プレイヤーの移動処理 
+
+\mbox{\Hypertarget{class_player_a54be273b0cd99bf5f3ee8825bd8bc943}\label{class_player_a54be273b0cd99bf5f3ee8825bd8bc943}} 
+\index{Player@{Player}!Player\+Sandwiched@{Player\+Sandwiched}}
+\index{Player\+Sandwiched@{Player\+Sandwiched}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player\+Sandwiched()}{PlayerSandwiched()}}
+{\footnotesize\ttfamily bool Player.\+Player\+Sandwiched (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+プレイヤーが挟まれているかどうか 
+
+\begin{DoxyReturn}{Returns}
+trueなら挟まれている
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a2a687463f122935a8b084231f0c919de}\label{class_player_a2a687463f122935a8b084231f0c919de}} 
+\index{Player@{Player}!Set\+Collider\+Center@{Set\+Collider\+Center}}
+\index{Set\+Collider\+Center@{Set\+Collider\+Center}!Player@{Player}}
+\subsubsection{\texorpdfstring{Set\+Collider\+Center()}{SetColliderCenter()}}
+{\footnotesize\ttfamily void Player.\+Set\+Collider\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+プレイヤーのコライダー座標の調整 
+
+\mbox{\Hypertarget{class_player_a3f5753ef7b1f00fb358eab8b6df132cf}\label{class_player_a3f5753ef7b1f00fb358eab8b6df132cf}} 
+\index{Player@{Player}!Shot\+Decision@{Shot\+Decision}}
+\index{Shot\+Decision@{Shot\+Decision}!Player@{Player}}
+\subsubsection{\texorpdfstring{Shot\+Decision()}{ShotDecision()}}
+{\footnotesize\ttfamily void Player.\+Shot\+Decision (\begin{DoxyParamCaption}\item[{\hyperlink{class_player_shot}{Player\+Shot}}]{go }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+球の生成位置調整 
+
+
+\begin{DoxyParams}{Parameters}
+{\em go} & 生成する球のプレハブ\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_ae225a525cb56847f919b5b6342233f97}\label{class_player_ae225a525cb56847f919b5b6342233f97}} 
+\index{Player@{Player}!To\+Clare\+Move\+Pos@{To\+Clare\+Move\+Pos}}
+\index{To\+Clare\+Move\+Pos@{To\+Clare\+Move\+Pos}!Player@{Player}}
+\subsubsection{\texorpdfstring{To\+Clare\+Move\+Pos()}{ToClareMovePos()}}
+{\footnotesize\ttfamily void Player.\+To\+Clare\+Move\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+クリア時の移動処理 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Player/\+Player\+Script/Player.\+cs\end{DoxyCompactItemize}

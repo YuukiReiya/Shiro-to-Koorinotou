@@ -1,0 +1,61 @@
+\hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer}{}\section{Unity\+Editor.\+Post\+Processing.\+Trackball\+Group\+Drawer Class Reference}
+\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer}\index{Unity\+Editor.\+Post\+Processing.\+Trackball\+Group\+Drawer@{Unity\+Editor.\+Post\+Processing.\+Trackball\+Group\+Drawer}}
+Inheritance diagram for Unity\+Editor.\+Post\+Processing.\+Trackball\+Group\+Drawer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a8d90fa1568d3c85d649dfcc4814e7433}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a8d90fa1568d3c85d649dfcc4814e7433}} 
+override void {\bfseries On\+G\+UI} (Rect position, Serialized\+Property property, G\+U\+I\+Content label)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_ad37342e5aad4e98329b8d41666db6d9a}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_ad37342e5aad4e98329b8d41666db6d9a}} 
+override float {\bfseries Get\+Property\+Height} (Serialized\+Property property, G\+U\+I\+Content label)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a9912c3c510cc003d5127337f7b9c2c62}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a9912c3c510cc003d5127337f7b9c2c62}} 
+void {\bfseries On\+Wheel\+G\+UI} (Rect position, int size, Serialized\+Property property)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a8ec5f5222e287f336547772a53277d60}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a8ec5f5222e287f336547772a53277d60}} 
+bool {\bfseries Try\+Get\+Display\+Value} (Color color, Serialized\+Property property, out Vector3 output)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_ac8b29b2cb2e57601ad050c66374649bd}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_ac8b29b2cb2e57601ad050c66374649bd}} 
+Vector3 {\bfseries Get\+Input} (Rect bounds, Vector3 hsv, float radius)
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a9781cb117e7c7bd3355469193b24d0e2}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a9781cb117e7c7bd3355469193b24d0e2}} 
+void {\bfseries Get\+Wheel\+Hue\+Saturation} (float x, float y, float radius, out float hue, out float saturation)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a43cd4dd298a8bb194ff1f7378efeb351}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a43cd4dd298a8bb194ff1f7378efeb351}} 
+const int {\bfseries k\+\_\+\+Min\+Wheel\+Size} = 80
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_ab960c90013932b21507e57aa9620a822}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_ab960c90013932b21507e57aa9620a822}} 
+const int {\bfseries k\+\_\+\+Max\+Wheel\+Size} = 256
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_ac85e1ba72a09597c85774fe6c48c9fe3}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_ac85e1ba72a09597c85774fe6c48c9fe3}} 
+bool {\bfseries m\+\_\+\+Reset\+State}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a63a310b81cb4ce686055ba578979cde1}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_a63a310b81cb4ce686055ba578979cde1}} 
+static Material {\bfseries s\+\_\+\+Material}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_aa452c61074628fe1d84a8c34bf730019}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_aa452c61074628fe1d84a8c34bf730019}} 
+static Dictionary$<$ string, Method\+Info $>$ {\bfseries m\+\_\+\+Trackball\+Methods} = new Dictionary$<$string, Method\+Info$>$()
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_aeb5fd1772425fa374a9c7f63cc6a5105}\label{class_unity_editor_1_1_post_processing_1_1_trackball_group_drawer_aeb5fd1772425fa374a9c7f63cc6a5105}} 
+static readonly int {\bfseries k\+\_\+\+Thumb\+Hash} = \char`\"{}color\+Wheel\+Thumb\char`\"{}.Get\+Hash\+Code()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Post\+Processing/\+Editor/\+Property\+Drawers/Trackball\+Group\+Drawer.\+cs\end{DoxyCompactItemize}

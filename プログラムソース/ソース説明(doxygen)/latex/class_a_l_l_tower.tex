@@ -1,0 +1,398 @@
+\hypertarget{class_a_l_l_tower}{}\section{A\+L\+L\+Tower Class Reference}
+\label{class_a_l_l_tower}\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+
+
+ステージ全体の制御クラス 製作者：冨田 大悟  
+
+
+Inheritance diagram for A\+L\+L\+Tower\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_l_l_tower}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_a_l_l_tower_a30b3b152a1444c0dd1f326ff4d4f6ede}{Retry} ()
+\begin{DoxyCompactList}\small\item\em リトライの実行 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_a75b8b5715175131c28e9e1a571e57521}{Goto\+Stage\+Select} ()
+\begin{DoxyCompactList}\small\item\em ステージセレクトにシーンを移行 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_a4ace44a9bb3967b4f8f7b534e5e2df40}{Goto\+Title} ()
+\begin{DoxyCompactList}\small\item\em タイトルにシーン移行 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_a02ad7d49b43a0d3466fe7aecc099bd4b}{Go\+To\+Next\+Stage} (string next\+Stage\+Name)
+\begin{DoxyCompactList}\small\item\em 次のステージに移行 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_ab65162a24d9a2361ae3eee3119a1df6a}\label{class_a_l_l_tower_ab65162a24d9a2361ae3eee3119a1df6a}} 
+enum {\bfseries Tower\+State} \{ \newline
+{\bfseries Game\+Start}, 
+{\bfseries Tower\+Start}, 
+{\bfseries Tower\+Update}, 
+{\bfseries Cameta\+Up\+Update}, 
+\newline
+{\bfseries Game\+Clear\+End}, 
+{\bfseries Game\+Over\+End}, 
+{\bfseries Pose}, 
+{\bfseries Load\+Wait}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_a_l_l_tower_a110e253951597032d6dbd249b5bb16ac}{Floors\+Set} ()
+\begin{DoxyCompactList}\small\item\em Towerを生成する \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_l_l_tower_af1eed1caa5113b288153ae9556c14363}\label{class_a_l_l_tower_af1eed1caa5113b288153ae9556c14363}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_ac0089036e2b52b613d13a1ab97d18eb1}\label{class_a_l_l_tower_ac0089036e2b52b613d13a1ab97d18eb1}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a16bc010a4fceae1987cb6b8744821239}\label{class_a_l_l_tower_a16bc010a4fceae1987cb6b8744821239}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_ac46483caa2fb9d145bcc80032ee052f2}\label{class_a_l_l_tower_ac46483caa2fb9d145bcc80032ee052f2}} 
+void {\bfseries Fixed\+Update} ()
+\item 
+void \hyperlink{class_a_l_l_tower_a1188a8535e12016d11fb5d10674ab02a}{Game\+Start} ()
+\begin{DoxyCompactList}\small\item\em ゲームの開始時の処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_aed8435a5e40b07b3b6a88d0ad08e7904}{Tower\+Update} ()
+\begin{DoxyCompactList}\small\item\em タワーの更新 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_aef377489de75ef1b4954862980c8fba5}{Camara\+Up\+Update} ()
+\begin{DoxyCompactList}\small\item\em カメラ上昇の更新 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_a5cd837400467a269c9617aaecb9b4815}{Floor\+End} ()
+\begin{DoxyCompactList}\small\item\em フロアクリア時の処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_a0e19c6ee9a0741934d50233f2adb725d}{Floor\+Clear} ()
+\begin{DoxyCompactList}\small\item\em クリア時の処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_aa97b8b7040c9e79196555bc67aaa49e4}{Destory\+Ander\+Obj} ()
+\begin{DoxyCompactList}\small\item\em オブジェクトの破棄 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_a26c3821f8496577c36b16c0176fd79b6}{Camera\+Up\+End} ()
+\begin{DoxyCompactList}\small\item\em カメラの上昇の終了処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_a84b1273de1512284c703066b41c9f290}{Floor\+All\+Clear} ()
+\begin{DoxyCompactList}\small\item\em フロアをすべてクリアした \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_ac035c6f40e4fb3235fc8fe0821263c52}{Game\+Clear\+Event\+Stert} ()
+\begin{DoxyCompactList}\small\item\em ゲームクリア演出の開始 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_ab102e5acd30714b1b41ab0861ca1366e}{Game\+Clear\+Event\+Update} ()
+\begin{DoxyCompactList}\small\item\em クリア演出の更新 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_a283b74e62516175229f93d819bbffeea}{Game\+Over\+Stert} ()
+\begin{DoxyCompactList}\small\item\em ゲームオーバーの開始 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_af4e2bbc28056233f82dfb9ea4a7612bf}{Game\+Over\+Update} ()
+\begin{DoxyCompactList}\small\item\em ゲームオーバーの更新 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a927db4929e3e5071252f60212e46f1c9}\label{class_a_l_l_tower_a927db4929e3e5071252f60212e46f1c9}} 
+void {\bfseries Set\+E\+PS} ()
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_aad2dd96c6d608e268a61000c4af24792}\label{class_a_l_l_tower_aad2dd96c6d608e268a61000c4af24792}} 
+void {\bfseries Creat\+Base} ()
+\item 
+void \hyperlink{class_a_l_l_tower_ae37b91b8eb784a8d1c96220233afd76f}{Pose\+Start} ()
+\begin{DoxyCompactList}\small\item\em ポーズの開始 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_ae91a9023605bd83d59aee9eda6f72779}{Pose\+End} ()
+\begin{DoxyCompactList}\small\item\em ポーズの終了 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_abb9823ebb19ac7ac19ca871b55af1977}{Load\+Set} ()
+\begin{DoxyCompactList}\small\item\em シーン移行の前処理 \end{DoxyCompactList}\item 
+void \hyperlink{class_a_l_l_tower_af6aed1fd1193a72df854ad4970b9d174}{Clear\+Save} ()
+\begin{DoxyCompactList}\small\item\em クリア情報の保存 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a5eee0d3b044f51b3c4827915dba03833}\label{class_a_l_l_tower_a5eee0d3b044f51b3c4827915dba03833}} 
+\hyperlink{class_a_l_l_tower_base_deta}{A\+L\+L\+Tower\+Base\+Deta} {\bfseries all\+Tower\+Base\+Deta}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a4b32fbbea95b9d14c38bd2459fe42bd2}\label{class_a_l_l_tower_a4b32fbbea95b9d14c38bd2459fe42bd2}} 
+int {\bfseries tower\+Size} = 3
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a8d024829043e28b538b7d3c24d3d6004}\label{class_a_l_l_tower_a8d024829043e28b538b7d3c24d3d6004}} 
+\hyperlink{class_camera_operation}{Camera\+Operation} {\bfseries camera\+Op}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a08e4e7cbabbd283acf7cab3a5db6128d}\label{class_a_l_l_tower_a08e4e7cbabbd283acf7cab3a5db6128d}} 
+Vector3 {\bfseries player\+Pop\+Pos} = new Vector3(-\/10,1)
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_ae9c0a673001d483cb785752f89d2da9b}\label{class_a_l_l_tower_ae9c0a673001d483cb785752f89d2da9b}} 
+\hyperlink{class_player}{Player} {\bfseries player}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a7e08abf89e7cf1b4bfbc750199a4395a}\label{class_a_l_l_tower_a7e08abf89e7cf1b4bfbc750199a4395a}} 
+\hyperlink{class_tower}{Tower} {\bfseries tower}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a6a17167cf2e22569abba3dc9b5499359}\label{class_a_l_l_tower_a6a17167cf2e22569abba3dc9b5499359}} 
+List$<$ \hyperlink{class_tower}{Tower} $>$ {\bfseries towers}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_aa2856e0c7f48411a03a385266e587e0b}\label{class_a_l_l_tower_aa2856e0c7f48411a03a385266e587e0b}} 
+float {\bfseries start\+Height}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a62f7dc14dada0e0ea582ffb5331ab26d}\label{class_a_l_l_tower_a62f7dc14dada0e0ea582ffb5331ab26d}} 
+float {\bfseries height}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_aec7478f9fadf68a6be8c0065d00c94d4}\label{class_a_l_l_tower_aec7478f9fadf68a6be8c0065d00c94d4}} 
+int {\bfseries floor\+Namber}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a4b8e8b6f92bc0e41ca4977d93d17f63c}\label{class_a_l_l_tower_a4b8e8b6f92bc0e41ca4977d93d17f63c}} 
+Game\+Object {\bfseries E\+P\+S\+Parent}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a3ab3212374d38c1a7e5cc579146a8bdc}\label{class_a_l_l_tower_a3ab3212374d38c1a7e5cc579146a8bdc}} 
+List$<$ \hyperlink{class_enemy_pop_system}{Enemy\+Pop\+System} $>$ {\bfseries E\+P\+System}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_afee66c65fd932fd1534ef490c3910b88}\label{class_a_l_l_tower_afee66c65fd932fd1534ef490c3910b88}} 
+Tower\+State {\bfseries tower\+State}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_aa25aa48a526259538c90944e886d729a}\label{class_a_l_l_tower_aa25aa48a526259538c90944e886d729a}} 
+Tower\+State {\bfseries back\+Tower\+State}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a70f2cea9c52dfa5813b225313b597edc}\label{class_a_l_l_tower_a70f2cea9c52dfa5813b225313b597edc}} 
+Audio\+Clip {\bfseries clear\+SE}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a2ad92c5275a219d9bfb28b6f9561c836}\label{class_a_l_l_tower_a2ad92c5275a219d9bfb28b6f9561c836}} 
+Audio\+Clip {\bfseries clear\+B\+GM}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_ad4ea83b4de250c3a173542eeafc06be5}\label{class_a_l_l_tower_ad4ea83b4de250c3a173542eeafc06be5}} 
+\hyperlink{class_start_creat_prefabs}{Start\+Creat\+Prefabs} {\bfseries start\+Creat\+Prefabs}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a4d4897e2b7f6a296257596d48f35577b}\label{class_a_l_l_tower_a4d4897e2b7f6a296257596d48f35577b}} 
+\hyperlink{class_game_pause_u_i}{Game\+Pause\+UI} {\bfseries game\+Poise\+UI}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a29e7a1c99a5f5604030ff9699c3f9c35}\label{class_a_l_l_tower_a29e7a1c99a5f5604030ff9699c3f9c35}} 
+\hyperlink{class_game_clear_next_select}{Game\+Clear\+Next\+Select} {\bfseries clear\+Next\+Select\+UI}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a96f47b39b091519f89f281f0c056c849}\label{class_a_l_l_tower_a96f47b39b091519f89f281f0c056c849}} 
+\hyperlink{class_game_over_select_u_i}{Game\+Over\+Select\+UI} {\bfseries game\+Over\+Next\+Select\+UI}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_ace593a1209a27bd4ff2ae7edc7f925fe}\label{class_a_l_l_tower_ace593a1209a27bd4ff2ae7edc7f925fe}} 
+\hyperlink{class_ready_u_i}{Ready\+UI} {\bfseries ready\+UI}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_aeca6635cb241afd8088aa425b38493d1}\label{class_a_l_l_tower_aeca6635cb241afd8088aa425b38493d1}} 
+Game\+Object {\bfseries key\+Canvas}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a48dfb4be4de35cff263c87575dfd93b6}\label{class_a_l_l_tower_a48dfb4be4de35cff263c87575dfd93b6}} 
+\hyperlink{class_floor_u_i}{Floor\+UI} {\bfseries floor\+UI}
+\item 
+\mbox{\Hypertarget{class_a_l_l_tower_a8cbd09462a2f718d92ffa798c971f767}\label{class_a_l_l_tower_a8cbd09462a2f718d92ffa798c971f767}} 
+List$<$ Game\+Object $>$ {\bfseries auto\+Creat\+Obj}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ステージ全体の制御クラス 製作者：冨田 大悟 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_l_l_tower_aef377489de75ef1b4954862980c8fba5}\label{class_a_l_l_tower_aef377489de75ef1b4954862980c8fba5}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Camara\+Up\+Update@{Camara\+Up\+Update}}
+\index{Camara\+Up\+Update@{Camara\+Up\+Update}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Camara\+Up\+Update()}{CamaraUpUpdate()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Camara\+Up\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+カメラ上昇の更新 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a26c3821f8496577c36b16c0176fd79b6}\label{class_a_l_l_tower_a26c3821f8496577c36b16c0176fd79b6}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Camera\+Up\+End@{Camera\+Up\+End}}
+\index{Camera\+Up\+End@{Camera\+Up\+End}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Camera\+Up\+End()}{CameraUpEnd()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Camera\+Up\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+カメラの上昇の終了処理 
+
+\mbox{\Hypertarget{class_a_l_l_tower_af6aed1fd1193a72df854ad4970b9d174}\label{class_a_l_l_tower_af6aed1fd1193a72df854ad4970b9d174}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Clear\+Save@{Clear\+Save}}
+\index{Clear\+Save@{Clear\+Save}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Clear\+Save()}{ClearSave()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Clear\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+クリア情報の保存 
+
+\mbox{\Hypertarget{class_a_l_l_tower_aa97b8b7040c9e79196555bc67aaa49e4}\label{class_a_l_l_tower_aa97b8b7040c9e79196555bc67aaa49e4}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Destory\+Ander\+Obj@{Destory\+Ander\+Obj}}
+\index{Destory\+Ander\+Obj@{Destory\+Ander\+Obj}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Destory\+Ander\+Obj()}{DestoryAnderObj()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Destory\+Ander\+Obj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+オブジェクトの破棄 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a84b1273de1512284c703066b41c9f290}\label{class_a_l_l_tower_a84b1273de1512284c703066b41c9f290}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Floor\+All\+Clear@{Floor\+All\+Clear}}
+\index{Floor\+All\+Clear@{Floor\+All\+Clear}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Floor\+All\+Clear()}{FloorAllClear()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Floor\+All\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+フロアをすべてクリアした 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a0e19c6ee9a0741934d50233f2adb725d}\label{class_a_l_l_tower_a0e19c6ee9a0741934d50233f2adb725d}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Floor\+Clear@{Floor\+Clear}}
+\index{Floor\+Clear@{Floor\+Clear}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Floor\+Clear()}{FloorClear()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Floor\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+クリア時の処理 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a5cd837400467a269c9617aaecb9b4815}\label{class_a_l_l_tower_a5cd837400467a269c9617aaecb9b4815}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Floor\+End@{Floor\+End}}
+\index{Floor\+End@{Floor\+End}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Floor\+End()}{FloorEnd()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Floor\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+フロアクリア時の処理 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a110e253951597032d6dbd249b5bb16ac}\label{class_a_l_l_tower_a110e253951597032d6dbd249b5bb16ac}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Floors\+Set@{Floors\+Set}}
+\index{Floors\+Set@{Floors\+Set}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Floors\+Set()}{FloorsSet()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Floors\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Towerを生成する 
+
+\mbox{\Hypertarget{class_a_l_l_tower_ac035c6f40e4fb3235fc8fe0821263c52}\label{class_a_l_l_tower_ac035c6f40e4fb3235fc8fe0821263c52}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Game\+Clear\+Event\+Stert@{Game\+Clear\+Event\+Stert}}
+\index{Game\+Clear\+Event\+Stert@{Game\+Clear\+Event\+Stert}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Game\+Clear\+Event\+Stert()}{GameClearEventStert()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Game\+Clear\+Event\+Stert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ゲームクリア演出の開始 
+
+\mbox{\Hypertarget{class_a_l_l_tower_ab102e5acd30714b1b41ab0861ca1366e}\label{class_a_l_l_tower_ab102e5acd30714b1b41ab0861ca1366e}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Game\+Clear\+Event\+Update@{Game\+Clear\+Event\+Update}}
+\index{Game\+Clear\+Event\+Update@{Game\+Clear\+Event\+Update}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Game\+Clear\+Event\+Update()}{GameClearEventUpdate()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Game\+Clear\+Event\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+クリア演出の更新 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a283b74e62516175229f93d819bbffeea}\label{class_a_l_l_tower_a283b74e62516175229f93d819bbffeea}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Game\+Over\+Stert@{Game\+Over\+Stert}}
+\index{Game\+Over\+Stert@{Game\+Over\+Stert}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Game\+Over\+Stert()}{GameOverStert()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Game\+Over\+Stert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ゲームオーバーの開始 
+
+\mbox{\Hypertarget{class_a_l_l_tower_af4e2bbc28056233f82dfb9ea4a7612bf}\label{class_a_l_l_tower_af4e2bbc28056233f82dfb9ea4a7612bf}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Game\+Over\+Update@{Game\+Over\+Update}}
+\index{Game\+Over\+Update@{Game\+Over\+Update}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Game\+Over\+Update()}{GameOverUpdate()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Game\+Over\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ゲームオーバーの更新 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a1188a8535e12016d11fb5d10674ab02a}\label{class_a_l_l_tower_a1188a8535e12016d11fb5d10674ab02a}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Game\+Start@{Game\+Start}}
+\index{Game\+Start@{Game\+Start}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Game\+Start()}{GameStart()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Game\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ゲームの開始時の処理 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a02ad7d49b43a0d3466fe7aecc099bd4b}\label{class_a_l_l_tower_a02ad7d49b43a0d3466fe7aecc099bd4b}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Go\+To\+Next\+Stage@{Go\+To\+Next\+Stage}}
+\index{Go\+To\+Next\+Stage@{Go\+To\+Next\+Stage}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Go\+To\+Next\+Stage()}{GoToNextStage()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Go\+To\+Next\+Stage (\begin{DoxyParamCaption}\item[{string}]{next\+Stage\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+次のステージに移行 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\+Stage\+Name} & 次のシーンの名前\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_l_l_tower_a75b8b5715175131c28e9e1a571e57521}\label{class_a_l_l_tower_a75b8b5715175131c28e9e1a571e57521}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Goto\+Stage\+Select@{Goto\+Stage\+Select}}
+\index{Goto\+Stage\+Select@{Goto\+Stage\+Select}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Goto\+Stage\+Select()}{GotoStageSelect()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Goto\+Stage\+Select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ステージセレクトにシーンを移行 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a4ace44a9bb3967b4f8f7b534e5e2df40}\label{class_a_l_l_tower_a4ace44a9bb3967b4f8f7b534e5e2df40}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Goto\+Title@{Goto\+Title}}
+\index{Goto\+Title@{Goto\+Title}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Goto\+Title()}{GotoTitle()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Goto\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+タイトルにシーン移行 
+
+\mbox{\Hypertarget{class_a_l_l_tower_abb9823ebb19ac7ac19ca871b55af1977}\label{class_a_l_l_tower_abb9823ebb19ac7ac19ca871b55af1977}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Load\+Set@{Load\+Set}}
+\index{Load\+Set@{Load\+Set}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Load\+Set()}{LoadSet()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Load\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+シーン移行の前処理 
+
+\mbox{\Hypertarget{class_a_l_l_tower_ae91a9023605bd83d59aee9eda6f72779}\label{class_a_l_l_tower_ae91a9023605bd83d59aee9eda6f72779}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Pose\+End@{Pose\+End}}
+\index{Pose\+End@{Pose\+End}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Pose\+End()}{PoseEnd()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Pose\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ポーズの終了 
+
+\mbox{\Hypertarget{class_a_l_l_tower_ae37b91b8eb784a8d1c96220233afd76f}\label{class_a_l_l_tower_ae37b91b8eb784a8d1c96220233afd76f}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Pose\+Start@{Pose\+Start}}
+\index{Pose\+Start@{Pose\+Start}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Pose\+Start()}{PoseStart()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Pose\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ポーズの開始 
+
+\mbox{\Hypertarget{class_a_l_l_tower_a30b3b152a1444c0dd1f326ff4d4f6ede}\label{class_a_l_l_tower_a30b3b152a1444c0dd1f326ff4d4f6ede}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Retry@{Retry}}
+\index{Retry@{Retry}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Retry()}{Retry()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Retry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+リトライの実行 
+
+\mbox{\Hypertarget{class_a_l_l_tower_aed8435a5e40b07b3b6a88d0ad08e7904}\label{class_a_l_l_tower_aed8435a5e40b07b3b6a88d0ad08e7904}} 
+\index{A\+L\+L\+Tower@{A\+L\+L\+Tower}!Tower\+Update@{Tower\+Update}}
+\index{Tower\+Update@{Tower\+Update}!A\+L\+L\+Tower@{A\+L\+L\+Tower}}
+\subsubsection{\texorpdfstring{Tower\+Update()}{TowerUpdate()}}
+{\footnotesize\ttfamily void A\+L\+L\+Tower.\+Tower\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+タワーの更新 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Tower\+Stage\+Scene/\+Tower/A\+L\+L\+Tower.\+cs\end{DoxyCompactItemize}

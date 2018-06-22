@@ -1,0 +1,234 @@
+\hypertarget{class_stage_select}{}\section{Stage\+Select Class Reference}
+\label{class_stage_select}\index{Stage\+Select@{Stage\+Select}}
+
+
+ステージセレクトの処理をするクラス 制作者\+:番場 宥輝  
+
+
+Inheritance diagram for Stage\+Select\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stage_select}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stage_select_aa69259adefd5b95d5c91d59478e97224}\label{class_stage_select_aa69259adefd5b95d5c91d59478e97224}} 
+static int {\bfseries stage}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stage_select_a390abc742a0bdf5e053dfa652d3e2d66}\label{class_stage_select_a390abc742a0bdf5e053dfa652d3e2d66}} 
+static int \mbox{[}$\,$\mbox{]} {\bfseries Clear\+Floor}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \hyperlink{class_stage_select_a6b3980abcd91e390c76fc5f914554bbe}{routine\+Func} ()
+\begin{DoxyCompactList}\small\item\em コルーチンに渡す関数型の宣言 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_stage_select_a75b54045db860921218319751b9771a3}\label{class_stage_select_a75b54045db860921218319751b9771a3}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_stage_select_a8e2086960e7e124beccbd0bab2daee38}\label{class_stage_select_a8e2086960e7e124beccbd0bab2daee38}} 
+void {\bfseries Update} ()
+\item 
+void \hyperlink{class_stage_select_a81b600e66141ab90bd9f48dc5f737db0}{Select\+Stage} ()
+\begin{DoxyCompactList}\small\item\em ステージを選ぶ関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_stage_select_aa194326736d1553ee134ad21d90ab832}{Select\+Floor} ()
+\begin{DoxyCompactList}\small\item\em フロアを選ぶ関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_stage_select_af7b468e46ddc79c41cecd72885256cb1}{Load\+Game\+Scene} ()
+\begin{DoxyCompactList}\small\item\em ロード画面をはさみ、ゲームシーンへ遷移する \end{DoxyCompactList}\item 
+void \hyperlink{class_stage_select_a38cbfdf8ea97f93d93b03b4d4cca0b5b}{Load\+Title\+Scene} ()
+\begin{DoxyCompactList}\small\item\em ロード画面をはさみ、タイトルに戻る \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_stage_select_ab76ca4f38ca97ab7afbacc44efb99ef2}{Run\+Coroutine} (int frame, \hyperlink{class_stage_select_a6b3980abcd91e390c76fc5f914554bbe}{routine\+Func} func)
+\begin{DoxyCompactList}\small\item\em 指定フレーム後に指定の関数を行うコルーチン ※関数はdelegate型で宣言したものにラムダ式を用いて代入している \end{DoxyCompactList}\item 
+void \hyperlink{class_stage_select_a048ef71453d75c2e3e20f7d6a189d060}{Floor\+\_\+\+Draw} ()
+\begin{DoxyCompactList}\small\item\em フロア選択中に毎フレーム呼ぶ描画系処理を一括にした関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_stage_select_a8a9239efe529afbcf0d22f3af01f9436}{Pause\+Menu} ()
+\begin{DoxyCompactList}\small\item\em ポーズメニューの処理 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stage_select_a2ed6e3bba389d42d6442097a6a6dcfc2}\label{class_stage_select_a2ed6e3bba389d42d6442097a6a6dcfc2}} 
+\hyperlink{class_camera_rotation}{Camera\+Rotation} {\bfseries main\+Camera\+Obj}
+\item 
+\mbox{\Hypertarget{class_stage_select_ab3b98c58051466baa1d28475460a8fe6}\label{class_stage_select_ab3b98c58051466baa1d28475460a8fe6}} 
+int {\bfseries floor} = Menu.\+F\+L\+O\+O\+R1
+\item 
+\mbox{\Hypertarget{class_stage_select_aea7e2a9a19ccd46afef002222935ab6b}\label{class_stage_select_aea7e2a9a19ccd46afef002222935ab6b}} 
+\hyperlink{class_floor_back_sprite}{Floor\+Back\+Sprite} {\bfseries floor\+Back\+Sprite}
+\item 
+\mbox{\Hypertarget{class_stage_select_a31a473f2ef00d55caf56f9a01b33706d}\label{class_stage_select_a31a473f2ef00d55caf56f9a01b33706d}} 
+\hyperlink{class_floor_best_time_string_sprite}{Floor\+Best\+Time\+String\+Sprite} {\bfseries Best\+Time\+Str}
+\item 
+\mbox{\Hypertarget{class_stage_select_ab4636e16569cde72a4bacb4a8e91f4fe}\label{class_stage_select_ab4636e16569cde72a4bacb4a8e91f4fe}} 
+\hyperlink{class_floor_best_time_num_sprite}{Floor\+Best\+Time\+Num\+Sprite} {\bfseries Best\+Time\+Num}
+\item 
+\mbox{\Hypertarget{class_stage_select_a214b28c16b1ca415dfc21edf551f9d6f}\label{class_stage_select_a214b28c16b1ca415dfc21edf551f9d6f}} 
+\hyperlink{class_floor_clear_sprite}{Floor\+Clear\+Sprite} {\bfseries floor\+Clear\+Marker}
+\item 
+\mbox{\Hypertarget{class_stage_select_addabe832384dc4371321457a40c89644}\label{class_stage_select_addabe832384dc4371321457a40c89644}} 
+\hyperlink{class_floor_top_sprite}{Floor\+Top\+Sprite} {\bfseries floor\+Top}
+\item 
+\mbox{\Hypertarget{class_stage_select_a9e1f1d2dc8d30338fa1f3ac393df0622}\label{class_stage_select_a9e1f1d2dc8d30338fa1f3ac393df0622}} 
+\hyperlink{class_floor_move_obj}{Floor\+Move\+Obj} {\bfseries floor\+Move}
+\item 
+\mbox{\Hypertarget{class_stage_select_a93ce063fc3b2c7fd07186ddb68c3dbe8}\label{class_stage_select_a93ce063fc3b2c7fd07186ddb68c3dbe8}} 
+\hyperlink{class_pause}{Pause} {\bfseries pause}
+\item 
+\mbox{\Hypertarget{class_stage_select_a52ef6611e47ae0f0f1e2f6e0f3e503f9}\label{class_stage_select_a52ef6611e47ae0f0f1e2f6e0f3e503f9}} 
+\hyperlink{class_stage_name_obj}{Stage\+Name\+Obj} {\bfseries st\+Name\+Obj}
+\item 
+\mbox{\Hypertarget{class_stage_select_af866e4ba0ce2bdcd1376d943c2b67a56}\label{class_stage_select_af866e4ba0ce2bdcd1376d943c2b67a56}} 
+\hyperlink{class_stage_select_cursol}{Stage\+Select\+Cursol} {\bfseries st\+Cur}
+\item 
+\mbox{\Hypertarget{class_stage_select_a3ed60dfaf9dc3e42284899412d92f204}\label{class_stage_select_a3ed60dfaf9dc3e42284899412d92f204}} 
+\hyperlink{class_floor_name_manager}{Floor\+Name\+Manager} {\bfseries floor\+Name\+Manager}
+\item 
+\mbox{\Hypertarget{class_stage_select_a9a7049916482752cfa9deffcd832471b}\label{class_stage_select_a9a7049916482752cfa9deffcd832471b}} 
+Audio\+Clip {\bfseries stage\+Select\+SE}
+\item 
+\mbox{\Hypertarget{class_stage_select_a966bce47b5747e1b6bdec3f95e0a13b8}\label{class_stage_select_a966bce47b5747e1b6bdec3f95e0a13b8}} 
+int {\bfseries mode} = S\+T\+A\+G\+E\+\_\+\+S\+E\+L\+E\+CT
+\item 
+\mbox{\Hypertarget{class_stage_select_a41e282bd684f54e37de0df5d302ddad6}\label{class_stage_select_a41e282bd684f54e37de0df5d302ddad6}} 
+int {\bfseries temp} = S\+T\+A\+G\+E\+\_\+\+S\+E\+L\+E\+CT
+\item 
+\mbox{\Hypertarget{class_stage_select_a04571ee6c3e5aeaa338c910967dead4d}\label{class_stage_select_a04571ee6c3e5aeaa338c910967dead4d}} 
+const int {\bfseries R\+E\+S\+E\+T\+\_\+\+S\+T\+A\+G\+E\+\_\+\+F\+R\+A\+ME} = 30
+\item 
+\mbox{\Hypertarget{class_stage_select_a562afe438af90078afece810a364e784}\label{class_stage_select_a562afe438af90078afece810a364e784}} 
+const int {\bfseries R\+E\+S\+E\+T\+\_\+\+F\+L\+O\+O\+R\+\_\+\+F\+R\+A\+ME} = 15
+\item 
+\mbox{\Hypertarget{class_stage_select_aaa32dce3186ffabda37dbf7680cf8d10}\label{class_stage_select_aaa32dce3186ffabda37dbf7680cf8d10}} 
+const int {\bfseries C\+A\+M\+E\+R\+A\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+T\+I\+ME} = 18
+\item 
+\mbox{\Hypertarget{class_stage_select_ab274726f22630ba11002b99fa56d0be3}\label{class_stage_select_ab274726f22630ba11002b99fa56d0be3}} 
+const int {\bfseries S\+T\+A\+G\+E\+\_\+\+S\+E\+L\+E\+CT} = 0
+\item 
+\mbox{\Hypertarget{class_stage_select_a43591fc54aabe56e001256c0c106f2fd}\label{class_stage_select_a43591fc54aabe56e001256c0c106f2fd}} 
+const int {\bfseries F\+L\+O\+O\+R\+\_\+\+S\+E\+L\+E\+CT} = 1
+\item 
+\mbox{\Hypertarget{class_stage_select_ae4a9274570d88bf5c074aa3d5e19e4e8}\label{class_stage_select_ae4a9274570d88bf5c074aa3d5e19e4e8}} 
+const int {\bfseries P\+A\+U\+SE} = 2
+\item 
+\hyperlink{class_stage_select_a6b3980abcd91e390c76fc5f914554bbe}{routine\+Func} \hyperlink{class_stage_select_aad154f2d7ed55fde9d3b115f60f1f9e1}{running\+Func} = null
+\begin{DoxyCompactList}\small\item\em コルーチンの行う関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ステージセレクトの処理をするクラス 制作者\+:番場 宥輝 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stage_select_a048ef71453d75c2e3e20f7d6a189d060}\label{class_stage_select_a048ef71453d75c2e3e20f7d6a189d060}} 
+\index{Stage\+Select@{Stage\+Select}!Floor\+\_\+\+Draw@{Floor\+\_\+\+Draw}}
+\index{Floor\+\_\+\+Draw@{Floor\+\_\+\+Draw}!Stage\+Select@{Stage\+Select}}
+\subsubsection{\texorpdfstring{Floor\+\_\+\+Draw()}{Floor\_Draw()}}
+{\footnotesize\ttfamily void Stage\+Select.\+Floor\+\_\+\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+フロア選択中に毎フレーム呼ぶ描画系処理を一括にした関数 
+
+\mbox{\Hypertarget{class_stage_select_af7b468e46ddc79c41cecd72885256cb1}\label{class_stage_select_af7b468e46ddc79c41cecd72885256cb1}} 
+\index{Stage\+Select@{Stage\+Select}!Load\+Game\+Scene@{Load\+Game\+Scene}}
+\index{Load\+Game\+Scene@{Load\+Game\+Scene}!Stage\+Select@{Stage\+Select}}
+\subsubsection{\texorpdfstring{Load\+Game\+Scene()}{LoadGameScene()}}
+{\footnotesize\ttfamily void Stage\+Select.\+Load\+Game\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ロード画面をはさみ、ゲームシーンへ遷移する 
+
+\mbox{\Hypertarget{class_stage_select_a38cbfdf8ea97f93d93b03b4d4cca0b5b}\label{class_stage_select_a38cbfdf8ea97f93d93b03b4d4cca0b5b}} 
+\index{Stage\+Select@{Stage\+Select}!Load\+Title\+Scene@{Load\+Title\+Scene}}
+\index{Load\+Title\+Scene@{Load\+Title\+Scene}!Stage\+Select@{Stage\+Select}}
+\subsubsection{\texorpdfstring{Load\+Title\+Scene()}{LoadTitleScene()}}
+{\footnotesize\ttfamily void Stage\+Select.\+Load\+Title\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ロード画面をはさみ、タイトルに戻る 
+
+\mbox{\Hypertarget{class_stage_select_a8a9239efe529afbcf0d22f3af01f9436}\label{class_stage_select_a8a9239efe529afbcf0d22f3af01f9436}} 
+\index{Stage\+Select@{Stage\+Select}!Pause\+Menu@{Pause\+Menu}}
+\index{Pause\+Menu@{Pause\+Menu}!Stage\+Select@{Stage\+Select}}
+\subsubsection{\texorpdfstring{Pause\+Menu()}{PauseMenu()}}
+{\footnotesize\ttfamily void Stage\+Select.\+Pause\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ポーズメニューの処理 
+
+\mbox{\Hypertarget{class_stage_select_a6b3980abcd91e390c76fc5f914554bbe}\label{class_stage_select_a6b3980abcd91e390c76fc5f914554bbe}} 
+\index{Stage\+Select@{Stage\+Select}!routine\+Func@{routine\+Func}}
+\index{routine\+Func@{routine\+Func}!Stage\+Select@{Stage\+Select}}
+\subsubsection{\texorpdfstring{routine\+Func()}{routineFunc()}}
+{\footnotesize\ttfamily delegate void Stage\+Select.\+routine\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+コルーチンに渡す関数型の宣言 
+
+\mbox{\Hypertarget{class_stage_select_ab76ca4f38ca97ab7afbacc44efb99ef2}\label{class_stage_select_ab76ca4f38ca97ab7afbacc44efb99ef2}} 
+\index{Stage\+Select@{Stage\+Select}!Run\+Coroutine@{Run\+Coroutine}}
+\index{Run\+Coroutine@{Run\+Coroutine}!Stage\+Select@{Stage\+Select}}
+\subsubsection{\texorpdfstring{Run\+Coroutine()}{RunCoroutine()}}
+{\footnotesize\ttfamily I\+Enumerator Stage\+Select.\+Run\+Coroutine (\begin{DoxyParamCaption}\item[{int}]{frame,  }\item[{\hyperlink{class_stage_select_a6b3980abcd91e390c76fc5f914554bbe}{routine\+Func}}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+指定フレーム後に指定の関数を行うコルーチン ※関数はdelegate型で宣言したものにラムダ式を用いて代入している 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & 待つフレーム\\
+\hline
+{\em func} & 行う関数\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1フレームずつ値を返す
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stage_select_aa194326736d1553ee134ad21d90ab832}\label{class_stage_select_aa194326736d1553ee134ad21d90ab832}} 
+\index{Stage\+Select@{Stage\+Select}!Select\+Floor@{Select\+Floor}}
+\index{Select\+Floor@{Select\+Floor}!Stage\+Select@{Stage\+Select}}
+\subsubsection{\texorpdfstring{Select\+Floor()}{SelectFloor()}}
+{\footnotesize\ttfamily void Stage\+Select.\+Select\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+フロアを選ぶ関数 
+
+\mbox{\Hypertarget{class_stage_select_a81b600e66141ab90bd9f48dc5f737db0}\label{class_stage_select_a81b600e66141ab90bd9f48dc5f737db0}} 
+\index{Stage\+Select@{Stage\+Select}!Select\+Stage@{Select\+Stage}}
+\index{Select\+Stage@{Select\+Stage}!Stage\+Select@{Stage\+Select}}
+\subsubsection{\texorpdfstring{Select\+Stage()}{SelectStage()}}
+{\footnotesize\ttfamily void Stage\+Select.\+Select\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+ステージを選ぶ関数 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_stage_select_aad154f2d7ed55fde9d3b115f60f1f9e1}\label{class_stage_select_aad154f2d7ed55fde9d3b115f60f1f9e1}} 
+\index{Stage\+Select@{Stage\+Select}!running\+Func@{running\+Func}}
+\index{running\+Func@{running\+Func}!Stage\+Select@{Stage\+Select}}
+\subsubsection{\texorpdfstring{running\+Func}{runningFunc}}
+{\footnotesize\ttfamily \hyperlink{class_stage_select_a6b3980abcd91e390c76fc5f914554bbe}{routine\+Func} Stage\+Select.\+running\+Func = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+コルーチンの行う関数 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Scene/\+Stage\+Select/\+Scripts/Stage\+Select.\+cs\end{DoxyCompactItemize}

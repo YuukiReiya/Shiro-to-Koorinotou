@@ -1,0 +1,122 @@
+\hypertarget{class_change_scale}{}\section{Change\+Scale Class Reference}
+\label{class_change_scale}\index{Change\+Scale@{Change\+Scale}}
+
+
+ゲームオブジェクトの拡大・縮小を行うクラス 制作者\+:番場宥輝  
+
+
+Inheritance diagram for Change\+Scale\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_change_scale}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_change_scale_a4a306bcc12f9855028d8141966af3c09}{Start\+Narrow} ()
+\begin{DoxyCompactList}\small\item\em 縮小を開始する関数 \end{DoxyCompactList}\item 
+void \hyperlink{class_change_scale_ade4b9eab7494442dc56e92f96a6a3c2b}{Start\+Expansion} ()
+\begin{DoxyCompactList}\small\item\em 拡大を開始する関数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_change_scale_aaef648ca57bd63b7815e280a0cf58341}{is\+Changing}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em ステート確認用プロパティ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_change_scale_ae9b937ada20d587fa0dc08efdc1025cc}\label{class_change_scale_ae9b937ada20d587fa0dc08efdc1025cc}} 
+bool {\bfseries is\+Max\+Scale}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_change_scale_aff84f3a23fb4a87a1636b96ba77e256f}\label{class_change_scale_aff84f3a23fb4a87a1636b96ba77e256f}} 
+void {\bfseries Start} ()
+\item 
+I\+Enumerator \hyperlink{class_change_scale_a6ea53bd612343b4516bd0c870b0de350}{Expansion} ()
+\begin{DoxyCompactList}\small\item\em 拡大するコルーチン \end{DoxyCompactList}\item 
+I\+Enumerator \hyperlink{class_change_scale_a96b187f4826b4713f05788c440b4eb41}{Narrow} ()
+\begin{DoxyCompactList}\small\item\em 縮小するコルーチン \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_change_scale_a70c4cdd04c4d558fb8df9f351e1c65dc}\label{class_change_scale_a70c4cdd04c4d558fb8df9f351e1c65dc}} 
+Vector3 {\bfseries Max\+Scale} = new Vector3(1, 1, 0)
+\item 
+\mbox{\Hypertarget{class_change_scale_acda920801d5374dac50db21a50db9e05}\label{class_change_scale_acda920801d5374dac50db21a50db9e05}} 
+Vector3 {\bfseries Min\+Scale} = Vector3.\+zero
+\item 
+\mbox{\Hypertarget{class_change_scale_aab885a7e19d477b3ec0e61d50cabf8b7}\label{class_change_scale_aab885a7e19d477b3ec0e61d50cabf8b7}} 
+float {\bfseries Scale\+Power} = 0.\+05f
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+ゲームオブジェクトの拡大・縮小を行うクラス 制作者\+:番場宥輝 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_change_scale_a6ea53bd612343b4516bd0c870b0de350}\label{class_change_scale_a6ea53bd612343b4516bd0c870b0de350}} 
+\index{Change\+Scale@{Change\+Scale}!Expansion@{Expansion}}
+\index{Expansion@{Expansion}!Change\+Scale@{Change\+Scale}}
+\subsubsection{\texorpdfstring{Expansion()}{Expansion()}}
+{\footnotesize\ttfamily I\+Enumerator Change\+Scale.\+Expansion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+拡大するコルーチン 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_change_scale_a96b187f4826b4713f05788c440b4eb41}\label{class_change_scale_a96b187f4826b4713f05788c440b4eb41}} 
+\index{Change\+Scale@{Change\+Scale}!Narrow@{Narrow}}
+\index{Narrow@{Narrow}!Change\+Scale@{Change\+Scale}}
+\subsubsection{\texorpdfstring{Narrow()}{Narrow()}}
+{\footnotesize\ttfamily I\+Enumerator Change\+Scale.\+Narrow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+縮小するコルーチン 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_change_scale_ade4b9eab7494442dc56e92f96a6a3c2b}\label{class_change_scale_ade4b9eab7494442dc56e92f96a6a3c2b}} 
+\index{Change\+Scale@{Change\+Scale}!Start\+Expansion@{Start\+Expansion}}
+\index{Start\+Expansion@{Start\+Expansion}!Change\+Scale@{Change\+Scale}}
+\subsubsection{\texorpdfstring{Start\+Expansion()}{StartExpansion()}}
+{\footnotesize\ttfamily void Change\+Scale.\+Start\+Expansion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+拡大を開始する関数 
+
+\mbox{\Hypertarget{class_change_scale_a4a306bcc12f9855028d8141966af3c09}\label{class_change_scale_a4a306bcc12f9855028d8141966af3c09}} 
+\index{Change\+Scale@{Change\+Scale}!Start\+Narrow@{Start\+Narrow}}
+\index{Start\+Narrow@{Start\+Narrow}!Change\+Scale@{Change\+Scale}}
+\subsubsection{\texorpdfstring{Start\+Narrow()}{StartNarrow()}}
+{\footnotesize\ttfamily void Change\+Scale.\+Start\+Narrow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+縮小を開始する関数 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_change_scale_aaef648ca57bd63b7815e280a0cf58341}\label{class_change_scale_aaef648ca57bd63b7815e280a0cf58341}} 
+\index{Change\+Scale@{Change\+Scale}!is\+Changing@{is\+Changing}}
+\index{is\+Changing@{is\+Changing}!Change\+Scale@{Change\+Scale}}
+\subsubsection{\texorpdfstring{is\+Changing}{isChanging}}
+{\footnotesize\ttfamily bool Change\+Scale.\+is\+Changing\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+ステート確認用プロパティ 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/user/\+Documents/\+Unity\+Project\+File/制作用フォルダ/しろと氷の塔/\+Assets/\+Scene/\+Title/\+Scripts/Change\+Scale.\+cs\end{DoxyCompactItemize}
